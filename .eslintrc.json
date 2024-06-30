@@ -1,0 +1,21 @@
+{
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "indent": ["warn", 2],
+    "quotes": ["warn", "single"],
+    "semi": ["warn", "always"],
+    "no-unused-vars": "warn",
+    "keyword-spacing": "warn",
+    "space-before-function-paren": ["warn", "always"],
+    "eqeqeq": ["warn", "always"],
+    "space-infix-ops": "error",
+    "comma-spacing": "warn",
+    "brace-style": "warn",
+    "curly": "warn",
+    "block-spacing": ["error", "always"],
+    "camelcase": "warn",
+    "comma-style": "warn",
+    "func-call-spacing": "warn",
+    "key-spacing": "warn"
+  }
+}

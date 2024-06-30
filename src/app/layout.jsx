@@ -1,5 +1,5 @@
-import '@/src/app/ui/styles/globals.css'
+import '@/src/globals.css';
 
-export default function Layout({ children }) {
-  return children
+export default function Layout ({ children }) {
+  return children;
 }

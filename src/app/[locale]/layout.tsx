@@ -1,9 +1,8 @@
-import '@/src/app/ui/styles/Home/Header.css'
-import React from 'react'
-import { outfit } from '../ui/fonts'
-import Header from '../ui/components/Header'
-import { useTranslations } from "next-intl"
-import Footer from '../ui/components/Footer'
+import { outfit } from '@/src/fonts/fonts';
+import { useTranslations } from 'next-intl';
+import Header from '@/src/layout/components/Header';
+import Footer from '@/src/layout/components/Footer';
+import '@/src/layout/styles/Header.css';
 
 interface RootLayoutProps {
   children: React.ReactNode
@@ -12,7 +11,7 @@ interface RootLayoutProps {
   }
 }
 
-export default function RootLayout({
+export default function RootLayout ({
   children, 
   params: { locale }
 }: Readonly<RootLayoutProps>) {
@@ -26,7 +25,7 @@ export default function RootLayout({
     },
     donate: t('donate'),
     changeLanguage: t('changeLanguage'),
-  }
+  };
   return (
     <html lang={locale} className={outfit.className}>
       <body className='main'>
@@ -35,5 +34,5 @@ export default function RootLayout({
         <Footer />
       </body>
     </html>
-  )
+  );
 }

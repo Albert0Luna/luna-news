@@ -1,14 +1,14 @@
-'use client'
-
-import Image from 'next/image';
+/* eslint-disable @next/next/no-async-client-component */
+/* eslint-disable @next/next/no-img-element */
+'use client';
 import React, { useEffect, useState } from 'react';
 
-export default async function RenderNews() {
+export default async function RenderNews () {
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
-      const data = await fetch(`https://jsonplaceholder.typicode.com/posts`);
+      const data = await fetch('https://jsonplaceholder.typicode.com/posts');
       const response = await data.json();
       setArticles(response); // Asegúrate de ajustar esto según la estructura de la respuesta
     };
@@ -17,17 +17,17 @@ export default async function RenderNews() {
 
   return (
     <ul className='highlights_container'>
-      {articles && articles?.slice(0,9).map((article: any) => (
+      {articles && articles?.slice(0, 9).map((article: any) => (
         <li key={article.id} className='highlights_item'>
-            <h5 className='highlights_item_title'>
+          <h5 className='highlights_item_title'>
               ¿Ha llegado la nueva era de los procesadores con los nuevos Snapdragon?
-            </h5>
+          </h5>
           <div className='highlights_s1'>
             <div className='highlights_item_image_container'>
-            <img 
-              src='https://www.notebookcheck.org/fileadmin/Notebooks/News/_nc3/19917.jpg' 
-              alt='news'
-              className='highlights_item_image'
+              <img 
+                src='https://www.notebookcheck.org/fileadmin/Notebooks/News/_nc3/19917.jpg' 
+                alt='news'
+                className='highlights_item_image'
               />
             </div>
             <div className='highlights_item_content'>
@@ -37,7 +37,7 @@ export default async function RenderNews() {
               */}
               <p 
                 className='highlights_item_body'
-                >
+              >
                   Descubre como los nuevos procesadores de Intel están revolucionando el mercado de la tecnología.
                   Incluyendo la nueva serie de procesadores Intel Core i9.
               </p>

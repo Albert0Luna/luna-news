@@ -1,4 +1,4 @@
-@import url('@/src/app/ui/styles/globals.css');
+@import url('@/src/globals.css');
 
 .main {
   display: flex;

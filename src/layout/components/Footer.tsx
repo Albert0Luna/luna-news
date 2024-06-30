@@ -1,8 +1,8 @@
 
-import YoutubeIcon from '@/src/app/ui/icons/social-media/YoutubeIcon'
-import TiktokIcon from '@/src/app/ui/icons/social-media/TiktokIcon'
-import XIcon from '@/src/app/ui/icons/social-media/XIcon'
-import FacebookIcon from '@/src/app/ui/icons/social-media/FacebookIcon'
+import YoutubeIcon from '@/src/icons/social-media/YoutubeIcon';
+import TiktokIcon from '@/src/icons/social-media/TiktokIcon';
+import XIcon from '@/src/icons/social-media/XIcon';
+import FacebookIcon from '@/src/icons/social-media/FacebookIcon';
 
 export default function Footer () {
   return (
@@ -17,5 +17,5 @@ export default function Footer () {
         <FacebookIcon />
       </div>
     </footer>
-  )
+  );
 }
