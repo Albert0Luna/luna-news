@@ -1,0 +1,22 @@
+.footer {
+  background-color: var(--primary-color-dark);
+  border-radius: 0px 0px 10px 10px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  gap: .5rem;
+  border-top: 2px solid var(--gray-light);
+}
+
+.footer_privacity {
+  font-size: 1.2rem;
+  letter-spacing: 0.2px;
+  font-weight: 300;
+}
+
+.footer_social_container {
+  display: flex;
+  gap: .7rem;
+}

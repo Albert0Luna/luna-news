@@ -1,0 +1,43 @@
+{
+  "Index": {
+    "title": "Home",
+    "description": "Welcome to the home page"
+  },
+  "Header": {
+    "routes": {
+      "home": "Home",
+      "about": "About",
+      "contact": "Contact"
+    },
+    "donate": "Donate",
+    "changeLanguage": "Change Language"
+  },
+  "Coverpage": {
+    "title": {
+      "p1" : "The satellite ",
+      "p2": "best",
+      "p3": "informs you in the universe"
+    },
+    "subtitle": {
+      "p1": "In",
+      "p2": "LUNA",
+      "p3": "NEWS you will find the most recent and relevant news of the tech world"
+    },
+   "sections": {
+      "Latest": "Latest",
+      "Toturials": "Toturials",
+      "Pc's-&-Laptops": "Pc's & Laptops",
+      "Mobiles-&-Tablets": "Mobiles & Tablets",
+      "Gaming": "Gaming",
+      "Programming": "Programming",
+      "Reviews": "Reviews",
+      "AI": "AI"
+   },
+    "highlight": {
+        "p1": "Highlight",
+        "p2": "more",
+        "p3": "important"
+    }
+  }
+}
+

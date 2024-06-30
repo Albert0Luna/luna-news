@@ -1,0 +1,32 @@
+:root {
+  --dark-color: #000000;
+  --light-color: #eee;
+  
+  --primary-color-dark: #E71D36;
+  --primary-color-light: #E63946;
+  
+  --gray-light: #BBBBBB;
+  --gray-strong: #888888;
+  
+  --background-color: #222;
+
+  --background-gradient-dark: linear-gradient(95deg, #000 0%, #2c2b2b 70%);
+}
+
+html {
+  background-color: var(--dark-color);
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    background-color: transparent;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}

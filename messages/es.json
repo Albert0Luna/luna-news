@@ -1,0 +1,43 @@
+{
+  "Index": {
+    "title": "Inicio",
+    "description": "Bienvenido a la página de inicio"
+  },
+  "Header": {
+    "routes": {
+      "home": "Inicio",
+      "about": "Nosotros",
+      "contact": "Contacto"
+    },
+    "donate": "Donar",
+    "changeLanguage": "Cambiar idioma"
+  },
+  "Coverpage": {
+    "title": {
+      "p1" : "El satelite que",
+      "p2": "mejor",
+      "p3": "te informa en el universo"
+    },
+    "subtitle": {
+      "p1": "En",
+      "p2": "LUNA",
+      "p3": "NEWS encontraras las noticias mas recientes y relevantes del mundo tech"
+    },
+    "sections": {
+      "Latest": "Lo último",
+      "Toturials": "Tutoriales",
+      "Pc's-&-Laptops": "Pc's & Laptops",
+      "Mobiles-&-Tablets": "Mobiles & Tablets",
+      "Gaming": "Gaming",
+      "Programming": "Programación",
+      "Reviews": "Reseñas",
+      "AI": "IA"
+    },
+    "highlight": {
+      "p1": "Lo",
+      "p2": "más",
+      "p3": "destacado"
+    }
+  }
+}
+

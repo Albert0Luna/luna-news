@@ -1,0 +1,44 @@
+@import url('@/src/app/ui/styles/globals.css');
+
+.main {
+  display: flex;
+  flex-direction: column;
+  color: var(--light-color);
+  background: rgb(0,0,0); 
+  min-height: 98vh;
+  border-radius: 1rem;
+  outline: 3px solid var(--gray-light);
+  margin: 2% 2%;
+  background: var(--background-gradient-dark);
+}
+
+.header {
+  display: flex;
+  background-color: aliceblue;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  height: 100%;
+}
+
+
+@media screen and (max-width: 1030px) {
+  .main {
+    margin: 0;
+    outline: none;
+    border-radius: 0%;
+    min-height: 100vh;
+    background: #000;
+  }
+
+  main {
+    padding-top: 8vh;
+  }
+}
+

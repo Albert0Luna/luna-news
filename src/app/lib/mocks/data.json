@@ -1,0 +1,135 @@
+[
+  {
+    "id": 1,
+    "title": {
+      "en": "The importance of silicium in the tech industry",
+      "es": "La importancia del silicio en la industria tecnológica"
+    },
+    "miniDesc": {
+      "en": "Silicium is a key component in the tech industry. It is used in the production of microchips and other electronic components.",
+      "es": "El silicio es un componente clave en la industria tecnológica. Se utiliza en la producción de microchips y otros componentes electrónicos."
+    },
+    "content": {
+      "en": "Silicium is a key component in the tech industry. It is used in the production of microchips and other electronic components.",
+      "es": "El silicio es un componente clave en la industria tecnológica. Se utiliza en la producción de microchips y otros componentes electrónicos."
+    },
+    "image": "https://via.placeholder.com/150",
+    "date": "2021-10-10",
+    "author": "John Doe",
+    "readTime": "5 min"
+  },
+  {
+    "id": 2,
+    "title": {
+      "en": "The benefits of artificial intelligence",
+      "es": "Los beneficios de la inteligencia artificial"
+    },
+    "miniDesc": {
+      "en": "Silicium is a key component in the tech industry. It is used in the production of microchips and other electronic components.",
+      "es": "El silicio es un componente clave en la industria tecnológica. Se utiliza en la producción de microchips y otros componentes electrónicos."
+    },
+    "content": {
+      "en": "Artificial intelligence has revolutionized many industries. It has the potential to automate tasks, improve efficiency, and make better decisions.",
+      "es": "La inteligencia artificial ha revolucionado muchas industrias. Tiene el potencial de automatizar tareas, mejorar la eficiencia y tomar mejores decisiones."
+    },
+    "image": "https://via.placeholder.com/150",
+    "date": "2021-10-11",
+    "author": "Jane Smith",
+    "readTime": "7 min"
+  },
+  {
+    "id": 3,
+    "title": {
+      "en": "The future of quantum computing",
+      "es": "El futuro de la computación cuántica"
+    },
+    "miniDesc": {
+      "en": "Silicium is a key component in the tech industry. It is used in the production of microchips and other electronic components.",
+      "es": "El silicio es un componente clave en la industria tecnológica. Se utiliza en la producción de microchips y otros componentes electrónicos."
+    },
+    "content": {
+      "en": "Quantum computing is an emerging field with the potential to solve complex problems that are beyond the capabilities of classical computers.",
+      "es": "La computación cuántica es un campo emergente con el potencial de resolver problemas complejos que están más allá de las capacidades de las computadoras clásicas."
+    },
+    "image": "https://via.placeholder.com/150",
+    "date": "2021-10-12",
+    "author": "Jane Smith",
+    "readTime": "7 min"
+  },
+  {
+    "id": 4,
+    "title": {
+      "en": "The rise of 5G technology",
+      "es": "El auge de la tecnología 5G"
+    },
+    "miniDesc": {
+      "en": "Silicium is a key component in the tech industry. It is used in the production of microchips and other electronic components.",
+      "es": "El silicio es un componente clave en la industria tecnológica. Se utiliza en la producción de microchips y otros componentes electrónicos."
+    },
+    "content": {
+      "en": "5G technology promises faster speeds, lower latency, and greater capacity. It has the potential to revolutionize the way we connect and communicate.",
+      "es": "La tecnología 5G promete velocidades más rápidas, menor latencia y mayor capacidad. Tiene el potencial de revolucionar la forma en que nos conectamos y comunicamos."
+    },
+    "image": "https://via.placeholder.com/150",
+    "date": "2021-10-13",
+    "author": "Jane Smith",
+    "readTime": "7 min"
+  },
+  {
+    "id": 5,
+    "title": {
+      "en": "The impact of blockchain technology",
+      "es": "El impacto de la tecnología blockchain"
+    },
+    "miniDesc": {
+      "en": "Silicium is a key component in the tech industry. It is used in the production of microchips and other electronic components.",
+      "es": "El silicio es un componente clave en la industria tecnológica. Se utiliza en la producción de microchips y otros componentes electrónicos."
+    },
+    "content": {
+      "en": "Blockchain technology has the potential to transform industries by providing secure, transparent, and decentralized solutions. It has the potential to disrupt many sectors, including finance, healthcare, and supply chain management.",
+      "es": "La tecnología blockchain tiene el potencial de transformar industrias al proporcionar soluciones seguras, transparentes y descentralizadas. Tiene el potencial de interrumpir muchos sectores, incluidos finanzas, atención médica y gestión de la cadena de suministro."
+    },
+    "image": "https://via.placeholder.com/150",
+    "date": "2021-10-14",
+    "author": "Jane Smith",
+    "readTime": "7 min"
+  },
+  {
+    "id": 6,
+    "title": {
+      "en": "The future of electric vehicles",
+      "es": "El futuro de los vehículos eléctricos"
+    },
+    "miniDesc": {
+      "en": "Silicium is a key component in the tech industry. It is used in the production of microchips and other electronic components.",
+      "es": "El silicio es un componente clave en la industria tecnológica. Se utiliza en la producción de microchips y otros componentes electrónicos."
+    },
+    "content": {
+      "en": "Electric vehicles are becoming increasingly popular as the world transitions to a more sustainable future. They offer many benefits, including reduced emissions, lower operating costs, and improved performance.",
+      "es": "Los vehículos eléctricos están ganando popularidad a medida que el mundo se traslada a un futuro más sostenible. Ofrecen muchos beneficios, incluidas emisiones reducidas, costos operativos más bajos y mejor rendimiento."
+    },
+    "image": "https://via.placeholder.com/150",
+    "date": "2021-10",
+    "author": "Jane Smith",
+    "readTime": "7 min"
+  },
+  {
+    "id": 7,
+    "title": {
+      "en": "The importance of silicium in the tech industry",
+      "es": "La importancia del silicio en la industria tecnológica"
+    },
+    "miniDesc": {
+      "en": "Silicium is a key component in the tech industry. It is used in the production of microchips and other electronic components.",
+      "es": "El silicio es un componente clave en la industria tecnológica. Se utiliza en la producción de microchips y otros componentes electrónicos."
+    },
+    "content": {
+      "en": "Silicium is a key component in the tech industry. It is used in the production of microchips and other electronic components.",
+      "es": "El silicio es un componente clave en la industria tecnológica. Se utiliza en la producción de microchips y otros componentes electrónicos."
+    },
+    "image": "https://via.placeholder.com/150",
+    "date": "2021-10-10",
+    "author": "Jane Smith",
+    "readTime": "7 min"
+  }
+]
