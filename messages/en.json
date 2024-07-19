@@ -7,7 +7,7 @@
     "routes": {
       "home": "Home",
       "about": "About",
-      "contact": "Contact"
+      "sections": "Sections"
     },
     "donate": "Donate",
     "changeLanguage": "Change Language"
@@ -38,6 +38,17 @@
         "p2": "more",
         "p3": "important"
     }
-  }
+  },
+  "About": {
+    "title": {
+      "p1": "About",
+      "p2": "us"
+    },
+    "content": "# Luna News\n\nLuna News is a digital news portal committed to providing accurate, relevant, and timely information to our audience. We work tirelessly to bring you the latest news on a wide range of topics, including:\n\n## Sections\n\n- **Local:** In-depth coverage of events and news that affect your community.\n- **National:** Up-to-date information on the most important events shaping our country.\n- **International:** Global analysis of the news that impacts the world.\n- **Business:** News and analysis on the business world, finance, and the economy.\n- **Technology:** The latest news in technology, gadgets, and digital trends.\n- **Sports:** Comprehensive coverage of local, national, and international sporting events.\n- **Entertainment:** News about celebrities, music, movies, television, and more.\n- **Lifestyle:** Tips and trends on health, wellness, fashion, travel, and gastronomy.\n\n## Our Values\n\n- **Objectivity:** We strive to present the news impartially and without political or religious influence.\n- **Accuracy:** We meticulously verify all information we publish to ensure its accuracy and reliability.\n- **Relevance:** We focus on news that is important to our audience and that impacts their lives.\n- **Timeliness:** We stay up-to-date with the latest news and deliver it to our readers as quickly as possible.\n- **Analysis:** We offer in-depth analysis and expert insights on current events.\n- **Commitment:** We are committed to providing our audience with an engaging and valuable news experience.\n\n---\n## Mision\nLuna News is more than just a news website. We are a community passionate about staying informed and engaged with the world around us.\n\n We invite you to join our community and immerse yourself in knowledge."
+  },
+  "SectionsPage": {
+    "sections": "Sections",
+    "readMore": "Read more"
+  }  
 }
 

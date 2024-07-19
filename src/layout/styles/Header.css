@@ -17,7 +17,7 @@ header {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 8px 18px;
+  padding: 8px 2.70%;
 }
 
 .brand {
@@ -295,6 +295,7 @@ option {
   select {
     color: #bbb;
     font-size: 1.1rem;
+    padding: 5px 10px;
   }
 
   .flag_icon {

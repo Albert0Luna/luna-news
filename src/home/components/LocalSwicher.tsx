@@ -4,25 +4,26 @@ import SpanishIcon from '@/src/icons/ui-icons/SpanishIcon';
 import EnglishIcon from '@/src/icons/ui-icons/EnglishIcon';
 import React, { ChangeEvent, useTransition } from 'react';
 import { useLocale } from 'next-intl';
-import { useRouter } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 
 export default function LocalSwicher ({changeLanguage}: {changeLanguage: string}) {
   const [isPending, startTransition] = useTransition();
   const router = useRouter();
   const localActive = useLocale();
+  const pathName = usePathname();
 
   const onSelectChange = (e: ChangeEvent<HTMLSelectElement>) => {
     const nextLocale = e.target.value;
     startTransition(() => {
-      router.replace(`/${nextLocale}`);
+      router.replace(`/${nextLocale + pathName.slice(3)}`);
     });
   };
   return (
     <label className='change_language'>
       {
-        localActive + 'en' 
+        localActive === 'en' 
           ? <EnglishIcon width={30} height={30} alt='English'/>
-          : <SpanishIcon width={30} height={30} alt='Español'/> 
+          : <SpanishIcon width={30} height={30} alt='Español'/>
       }
       <select
         defaultValue={localActive} 

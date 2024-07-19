@@ -1,0 +1,48 @@
+.prrivacy {
+  width: 100%;
+}
+
+.privacy_title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.privacy_matters h2 {
+  margin-bottom: .5rem;
+  font-size: 2rem;
+}
+
+.privacy_matters p {
+  margin-bottom: .5rem;
+  font-size: 1.2rem;
+  color: var(--gray-light);
+}
+
+.privacy_collect h3 {
+  margin-bottom: .5rem;
+  font-size: 1.7rem;
+}
+
+.privacy_collect li {
+  margin-bottom: .5rem;
+  font-size: 1.2rem;
+  color: var(--gray-light);
+}
+
+.privacy_information h3 {
+  margin-bottom: .5rem;
+  font-size: 1.7rem;
+}
+
+.privacy_information li {
+  margin-bottom: .5rem;
+  font-size: 1.2rem;
+  color: var(--gray-light);
+}
+
+@media screen and (min-width: 1030px) {
+  .privacy {
+    width: var(--content-pc);
+  }
+}

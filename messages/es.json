@@ -7,7 +7,7 @@
     "routes": {
       "home": "Inicio",
       "about": "Nosotros",
-      "contact": "Contacto"
+      "sections": "Secciones"
     },
     "donate": "Donar",
     "changeLanguage": "Cambiar idioma"
@@ -38,6 +38,17 @@
       "p2": "más",
       "p3": "destacado"
     }
-  }
+  },
+  "About": {
+    "title": {
+      "p1": "Sobre",
+      "p2": "Nosotros"
+    },
+      "content": "# Luna News\n\nLuna News es un portal digital de noticias comprometido con ofrecer información precisa, relevante y oportuna a nuestra audiencia. Trabajamos incansablemente para brindarle las últimas noticias sobre una amplia gama de temas, que incluyen:\n\n## Secciones\n\n- **Locales:** Cobertura en profundidad de eventos y noticias que afectan a tu comunidad.\n- **Nacionales:** Información actualizada sobre los acontecimientos más importantes que dan forma a nuestro país.\n- **Internacionales:** Análisis global de las noticias que impactan el mundo.\n- **Negocios:** Noticias y análisis sobre el mundo empresarial, finanzas y economía.\n- **Tecnología:** Las últimas novedades en tecnología, gadgets y tendencias digitales.\n- **Deportes:** Cobertura completa de eventos deportivos locales, nacionales e internacionales.\n- **Entretenimiento:** Noticias sobre celebridades, música, cine, televisión y más.\n- **Estilo de vida:** Consejos y tendencias sobre salud, bienestar, moda, viajes y gastronomía.\n\n## Nuestros Valores\n\n- **Objetividad:** Nos esforzamos por presentar las noticias de manera imparcial y sin influencia política o religiosa.\n- **Precisión:** Verificamos meticulosamente toda la información que publicamos para garantizar su exactitud y confiabilidad.\n- **Relevancia:** Nos enfocamos en las noticias que son importantes para nuestra audiencia y que impactan en sus vidas.\n- **Oportunidad:** Nos mantenemos actualizados con las últimas noticias y las entregamos a nuestros lectores lo más rápido posible.\n- **Análisis:** Ofrecemos análisis profundo y perspectivas expertas sobre los eventos actuales.\n- **Compromiso:** Nos comprometemos a brindar a nuestra audiencia una experiencia informativa atractiva y valiosa.\n\n---\n## Misión\n Luna News es más que un simple sitio web de noticias. \nSomos una comunidad apasionada por mantenerse informada y comprometida con el mundo que nos rodea. \n\nTe invitamos a unirte a nuestra comunidad y empaparte de conocimiento."
+  },
+  "SectionsPage": {
+    "sections": "Secciones",
+    "readMore": "Leer más"
+  } 
 }
 

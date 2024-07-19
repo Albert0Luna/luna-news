@@ -15,10 +15,11 @@ import '@/src/home/styles/Coverpage.css';
 export default function CoverPage () {
   const t = useTranslations('Coverpage');
 
+
   const sections = [
     {
       title: t('sections.Latest'),
-      link: t('/latest'),
+      link: '/latest',
       icon: () => <HotIcon />
     },
     {
@@ -84,10 +85,10 @@ export default function CoverPage () {
             sections && 
                 sections.map((section) => (
                   <li key={section.title} className='section_item'>
-                    <div className='section_icon'>
-                      {section.icon()}
-                    </div>
-                    <Link href={''}>
+                    <Link href={section.link}>
+                      <div className='section_icon'>
+                        {section.icon()}
+                      </div>
                       <p>{section.title}</p>
                     </Link>
                   </li>

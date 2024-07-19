@@ -2,7 +2,7 @@ import { outfit } from '@/src/fonts/fonts';
 import { useTranslations } from 'next-intl';
 import Header from '@/src/layout/components/Header';
 import Footer from '@/src/layout/components/Footer';
-import '@/src/layout/styles/Header.css';
+import '@/src/home/styles/main.css';
 
 interface RootLayoutProps {
   children: React.ReactNode
@@ -21,16 +21,21 @@ export default function RootLayout ({
     routes: {
       home: t('routes.home'),
       about: t('routes.about'),
-      contact: t('routes.contact'),
+      sections: t('routes.sections'),
     },
     donate: t('donate'),
     changeLanguage: t('changeLanguage'),
   };
+
   return (
     <html lang={locale} className={outfit.className}>
-      <body className='main'>
-        <Header translations={homeTranslations}/>
-        {children}
+      <body>
+        <section className='header_and_content'>
+          <Header translations={homeTranslations}/>
+          <main>
+            {children}
+          </main>
+        </section>
         <Footer />
       </body>
     </html>

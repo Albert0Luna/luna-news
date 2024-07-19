@@ -5,21 +5,27 @@
   --primary-color-dark: #E71D36;
   --primary-color-light: #E63946;
   
-  --gray-light: #BBBBBB;
+  --gray-light: #c7c7c7;
   --gray-strong: #888888;
   
   --background-color: #222;
 
   --background-gradient-dark: linear-gradient(95deg, #000 0%, #2c2b2b 70%);
+
+  --backgorund-code: linear-gradient(95deg, #2c2c2c 20%, #3a3939 70%);
+
+  --content-mobile: 100%;
+  --content-pc: 56%;
+
 }
 
 html {
   background-color: var(--dark-color);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1030px) {
   html {
-    background-color: transparent;
+    background-color: #000;
   }
 }
 

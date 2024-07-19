@@ -1,0 +1,257 @@
+.new {
+  width: var(--mobile-content);
+}
+
+.new_title {
+  font-size: 2.2rem;
+  margin-top: 1rem;
+  text-wrap: balance;
+}
+
+.new_info {
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.new_info_text {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  color: var(--gray-light);
+}
+
+.new_info_image_container {
+  display: flex;
+  width: 100%;
+  height: 260px;
+  margin-bottom: 1rem;
+}
+
+.new_info_image {
+  width: 100%;
+  height: 100%;
+}
+
+.article {
+  line-height: 25px;
+  text-wrap: balance;
+}
+
+.article h1 {
+  font-size: 1.35rem;
+  font-weight: 650;
+  margin-bottom: .4rem;
+  margin-top: 1rem;
+  letter-spacing: .9px;
+  text-wrap: balance;
+}
+
+.article h2 {
+  font-size: 1.25rem;
+  font-weight: 650;
+  margin-top: 1rem;
+  letter-spacing: .8px;
+  margin-bottom: .4rem;
+  text-wrap: balance;
+}
+
+.article h3 {
+  font-size: 1.25rem;
+  font-weight: 650;
+  margin-top: .8rem;
+  letter-spacing: .8px;
+  margin-bottom: .4rem;
+  text-wrap: balance;
+}
+
+.article p {
+  font-size: 1.1rem;
+  color: var(--gray-light);
+  margin-bottom: .4rem;
+  text-wrap: pretty;
+}
+
+.article p:has(img) {
+  margin-bottom: 2px;
+}
+
+.article img {
+  width: 100%;
+  height: auto;
+  margin-top: .4rem;
+  max-height: 260px;
+}
+
+.article ul, .article ol {
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+}
+
+.article strong {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.article li p {
+  font-size: 1.1rem;
+  color: var(--gray-light);
+  margin-bottom: .5rem;
+  text-wrap: pretty;
+}
+
+.article pre {
+  background: var(--backgorund-code);
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+  color: #efefef;
+}
+
+.article code {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+}
+
+.article hr {
+  color: var(--primary-color-dark);
+  margin: 1rem 0;
+  opacity: .6;
+}
+
+.article a {
+  color: var(--primary-color-dark);
+  opacity: .85;
+}
+
+@media screen and (min-width: 1030px) {
+  .new {
+    width: var(--content-pc);
+  }
+
+  .new_title {
+    font-size: 3rem;
+    text-wrap: pretty;
+  }
+
+  .new_info {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    margin: 1rem 0;
+  }
+
+  .new_info_text {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    color: var(--gray-light);
+  }
+
+  .new_info_image_container {
+    display: flex;
+    width: 100%;
+    height: 55vh;
+    margin-bottom: 1rem;
+  }
+
+  .new_info_image {
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .article h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: .8px;
+    line-height: 30px;
+  }
+
+  .article h2 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-top: 1.4rem;
+    margin-bottom: .9rem;
+    letter-spacing: .8px;
+    line-height: 28px;
+  }
+
+  .article h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-top: 1.4rem;
+    margin-bottom: .9rem;
+    letter-spacing: .8px;
+    line-height: 26px;
+  }
+
+  .article p {
+    font-size: 1.3rem;
+    color: var(--gray-light);
+    margin-bottom: .6rem;
+    line-height: 27px;
+    text-wrap: pretty;
+  }
+
+  .article p:has(img) {
+    margin-bottom: 2px;
+  }
+
+  .article img {
+    width: 100%;
+    height: auto;
+    margin-top: .4rem;
+    max-height: 260px;
+  }
+
+  .article ul, .article ol {
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+  }
+
+  .article strong {
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+
+  .article li p {
+    font-size: 1.1rem;
+    color: var(--gray-light);
+    margin-bottom: .5rem;
+    text-wrap: pretty;
+  }
+
+  .article pre {
+    background: var(--backgorund-code);
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    color: #efefef;
+  }
+
+  .article code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+  }
+
+  .article hr {
+    color: var(--primary-color-dark);
+    margin: 1rem 0;
+    padding: .7px;
+    background-color: var(--primary-color-dark);
+    opacity: .7;
+  }
+
+  .article a {
+    color: var(--primary-color-dark);
+    opacity: .85;
+  }
+}

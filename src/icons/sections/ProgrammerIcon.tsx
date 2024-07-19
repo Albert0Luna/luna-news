@@ -1,6 +1,6 @@
 export default function ProgrammerIcon() {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none" className="icon-section">
       <g clip-path="url(#clip0_20_24)">
         <path d="M23.8333 24V20.6667C23.8333 19.6058 23.4119 18.5884 22.6617 17.8383C21.9116 17.0881 20.8942 16.6667 19.8333 16.6667H9.16666C8.10579 16.6667 7.08837 17.0881 6.33823 17.8383C5.58808 18.5884 5.16666 19.6058 5.16666 20.6667V24H23.8333Z" fill="#77B255"/>
         <path d="M11.5933 16.7374C11.5933 17.3334 13.1667 18.066 14.5 18.066C15.8333 18.066 17.406 17.3334 17.406 16.738V14.1934H11.5927L11.5933 16.7374Z" fill="#F3D2A2"/>

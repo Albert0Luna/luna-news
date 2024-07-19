@@ -6,7 +6,7 @@ import HearthIcon from '@/src/icons/ui-icons/HearthIcon';
 import CancelIcon from '@/src/icons/ui-icons/CancelIcon';
 import LocalSwicher from '@/src/home/components/LocalSwicher';
 import MenuIcon from '@/src/icons/ui-icons/MenuIcon';
-import Link from 'next/link';
+import { Link } from '@/src/navigation';
 import clsx from 'clsx';
 import { oxygen } from '@/src/fonts/fonts';
 import { useEffect, useState } from 'react';
@@ -15,23 +15,33 @@ import { usePathname } from 'next/navigation';
 import { useAllRoutes } from '@/src/layout/hooks/useAllRoutes';
 
 function NavBar (
-  {translations}: {translations: HomeTranslations}
+  {translations}: {translations: HomeTranslations}, {hideNav}: {hideNav: (value: boolean) => void}
 ) {
   const {allRoutes} = useAllRoutes({translations});
   const pathName = usePathname();
+
+  const handleHideNav = (value: boolean) => {
+    hideNav(value);
+  };
+
   return (
     <nav className='nav_bar'>
       <ul className='routes_container'>
         {
           allRoutes && allRoutes.map((route) => (
             <li key={route.name} className='link_container'>
-              <Link href={route.path} className={clsx(
-                'link_item',
-                { 'active': pathName === `${route.path}es` || pathName === `${route.path}en` }
-              )}>
+              <Link 
+                onClick={() => handleHideNav(false)}
+                href={route.path === '/es' || route.path === '/en' ? '/' : route.path} 
+                className={clsx(
+                  'link_item',
+                  { 'active': pathName.replace('/es', '') === route.path  || pathName.replace('/en', '') === route.path
+                  }
+                )}>
                 {route.name}
               </Link>
             </li>
+
           ))
         }
       </ul>
@@ -45,8 +55,8 @@ export default function Header (
   const [showNav, setShowNav] = useState(false);
   const [background, setBackground] = useState(false);
 
-  const {donate, changeLanguage} = translations;
-
+  const {donate, changeLanguage, routes} = translations;
+  
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -59,16 +69,21 @@ export default function Header (
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const hideNav = (value: boolean) => {
+    setShowNav(value);
+  };
   return (
     <header className={clsx({
       'header_background': background
     })}>
+      <div>
+      </div>
       <div className='brand_menu'>
         <div className='brand'>
-          <div className='brand_logo'>
+          <Link href='/' className='brand_logo'>
             <LogoIcon width={40} alt='LUNA NEWS logo'/>
-          </div>
-          <Link 
+          </Link>
+          <Link
             className={`${oxygen.className} brand_name`} 
             href='/' >
             LUNA <span>NEWS</span>
@@ -92,7 +107,7 @@ export default function Header (
         <button onClick={() => setShowNav(false)} className='close_menu'>
           <CancelIcon width={40} height={40} alt='Cancel' />
         </button>
-        <NavBar translations={translations}/>
+        <NavBar translations={routes} hideNav={hideNav}/>
 
         <div className='other_options'>
           <div className='change_language_container'>

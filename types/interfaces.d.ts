@@ -10,7 +10,7 @@ export interface HomeTranslations {
   routes: {
     home: string;
     about: string;
-    contact: string;
+    section: string;
   };
   donate: string;
   changeLanguage: string;
