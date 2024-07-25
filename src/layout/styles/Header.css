@@ -6,6 +6,7 @@ header {
   position: fixed;
   padding: 0 .1rem;
   transition: .47s ease;
+  z-index: 100;
 }
 
 .header_background {

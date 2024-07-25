@@ -1,8 +1,9 @@
+import '@/src/globals.css';
+
 export default function Loading () {
-  // You can add any UI inside Loading, including a Skeleton.
   return (
-    <div>
-      <p>Loading...</p>
+    <div className='loader_contanier'>
+      <div className="loader"></div>
     </div>
   );
 }

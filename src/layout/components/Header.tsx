@@ -86,7 +86,7 @@ export default function Header (
           <Link
             className={`${oxygen.className} brand_name`} 
             href='/' >
-            LUNA <span>NEWS</span>
+            <p><span>LUNA</span> NEWS</p>
           </Link>
         </div>
 

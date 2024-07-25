@@ -17,7 +17,7 @@ export default async function RenderNews () {
 
   return (
     <ul className='section_highlights_container'>
-      {articles && articles?.slice(0, 9).map((article: any) => (
+      {articles && articles?.slice(0, 10).map((article: any) => (
         <li key={article.id} className='section_highlights_item'>
           <h5 className='section_highlights_item_title'>
               ¿Ha llegado la nueva era de los procesadores con los nuevos Snapdragon?

@@ -12,6 +12,35 @@
     "donate": "Donar",
     "changeLanguage": "Cambiar idioma"
   },
+  "Footer": {
+    "privacy": "Política de privacidad",
+    "terms": "Términos y condiciones"
+  },
+  "Privacy": {
+    "title": "Política de privacidad",
+    "content": "## Identidad del Responsable \n\nLuna News, operado por Alberto Luna, con el compromiso de proteger su privacidad, emite el presente Aviso de Privacidad de conformidad con la Ley Federal de Protección de Datos Personales en Posesión de los Particulares. \n\n## Datos Personales que Recopilamos \n\nActualmente, solo recopilamos las preferencias de idioma de los usuarios. \n\nNo se recopila ningún otro tipo de dato personal en nuestro sitio. \n\n## Finalidad del Tratamiento de Datos \n\nLas preferencias de idioma recopiladas son utilizadas únicamente por neongeeksofficial para configurar y personalizar el idioma del contenido en nuestro sitio, con el fin de ofrecer una mejor experiencia al usuario. \n\n## Uso de la Información \n\nLa información referente a las preferencias de idioma es utilizada exclusivamente dentro del mismo sitio y no es compartida con terceros. \n\n## Derechos ARCO \n\nLos usuarios tienen derecho a acceder, rectificar, cancelar u oponerse al tratamiento de sus datos personales (Derechos ARCO). \n\nPara ejercer estos derechos, puede ponerse en contacto con nosotros. \n\n## Cambios en el Aviso de Privacidad \n\nEste Aviso de Privacidad puede sufrir modificaciones, cambios o actualizaciones derivadas de nuevos requerimientos legales, de nuestras propias necesidades, de nuestras prácticas de privacidad, o por otras causas. Nos comprometemos a mantenerlo informado sobre los cambios que pueda sufrir el presente aviso a través de nuestro sitio web. \n\n### Fecha de última actualización: *30-07-2024* \n\n--- \n\n**Luna News**"
+  },
+  "TermsAndConditions": {
+    "title": "Términos y condiciones",
+    "content": "## Términos y Condiciones \n\n### 1. Nombre del Sitio \n\nEl presente sitio web, **Luna News**, es operado y administrado con el propósito de ofrecer a nuestros usuarios las noticias más relevantes del mundo tecnológico. \n\n### 2. Propósito del Sitio \n\nEl objetivo principal de Luna Digital es la publicación de contenido informativo y educativo relacionado con las últimas novedades y avances en tecnología. \n\n### 3. Prohibiciones \n\nSe prohíbe terminantemente el plagio, así como cualquier intento de robo de contenido. Todo usuario que acceda a este sitio debe abstenerse de copiar, reproducir, distribuir o utilizar de cualquier manera el contenido sin la autorización expresa de los propietarios de Luna Digital. \n\n### 4. Requisitos para Acceder al Sitio \n\nEl acceso a este sitio está destinado exclusivamente a aquellos usuarios que disfrutan del contenido ofrecido y que no se toman las opiniones o información de manera personal. La utilización del sitio implica la aceptación de estos términos y condiciones. \n\n### 5. Uso y Consulta del Sitio \n\nActualmente, el uso y la consulta del sitio web de Luna Digital son completamente gratuitos. No obstante, nos reservamos el derecho de modificar esta política en el futuro, previa notificación a nuestros usuarios. \n\n### 6. Actividades Prohibidas \n\nQueda prohibido el uso de este sitio web para llevar a cabo actividades ilegales, dañinas o que puedan perjudicar a otros usuarios. Esto incluye, pero no se limita a, el acoso, la difusión de virus informáticos y cualquier otro tipo de comportamiento malintencionado. \n\n### 7. Propiedad de los Contenidos \n\nLuna Digital es el propietario exclusivo de todos los contenidos y materiales publicados en este sitio web. Cualquier uso no autorizado de estos materiales será considerado una violación de nuestros derechos de propiedad intelectual. \n\n### 8. Responsabilidad por Sitios Externos \n\nLuna Digital no se hace responsable por el contenido, la precisión o las políticas de privacidad de los sitios web externos que puedan estar vinculados a nuestro sitio. La inclusión de cualquier enlace no implica aprobación o respaldo por parte de Luna Digital. \n\n### 9. Modificaciones a los Términos y Condiciones \n\nLuna Digital se reserva el derecho de realizar cambios a estos términos y condiciones en cualquier momento. Cualquier modificación será comunicada a los usuarios a través de nuestro sitio web. \n\n--- \n\n**Luna News**"
+  },
+  "Authors": {
+      "alberto-luna": {
+        "bio": {
+          "p1": "Hola soy Alberto Luna,",
+          "p2": "Creador de Luna News, Ingeniero de Software, pero sobre todo soy un apasionado de la tecnología",
+          "p3": "Espero que el contenido que compartimos en este sitio web de noticias tecnológicas sea de tu agrado.",
+          "p4": "Abrocha tus cinturones y prepárate para este viaje de conocimiento al estilo de Luna News."
+        }
+      },
+      "dinorah-luna": {
+        "bio": {
+          "p1": "Hola soy Dinorah Robles",
+          "p2": "Creadora de Luna News, Estudiante de ciberseguridad, pero sobre todo soy una apasionada de la tecnología",
+          "p3": "Espero que el contenido que compartimos en este sitio web de noticias tecnológicas sea de tu agrado.",
+          "p4": "Abrocha tus cinturones y prepárate para este viaje de conocimiento al estilo de Luna News."
+        }
+  }},
   "Coverpage": {
     "title": {
       "p1" : "El satelite que",
@@ -44,11 +73,16 @@
       "p1": "Sobre",
       "p2": "Nosotros"
     },
-      "content": "# Luna News\n\nLuna News es un portal digital de noticias comprometido con ofrecer información precisa, relevante y oportuna a nuestra audiencia. Trabajamos incansablemente para brindarle las últimas noticias sobre una amplia gama de temas, que incluyen:\n\n## Secciones\n\n- **Locales:** Cobertura en profundidad de eventos y noticias que afectan a tu comunidad.\n- **Nacionales:** Información actualizada sobre los acontecimientos más importantes que dan forma a nuestro país.\n- **Internacionales:** Análisis global de las noticias que impactan el mundo.\n- **Negocios:** Noticias y análisis sobre el mundo empresarial, finanzas y economía.\n- **Tecnología:** Las últimas novedades en tecnología, gadgets y tendencias digitales.\n- **Deportes:** Cobertura completa de eventos deportivos locales, nacionales e internacionales.\n- **Entretenimiento:** Noticias sobre celebridades, música, cine, televisión y más.\n- **Estilo de vida:** Consejos y tendencias sobre salud, bienestar, moda, viajes y gastronomía.\n\n## Nuestros Valores\n\n- **Objetividad:** Nos esforzamos por presentar las noticias de manera imparcial y sin influencia política o religiosa.\n- **Precisión:** Verificamos meticulosamente toda la información que publicamos para garantizar su exactitud y confiabilidad.\n- **Relevancia:** Nos enfocamos en las noticias que son importantes para nuestra audiencia y que impactan en sus vidas.\n- **Oportunidad:** Nos mantenemos actualizados con las últimas noticias y las entregamos a nuestros lectores lo más rápido posible.\n- **Análisis:** Ofrecemos análisis profundo y perspectivas expertas sobre los eventos actuales.\n- **Compromiso:** Nos comprometemos a brindar a nuestra audiencia una experiencia informativa atractiva y valiosa.\n\n---\n## Misión\n Luna News es más que un simple sitio web de noticias. \nSomos una comunidad apasionada por mantenerse informada y comprometida con el mundo que nos rodea. \n\nTe invitamos a unirte a nuestra comunidad y empaparte de conocimiento."
+      "content": "\nLuna News es un portal digital de noticias dedicado a ofrecer información precisa, relevante y oportuna a nuestra audiencia. Trabajamos incansablemente para traerte las últimas novedades sobre una amplia variedad de temas, que incluyen:\n\n## Secciones\n\n- **Lo Último:** Cobertura de las ultimas noticias del mundo tech.\n- **Tutoriales:** Guías prácticas y consejos sobre tecnología, software y más.\n- **PC's & Laptops:** Noticias y análisis de las últimas novedades en computadoras y portátiles.\n- **Móviles & Tablets:** Noticias y análisis sobre los dispositivos móviles y tabletas más recientes.\n- **Tecnología:** Actualizaciones sobre las últimas tendencias y avances en el mundo de la tecnología y los gadgets.\n- **Gaming:** Cobertura exhaustiva de eventos y noticias en el mundo de los videojuegos y el entretenimiento digital.\n- **Programación:** Noticias y recursos sobre el desarrollo de software, lenguajes de programación y más.\n- **Reseñas:** Críticas y opiniones sobre productos, servicios y tendencias en diversos campos.\n- **IA:** Noticias y desarrollos en el campo de la inteligencia artificial y su impacto en diversas industrias.\n\n## Nuestros Valores\n\n- **Objetividad:** Nos esforzamos por presentar las noticias de manera imparcial, sin influencias políticas o religiosas.\n- **Precisión:** Verificamos meticulosamente toda la información que publicamos para garantizar su exactitud y confiabilidad.\n- **Relevancia:** Nos enfocamos en las noticias que son importantes para nuestra audiencia y que tienen un impacto en sus vidas.\n- **Oportunidad:** Nos mantenemos actualizados con las últimas noticias y las entregamos a nuestros lectores lo más rápido posible.\n- **Análisis:** Ofrecemos análisis profundos y perspectivas expertas sobre los eventos actuales desde un enfoque profesional.\n- **Compromiso:** Nos comprometemos a brindar a nuestra audiencia una experiencia informativa atractiva y valiosa.\n\n---\n## Misión\n\nLuna News es más que un simple sitio web de noticias. Somos una comunidad apasionada por mantenerse informada y comprometida con el mundo que nos rodea.\n\n*Te invitamos a unirte a nuestra comunidad y a sumergirte en un mundo de conocimiento.*"    
   },
   "SectionsPage": {
     "sections": "Secciones",
     "readMore": "Leer más"
-  } 
+  },
+  "notFound": {
+    "notFoundPage": "Esta pagina no existe",
+    "errorFound": "La página que buscas ha sido eliminada o no existe :(.",
+    "backHome": "Regresar a la página de inicio"
+  }
 }
 

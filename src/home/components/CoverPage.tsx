@@ -1,6 +1,6 @@
 import { useTranslations } from 'next-intl';
 import LogoIcon from '@/src/icons/ui-icons/LogoIcon';
-import Link from 'next/link';
+import { Link } from '@/src/navigation';
 import {oxygen} from '@/src/fonts/fonts';
 import BookIcon from '@/src/icons/sections/BookIcon';
 import MagnifyingIcon from '@/src/icons/sections/MagnifyingIcon';
@@ -24,37 +24,37 @@ export default function CoverPage () {
     },
     {
       title: t('sections.Toturials'),
-      link: t('/toturials'),
+      link: '/toturials',
       icon: () => <BookIcon />
     },
     {
       title: t('sections.Pc\'s-&-Laptops'),
-      link: t('/pcs-and-laptops'),
+      link: '/pcs-and-laptops',
       icon: () => <PcIcon />
     },
     {
       title: t('sections.Mobiles-&-Tablets'),
-      link: t('/mobiles-and-tablets'),
+      link: '/mobiles-and-tablets',
       icon: () => <SmartphoneIcon />
     },
     {
       title: t('sections.Gaming'),
-      link: t('/gaming'),
+      link: '/gaming',
       icon: () => <JoystickIcon />
     },
     {
       title: t('sections.Reviews'),
-      link: t('/programming'),
+      link: '/reviews',
       icon: () => <MagnifyingIcon />
     },
     {
       title: t('sections.Programming'),
-      link: t('/reviews'),
+      link: '/programming',
       icon: () => <ProgrammerIcon />
     },
     {
       title: t('sections.AI'),
-      link: t('/reviews'),
+      link: '/ai',
       icon: () => <AIIcon />
     },
   ];
@@ -85,7 +85,10 @@ export default function CoverPage () {
             sections && 
                 sections.map((section) => (
                   <li key={section.title} className='section_item'>
-                    <Link href={section.link}>
+                    <Link 
+                      href={`/sections/${section.link}`} 
+                      className='section_item_link'
+                    >
                       <div className='section_icon'>
                         {section.icon()}
                       </div>

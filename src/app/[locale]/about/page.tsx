@@ -9,6 +9,7 @@ export default function Page () {
     <main className='about'>
       <h1 className='title'>{t('title.p1')} <span>{t('title.p2')}</span></h1>
       <section className='about_content'>
+        <h1><span>Luna</span> News</h1>
         <MDXRemote
           source={t('content')}
         />

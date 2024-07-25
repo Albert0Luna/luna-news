@@ -26,6 +26,7 @@ function Page ({params}: {params: {id: string}}) {
       <h1 className='title_section'>
         {section?.title}
       </h1>
+      <hr className='section_divisor'/>
       <RenderSection />
     </main>
   );

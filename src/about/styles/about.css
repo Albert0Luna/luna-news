@@ -71,6 +71,10 @@
   display: none;
 }
 
+.about_content span {
+  color: var(--primary-color-dark);
+}
+
 @media screen and (min-width: 1030px) {
   .about {
     margin: auto;
@@ -122,6 +126,7 @@
     font-weight: 400;
     color: var(--gray-light);
     margin: 1rem 0;
+    line-height: 26px;
   }
   
   .about_content strong {

@@ -5,12 +5,8 @@ import { useTranslations } from 'next-intl';
 
 const HighlightSkeleton = () => {
   return (
-    <div className="skeleton">
-      <div className="skeleton__title">Cargando... </div>
-      <div className="skeleton__content"></div>
-    </div>
+    <div className="loader"></div>
   );
-
 };
 
 export default function Highlights () {

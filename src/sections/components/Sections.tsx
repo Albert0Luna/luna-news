@@ -61,21 +61,22 @@ function Sections () {
 
   return (
     <div className='sections'>
-      <h1 className='title'>{tSections('sections')}</h1>
+      <h1 className='sections_title'>{tSections('sections')}</h1>
+      <hr className='sections_divisor'/>
       <section className='section'>
         <ul className='sections_container'>
           {
             sections && sections.map(item => {
               return (
-                <Link key={item.title} href={`/${locale}/sections/${item.link}`} className='section_item_container'>
-                  <li className='section_item'>
+                <li key={item.title} className='section_item_container'>
+                  <Link  href={`/${locale}/sections/${item.link}`} className='section_item' >
                     <picture className='section_item_svg_container'>
                       {item.icon()}
                     </picture>
                     <h2 className='section_item_title'>{item.title}</h2>
                     <small className='section_item_more'>{tSections('readMore')}</small>
-                  </li>
-                </Link>
+                  </Link>
+                </li>
               );
             })
           }

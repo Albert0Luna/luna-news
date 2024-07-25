@@ -36,3 +36,151 @@ html {
   list-style: none;
   text-decoration: none;
 }
+
+/** LOADER */
+
+.loader_contanier {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader_contanier h1 {
+  color: var(--light-color);
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.loader {
+  width: 100px;
+  aspect-ratio: 1;
+  display: grid;
+  border: 6px solid #0000;
+  border-radius: 50%;
+  border-color: var(--light-color) #0000;
+  animation: l16 1s infinite linear;
+}
+.loader::before,
+.loader::after {    
+  content: "";
+  grid-area: 1/1;
+  margin: 4px;
+  border: inherit;
+  border-radius: 50%;
+}
+.loader::before {
+  border-color: var(--primary-color-dark) #0000;
+  animation: inherit; 
+  animation-duration: .5s;
+  animation-direction: reverse;
+}
+.loader::after {
+  margin: 16px;
+}
+@keyframes l16 { 
+  100%{transform: rotate(1turn)}
+}
+
+/** LOADER */
+
+
+/*? NOT FOUND */
+
+.notFound {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.notFound small {
+  color: var(--gray-light);
+  font-size: 1.3rem;
+}
+
+.notFound h1 {
+  color: var(--primary-color-dark);
+  font-size: 7rem;
+  letter-spacing: 2PX;
+}
+
+.notFound h2 {
+  color: var(--light-color);
+  font-weight: 500;
+  font-size: 2rem;
+} 
+
+.notFound p {
+  color: var(--gray-strong);
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: .5rem;
+  padding: 0 .4rem;
+} 
+
+.notFound a {
+  color: var(--primary-color-dark);
+  font-size: 1.4rem;
+  text-decoration: underline;
+  opacity: .75;
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 1030px) {
+  .notFound small {
+    font-size: 1.5rem;
+  }
+
+  .notFound h1 {
+    font-size: 15rem;
+  }
+
+  .notFound h2 {
+    font-size: 2.5rem;
+  }
+
+  .notFound p {
+    font-size: 1.7rem;
+  }
+
+  .notFound a {
+    font-size: 1.6rem;
+  }
+}
+
+/*? NOT FOUND */
+
+
+/*! ERROR */
+
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error h1 {
+  color: var(--primary-color-dark);
+  font-size: 2.5rem;
+  text-align: center;
+  letter-spacing: 1PX;
+}
+
+.error p {
+  color: var(--gray-light);
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: .5rem;
+  padding: 0 .4rem;
+}
+
+.error a {
+  color: var(--primary-color-dark);
+  font-size: 1.4rem;
+  text-decoration: underline;
+  opacity: .75;
+  margin-top: 1rem;
+}

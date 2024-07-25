@@ -16,10 +16,12 @@
   font-size: 1.2rem;
   letter-spacing: 0.2px;
   font-weight: 300;
+  color: var(--ligth-color);
+
 }
 
-.footer_privacity a {
-  color: var(--ligth-color);
+.privacy, .terms  {
+  color: white;
 }
 
 .footer_social_container {
@@ -28,7 +30,16 @@
 }
 
 @media screen and (min-width: 1030px) {
+  .footer_privacity {
+    width: fit-content;
+  }
+
   .footer {
     border-radius: 0px 0px 10px 10px;
+  }
+
+  .privacy, .terms {
+    text-decoration: none;
+    color: white;
   }
 }
