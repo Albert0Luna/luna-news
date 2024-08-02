@@ -292,14 +292,14 @@ export default function sitemap (): MetadataRoute.Sitemap {
   ];
 
   const mappedNewsEs = newsEs.map((article) => ({
-    url: `https://lunanews.tech/news/${article.id}`,
+    url: `https://www.lunanews.tech/es/${article.id}`,
     lastModified: new Date(article.date),
     changeFrequency: 'monthly' as 'monthly',
     priority: 0.7,
   }));
   
   const mappedNewsEn = newsEn.map((article) => ({
-    url: `https://lunanews.tech/news/${article.id}`,
+    url: `https://www.lunanews.tech/es/${article.id}`,
     lastModified: new Date(article.date),
     changeFrequency: 'monthly' as 'monthly',
     priority: 0.7,
@@ -308,31 +308,31 @@ export default function sitemap (): MetadataRoute.Sitemap {
 
   return [
     {
-      url: 'https://lunanews.tech',
+      url: 'https://www.lunanews.tech',
       lastModified: new Date('2023-01-01'), // Fecha fija para la URL principal
       changeFrequency: 'monthly',
       priority: 1,
     },
     {
-      url: 'https://lunanews.tech/es/about',
+      url: 'https://www.lunanews.tech/es/about',
       lastModified: new Date('2023-01-01'), // Fecha fija para la sección "about" en español
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: 'https://lunanews.tech/en/about',
+      url: 'https://www.lunanews.tech/en/about',
       lastModified: new Date('2023-01-01'), // Fecha fija para la sección "about" en inglés
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: 'https://lunanews.tech/es/sections',
+      url: 'https://www.lunanews.tech/es/sections',
       lastModified: new Date('2023-01-01'), // Fecha fija para la sección "sections" en español
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: 'https://lunanews.tech/en/sections',
+      url: 'https://www.lunanews.tech/en/sections',
       lastModified: new Date('2023-01-01'), // Fecha fija para la sección "sections" en inglés
       changeFrequency: 'monthly',
       priority: 0.8,
