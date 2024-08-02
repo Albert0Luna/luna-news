@@ -5,7 +5,7 @@ import Footer from '@/src/layout/components/Footer';
 import '@/src/home/styles/main.css';
 import { Metadata } from 'next';
 import { cookies } from 'next/headers';
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from '@vercel/analytics/react';
 
 export function metadata () {
 
