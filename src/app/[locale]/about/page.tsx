@@ -4,7 +4,7 @@ import { useTranslations } from 'next-intl';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import { cookies } from 'next/headers';
 import { Metadata } from 'next';
-import { fetchSectionEn } from '../../lib/data';
+// import { fetchSectionEn } from '../../lib/data';
 
 export function metadata () {
 
@@ -38,7 +38,7 @@ export function metadata () {
   return dynamicMetadata;
 };
 
-//todo import {fetchNews} from '@/src/app/lib/data';
+/**  /todo import {fetchNews} from '@/src/app/lib/data';
 
 async function RenderData () {
   const sections = await fetchSectionEn('Pc & Laptops');
@@ -52,7 +52,7 @@ async function RenderData () {
     </>
   );
 }
-
+*/
 
 export default function Page () {
   const t = useTranslations('About');
@@ -66,7 +66,7 @@ export default function Page () {
         />
       </section>
       {/* <FAQ /> */}
-      <RenderData /> 
+      {/* <RenderData />*/}
     </main>
   );
 }

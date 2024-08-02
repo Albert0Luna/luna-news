@@ -7,10 +7,11 @@ export default async function RenderNews ({section}: {section: string | undefine
   const cookieStore = cookies();
   const lang = cookieStore.get('NEXT_LOCALE')?.value;
 
-  const latest = section === 'Latest' || 'Lo último';
+  const latest = section === 'Latest' || section === 'Lo último';
 
   let articles;
-
+  
+  console.log(latest);
   if (latest) {
     (lang === 'en') 
       ? articles = await fetchAllNewsEn()
