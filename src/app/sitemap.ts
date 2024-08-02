@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next';
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default function sitemap (): MetadataRoute.Sitemap {
 
   const newsEs = [
     {
@@ -294,16 +294,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const mappedNewsEs = newsEs.map((article) => ({
     url: `https://lunanews.tech/news/${article.id}`,
     lastModified: new Date(article.date),
-    changeFrequency: 'monthly',
+    changeFrequency: 'monthly' as 'monthly',
     priority: 0.7,
   }));
-
+  
   const mappedNewsEn = newsEn.map((article) => ({
     url: `https://lunanews.tech/news/${article.id}`,
     lastModified: new Date(article.date),
-    changeFrequency: 'monthly',
+    changeFrequency: 'monthly' as 'monthly',
     priority: 0.7,
   }));
+  
 
   return [
     {
