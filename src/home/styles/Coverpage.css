@@ -168,7 +168,7 @@
 
   .coverpage_content_title {
     font-size: 3.7rem;
-    font-weight: 600;
+    font-weight: 400;
     letter-spacing: 1px;
     text-wrap: pretty;
     text-decoration: none;
@@ -233,8 +233,8 @@
   
   .section_item:first-child:hover {
     border-radius: 12px;
-    border: 2px solid #445ef5;
-    box-shadow: -3px -3px 0px 0px #445ef5;
+    border: 2px solid #ffffff;
+    box-shadow: -3px -3px 0px 0px #ffffff;
   }
 
   .section_item_link {

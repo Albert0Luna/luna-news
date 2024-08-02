@@ -30,8 +30,12 @@ export default function LocalSwicher ({changeLanguage}: {changeLanguage: string}
         onChange={onSelectChange}
         disabled={isPending}
       >
-        <option value="en">English</option>
-        <option value="es">Español</option>
+        <option value="en">
+          English
+        </option>
+        <option value="es">
+          Español
+        </option>
       </select>
     </label>
   );

@@ -114,10 +114,12 @@ export default function Header (
             <LocalSwicher changeLanguage={changeLanguage}/>
           </div>
           <div className='donate_container'>
+            {/* 
             <button className='donate_btn'>
               <HearthIcon width={15} height={15} alt='Hearth'/>
               <p>{donate}</p>
             </button>
+            */}
           </div>
         </div>
       </div>

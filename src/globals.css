@@ -4,18 +4,22 @@
   
   --primary-color-dark: #E71D36;
   --primary-color-light: #E63946;
+
+  --primary-color-link: #f7465a;
   
   --gray-light: #c7c7c7;
+  --gray-very-light: #d3d3d3;
   --gray-strong: #888888;
   
   --background-color: #222;
 
-  --background-gradient-dark: linear-gradient(95deg, #000 0%, #2c2b2b 70%);
+  --background-gradient-dark: linear-gradient(95deg, #000 0%, #1d1d1d 70%);
 
   --backgorund-code: linear-gradient(95deg, #2c2c2c 20%, #3a3939 70%);
 
   --content-mobile: 100%;
   --content-pc: 56%;
+  
 
 }
 

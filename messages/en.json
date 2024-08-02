@@ -54,9 +54,9 @@
     },
    "sections": {
       "Latest": "Latest",
-      "Toturials": "Toturials",
-      "Pc's-&-Laptops": "Pc's & Laptops",
-      "Mobiles-&-Tablets": "Mobiles & Tablets",
+      "Tutorials": "Tutorials",
+      "Pc's-&-Laptops": "Pc & Laptops",
+      "Mobiles-&-Tablets": "Smathphones & Tablets",
       "Gaming": "Gaming",
       "Programming": "Programming",
       "Reviews": "Reviews",
@@ -83,6 +83,12 @@
     "notFoundPage": "This page does not exist",
     "errorFound": "The page you are looking has been deleted or does not exist :(.",
     "backHome": "Return to the home page"
+  },
+  "Date": {
+    "written": "Written",
+    "writtenToday": "Written today",
+    "lastUpdate": "Last update",
+    "lastUpdateToday": "Last update today"
   }
 }
 

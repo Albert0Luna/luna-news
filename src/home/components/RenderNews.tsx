@@ -1,34 +1,32 @@
-/* eslint-disable @next/next/no-async-client-component */
-/* eslint-disable @next/next/no-img-element */
-'use client';
+import { fetchLatestNewsEn, fetchLatestNewsEs } from '@/src/app/lib/data';
 import { Link } from '@/src/navigation';
-import React, { useEffect, useState } from 'react';
+import { cookies } from 'next/headers';
 
 export default async function RenderNews () {
-  const [articles, setArticles] = useState([]);
+  
+  const cookieStore = cookies();
+  const lang = cookieStore.get('NEXT_LOCALE')?.value;
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const data = await fetch('https://jsonplaceholder.typicode.com/posts');
-      const response = await data.json();
-      setArticles(response); // Asegúrate de ajustar esto según la estructura de la respuesta
-    };
-    fetchData(); // Llama a fetchData dentro de useEffect
-  }, []); // Añade las dependencias necesarias aquí, si las hay
+  let articles;
+
+  (lang === 'en') 
+    ? articles = await fetchLatestNewsEn() 
+    : articles = await fetchLatestNewsEs();
+
 
   return (
     <ul className='highlights_container'>
-      {articles && articles?.slice(0, 10).map((article: any) => (
-        <li key={article.id} className='highlights_item'>
-          <Link href='/1234' className='highlights_item_link'>
+      {articles.map((article: any) => (
+        <li key={article.new_code} className='highlights_item'>
+          <Link href={`/${article.id}`} className='highlights_item_link' scroll={true}>
             <h5 className='highlights_item_title'>
-              ¿Ha llegado la nueva era de los procesadores con los nuevos Snapdragon?
+              {article.title}
             </h5>
             <div className='highlights_s1'>
               <div className='highlights_item_image_container'>
                 <img 
-                  src='https://www.notebookcheck.org/fileadmin/Notebooks/News/_nc3/19917.jpg' 
-                  alt='news'
+                  src={article.thumbnail}
+                  alt={article.ImageAlt}
                   className='highlights_item_image'
                 />
               </div>
@@ -40,8 +38,7 @@ export default async function RenderNews () {
                 <p 
                   className='highlights_item_body'
                 >
-                  Descubre como los nuevos procesadores de Intel están revolucionando el mercado de la tecnología.
-                  Incluyendo la nueva serie de procesadores Intel Core i9.
+                  {article.mini_desc}
                 </p>
               
                 <small className='highlights_item_more'>Read more</small>

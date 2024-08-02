@@ -13,7 +13,7 @@ export function AuthorProfile ({ closeDialogFn, author }: { closeDialogFn: () =>
     {
       id: 'alberto-luna',
       name: 'Alberto Luna',
-      picture: '/alberto-luna.jpeg',
+      picture: '/alberto-luna.jpg',
       descES: {
         p1: 'Hola soy Alberto Luna,',
         p2: 'Creador de Luna News, Ingeniero de Software, pero sobre todo soy un apacionado de la tecnologia',
@@ -96,7 +96,7 @@ export default function Profile ({ authorId } : { authorId?: string }) {
     <div className='new_info_author'>
       <button onClick={toggleDialog} className='new_info_author_container'>
         <picture className='new_info_author_picture_container'>
-          <img src='/alberto-luna.jpeg' alt={authorId} />
+          <img src='/alberto-luna.jpg' alt={authorId} />
         </picture>
         <p className={`${outfit.className} antialiased`}>Alberto Luna</p>
       </button>

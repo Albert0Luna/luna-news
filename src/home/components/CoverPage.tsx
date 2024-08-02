@@ -23,8 +23,8 @@ export default function CoverPage () {
       icon: () => <HotIcon />
     },
     {
-      title: t('sections.Toturials'),
-      link: '/toturials',
+      title: t('sections.Tutorials'),
+      link: '/tutorials',
       icon: () => <BookIcon />
     },
     {
@@ -65,7 +65,7 @@ export default function CoverPage () {
         <div className='coverpage_content_brand'>
 
           <h1 className='coverpage_content_title'>
-            {t('title.p1')} <span className={oxygen.className}>{t('title.p2')}</span> {t('title.p3')}
+            {t('title.p1')} <span>{t('title.p2')}</span> {t('title.p3')}
           </h1>
           <h2 className='coverpage_content_subtitle'>
             {t('subtitle.p1')} <span>{t('subtitle.p2')}</span> {t('subtitle.p3')}

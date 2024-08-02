@@ -1,4 +1,4 @@
-import { useLocale, useTranslations } from 'next-intl';
+import { useTranslations } from 'next-intl';
 import '@/src/sections/styles/Sections.css';
 import BookIcon from '@/src/icons/sections/BookIcon';
 import MagnifyingIcon from '@/src/icons/sections/MagnifyingIcon';
@@ -8,7 +8,7 @@ import PcIcon from '@/src/icons/sections/PcIcon';
 import ProgrammerIcon from '@/src/icons/sections/ProgrammerIcon';
 import AIIcon from '@/src/icons/sections/AIIcon';
 import HotIcon from '@/src/icons/sections/FireIcon';
-import Link from 'next/link';
+import { Link } from '@/src/navigation';
 
 function Sections () {
   const t = useTranslations('Coverpage');
@@ -21,8 +21,8 @@ function Sections () {
       icon: () => <HotIcon />
     },
     {
-      title: t('sections.Toturials'),
-      link: '/toturials',
+      title: t('sections.Tutorials'),
+      link: '/tutorials',
       icon: () => <BookIcon />
     },
     {
@@ -57,8 +57,6 @@ function Sections () {
     },
   ];
 
-  const locale = useLocale();
-
   return (
     <div className='sections'>
       <h1 className='sections_title'>{tSections('sections')}</h1>
@@ -69,7 +67,7 @@ function Sections () {
             sections && sections.map(item => {
               return (
                 <li key={item.title} className='section_item_container'>
-                  <Link  href={`/${locale}/sections/${item.link}`} className='section_item' >
+                  <Link  href={`/sections/${item.link}`} className='section_item' >
                     <picture className='section_item_svg_container'>
                       {item.icon()}
                     </picture>

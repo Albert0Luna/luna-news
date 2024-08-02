@@ -54,9 +54,9 @@
     },
     "sections": {
       "Latest": "Lo último",
-      "Toturials": "Tutoriales",
-      "Pc's-&-Laptops": "Pc's & Laptops",
-      "Mobiles-&-Tablets": "Mobiles & Tablets",
+      "Tutorials": "Tutoriales",
+      "Pc's-&-Laptops": "Pc & Laptops",
+      "Mobiles-&-Tablets": "Smathphones & Tablets",
       "Gaming": "Gaming",
       "Programming": "Programación",
       "Reviews": "Reseñas",
@@ -83,6 +83,12 @@
     "notFoundPage": "Esta pagina no existe",
     "errorFound": "La página que buscas ha sido eliminada o no existe :(.",
     "backHome": "Regresar a la página de inicio"
+  },
+  "Date": {
+    "written": "Escrito",
+    "writtenToday": "Escrito hoy",
+    "lastUpdate": "Última actualización",
+    "lastUpdateToday": "Última actualización hoy"
   }
 }
 

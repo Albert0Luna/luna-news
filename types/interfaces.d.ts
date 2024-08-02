@@ -15,3 +15,4 @@ export interface HomeTranslations {
   donate: string;
   changeLanguage: string;
 }
+
