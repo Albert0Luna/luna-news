@@ -17,6 +17,10 @@ export async function generateMetadata ({ params }: { params: { id: string } }) 
   if (lang?.value === 'en') {
     const newMetaData = await fetchMetaDataNewsEn(newCode);
     const newData = newMetaData[0];
+    
+    if (!newData) {
+      return redirect('https://www.lunanews.tech');
+    }
     if (newData) {
       return {
       //? Basic metadata
@@ -75,6 +79,10 @@ export async function generateMetadata ({ params }: { params: { id: string } }) 
   } else if (lang?.value === 'es') {
     const newMetaData = await fetchMetaDataNewsEs(newCode);
     const newData = newMetaData[0];
+
+    if (!newData) {
+      return redirect('https://www.lunanews.tech');
+    }
     if (newData) {
       return {
       //? Basic metadata
