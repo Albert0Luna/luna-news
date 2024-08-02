@@ -10,9 +10,8 @@ export interface HomeTranslations {
   routes: {
     home: string;
     about: string;
-    section: string;
+    sections: string;
   };
   donate: string;
   changeLanguage: string;
 }
-

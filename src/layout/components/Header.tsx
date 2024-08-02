@@ -15,7 +15,7 @@ import { usePathname } from 'next/navigation';
 import { useAllRoutes } from '@/src/layout/hooks/useAllRoutes';
 
 function NavBar (
-  {translations}: {translations: HomeTranslations}, {hideNav}: {hideNav: (value: boolean) => void}
+  {translations}: any, {hideNav}: {hideNav: (value: boolean) => void}
 ) {
   const {allRoutes} = useAllRoutes({translations});
   const pathName = usePathname();
@@ -55,7 +55,7 @@ export default function Header (
   const [showNav, setShowNav] = useState(false);
   const [background, setBackground] = useState(false);
 
-  const {donate, changeLanguage, routes} = translations;
+  const {changeLanguage, routes} = translations;
   
   useEffect(() => {
     const handleScroll = () => {

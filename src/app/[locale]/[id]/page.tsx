@@ -198,7 +198,7 @@ export default async function Page ({params}: {params: {id: string}}) {
   const currentDate = new Date();
   const updateDate = new Date((fechaDB) as string);
 
-  const dateSinceUpdateDays = (updateDate - currentDate) / (1000 * 60 * 60 * 24);
+  const dateSinceUpdateDays = (updateDate.getTime() - currentDate.getTime()) / (1000 * 60 * 60 * 24);
 
   const dateSinceUpdateMonth = dateSinceUpdateDays / 31;
 
@@ -212,7 +212,7 @@ export default async function Page ({params}: {params: {id: string}}) {
 
   const lastUpdateDate = new Date((lastUpdate as string));
 
-  const lastUpdateDays = (lastUpdateDate - currentDate) / (1000 * 60 * 60 * 24);
+  const lastUpdateDays = (lastUpdateDate.getTime() - currentDate.getTime()) / (1000 * 60 * 60 * 24);
 
   const lastUpdateMonth = lastUpdateDays / 31;
 
@@ -261,7 +261,7 @@ export default async function Page ({params}: {params: {id: string}}) {
 
         <article className='article'>
           {
-            selectedNew?.content.map((item, index) => (
+            selectedNew?.content.map((item : string, index: number) => (
               <>
                 <MDXRemote key={index} source={item} />
                 {/*
