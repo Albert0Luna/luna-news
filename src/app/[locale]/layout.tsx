@@ -6,6 +6,7 @@ import '@/src/home/styles/main.css';
 import { Metadata } from 'next';
 import { cookies } from 'next/headers';
 
+
 export function metadata () {
 
   const cookieStore = cookies();
