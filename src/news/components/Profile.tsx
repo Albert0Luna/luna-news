@@ -68,10 +68,10 @@ export function AuthorProfile ({ closeDialogFn, author }: { closeDialogFn: () =>
       <div className='profile-text-content'>
         <div className='profile-content'>
           {locale === 'en'
-            ? Object.values(authorData?.descEN).map((paragraph, index) => (
+            ? Object.values(authorData?.descEN || {}).map((paragraph, index) => (
               <p key={index}>{paragraph}</p>
             ))
-            : Object.values(authorData?.descES).map((paragraph, index) => (
+            : Object.values(authorData?.descES || {}).map((paragraph, index) => (
               <p key={index}>{paragraph}</p>
             ))
           }
