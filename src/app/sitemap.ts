@@ -320,7 +320,7 @@ export default function sitemap (): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: 'hhttps://www.lunanews.tech/en/sections',
+      url: 'https://www.lunanews.tech/en/sections',
       lastModified: new Date('2024-08-04'), // Fecha fija para la sección "about" en inglés
       changeFrequency: 'monthly',
       priority: 0.8,
