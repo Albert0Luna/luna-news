@@ -46,7 +46,7 @@ export default function sitemap (): MetadataRoute.Sitemap {
       keywords: ['Lubuntu', 'Ubuntu', 'LXQt', 'Sistema Operativo', 'Hardware Antiguo']
     },
     {
-      id: 'mac-mini-con-m4-más-cerca-de-lo-que-crees_ES__4',
+      id: 'mac-mini-con-m4-mas-cerca-de-lo-que-crees_ES__4',
       newCode: '4',
       lang: 'es',
       readTime: '4 minutos',
@@ -299,7 +299,7 @@ export default function sitemap (): MetadataRoute.Sitemap {
   }));
   
   const mappedNewsEn = newsEn.map((article) => ({
-    url: `https://www.lunanews.tech/es/${article.id}`,
+    url: `https://www.lunanews.tech/en/${article.id}`,
     lastModified: new Date(article.date),
     changeFrequency: 'monthly' as 'monthly',
     priority: 0.7,
@@ -308,36 +308,160 @@ export default function sitemap (): MetadataRoute.Sitemap {
 
   return [
     {
-      url: 'https://www.lunanews.tech',
-      lastModified: new Date('2023-01-01'), // Fecha fija para la URL principal
+      url: 'https://www.lunanews.tech/en',
+      lastModified: new Date('2024-08-04'), // Fecha fija para la URL principal
+      changeFrequency: 'monthly',
+      priority: 1,
+    },
+    {
+      url: 'https://www.lunanews.tech/en/about',
+      lastModified: new Date('2024-08-04'), // Fecha fija para la sección "about" en español
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'hhttps://www.lunanews.tech/en/sections',
+      lastModified: new Date('2024-08-04'), // Fecha fija para la sección "about" en inglés
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://www.lunanews.tech/en/sections/latest',
+      lastModified: new Date('2024-08-04'), // Fecha fija para la sección "sections" en español
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://www.lunanews.tech/en/sections/tutorials',
+      lastModified: new Date('2024-08-04'), // Fecha fija para la sección "about" en inglés
+      changeFrequency: 'monthly',
+      priority: 0
+    },
+    {
+      url: 'https://www.lunanews.tech/en/sections/pcs-and-laptops',
+      lastModified: new Date('2024-08-04'), // Fecha fija para la sección "about" en inglés
+      changeFrequency: 'monthly',
+    },
+    {
+      url: 'https://www.lunanews.tech/en/sections/mobiles-and-tablets',
+      lastModified: new Date('2024-08-04'), // Fecha fija para la sección "about" en inglés
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://www.lunanews.tech/en/sections/gaming',
+      lastModified: new Date('2024-08-04'), // Fecha fija para la sección "about" en inglés
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://www.lunanews.tech/en/sections/reviews',
+      lastModified: new Date('2024-08-04'), // Fecha fija para la sección "about" en inglés
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://www.lunanews.tech/en/sections/programming',
+      lastModified: new Date('2024-08-04'), // Fecha fija para la sección "about" en inglés
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://www.lunanews.tech/en/sections/ai',
+      lastModified: new Date('2024-08-04'), // Fecha fija para la sección "sections" en inglés
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://www.lunanews.tech/en/privacy',
+      lastModified: new Date('2024-08-04'), // Fecha fija para la sección "sections" en inglés
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
+    {
+      url: 'https://www.lunanews.tech/en/terms-and-conditions',
+      lastModified: new Date('2024-08-04'), // Fecha fija para la sección "sections" en inglés
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
+    ...mappedNewsEn,
+    {
+      url: 'https://www.lunanews.tech/es',
+      lastModified: new Date('2024-08-04'), // Fecha fija para la sección "sections" en inglés
       changeFrequency: 'monthly',
       priority: 1,
     },
     {
       url: 'https://www.lunanews.tech/es/about',
-      lastModified: new Date('2023-01-01'), // Fecha fija para la sección "about" en español
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://www.lunanews.tech/en/about',
-      lastModified: new Date('2023-01-01'), // Fecha fija para la sección "about" en inglés
+      lastModified: new Date('2024-08-04'), // Fecha fija para la sección "sections" en inglés
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
       url: 'https://www.lunanews.tech/es/sections',
-      lastModified: new Date('2023-01-01'), // Fecha fija para la sección "sections" en español
+      lastModified: new Date('2024-08-04'), // Fecha fija para la sección "sections" en inglés
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: 'https://www.lunanews.tech/en/sections',
-      lastModified: new Date('2023-01-01'), // Fecha fija para la sección "sections" en inglés
+      url: 'https://www.lunanews.tech/es/sections/latest',
+      lastModified: new Date('2024-08-04'), // Fecha fija para la sección "sections" en inglés
       changeFrequency: 'monthly',
       priority: 0.8,
     },
+    {
+      url: 'https://www.lunanews.tech/es/sections/tutorials',
+      lastModified: new Date('2024-08-04'), // Fecha fija para la sección "sections" en inglés
+      changeFrequency: 'monthly',
+      priority: 0
+    },
+    {
+      url: 'https://www.lunanews.tech/es/sections/pcs-and-laptops',
+      lastModified: new Date('2024-08-04'), // Fecha fija para la sección "sections" en inglés
+      changeFrequency: 'monthly',
+    },
+    {
+      url: 'https://www.lunanews.tech/es/sections/mobiles-and-tablets',
+      lastModified: new Date('2024-08-04'), // Fecha fija para la sección "sections" en inglés
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://www.lunanews.tech/es/sections/gaming',
+      lastModified: new Date('2024-08-04'), // Fecha fija para la sección "sections" en inglés
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://www.lunanews.tech/es/sections/reviews',
+      lastModified: new Date('2024-08-04'), // Fecha fija para la sección "sections" en inglés
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://www.lunanews.tech/es/sections/programming',
+      lastModified: new Date('2024-08-04'), // Fecha fija para la sección "sections" en inglés
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://www.lunanews.tech/es/sections/ai',
+      lastModified: new Date('2024-08-04'), // Fecha fija para la sección "sections" en inglés
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://www.lunanews.tech/es/privacy',
+      lastModified: new Date('2024-08-04'), // Fecha fija para la sección "sections" en inglés
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
+    {
+      url: 'https://www.lunanews.tech/es/terms-and-conditions',
+      lastModified: new Date('2024-08-04'), // Fecha fija para la sección "sections" en inglés
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
     ...mappedNewsEs,
-    ...mappedNewsEn
   ];
 }

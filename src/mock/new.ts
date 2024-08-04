@@ -33,7 +33,7 @@ interface NewsEs extends BaseNews {
 }
 */
 
-const newsEs = [
+const newsEs  = [
   {
     id: 'las-nuevas-server-islands-de-astro-y-que-json_ES__1',
     newCode: '1',
@@ -256,7 +256,7 @@ Actualmente, esta característica está en fase beta, pero puedes probarla de ma
     keywords: ['Lubuntu', 'Ubuntu', 'LXQt', 'Sistema Operativo', 'Hardware Antiguo']
   },
   {
-    id: 'mac-mini-con-m4-más-cerca-de-lo-que-crees_ES__4',
+    id: 'mac-mini-con-m4-mas-cerca-de-lo-que-crees_ES__4',
     newCode: '4',
     lang: 'es',
     readTime: '4 minutos',
@@ -504,7 +504,7 @@ Actualmente, esta característica está en fase beta, pero puedes probarla de ma
     newCode: '7',
     lang: 'es',
     readTime: '4 minutos',
-    sections: ['Gaming', 'Pc & Laptops'],
+    sections: ['Gaming', 'Smathphones & Tablets'],
     title: 'Google Pixel 9 Pro Fold: Detalles y Expectativas',
     mainImage: 'https://res.cloudinary.com/dis6nw4o7/image/upload/v1722400968/pixel-fold_r9f5p5.jpg',
     thumbnail: 'https://res.cloudinary.com/dis6nw4o7/image/upload/v1722400964/pixel-fold-thumbnail_dtjctv.jpg',
@@ -672,7 +672,7 @@ Actualmente, esta característica está en fase beta, pero puedes probarla de ma
     newCode: '9',
     lang: 'es',
     readTime: '6 minutos',
-    sections: ['IA'],
+    sections: ['Reseñas'],
     title: 'Review del Teclado Thunderbolt K78',
     mainImage: 'https://res.cloudinary.com/dis6nw4o7/image/upload/v1722401307/thunder-teclado_dqf34g.jpg',
     thumbnail: 'https://res.cloudinary.com/dis6nw4o7/image/upload/v1722401305/thunder_teclado_thumbnail_cgjcs0.jpg',
@@ -758,7 +758,7 @@ Actualmente, esta característica está en fase beta, pero puedes probarla de ma
     newCode: '10',
     lang: 'es',
     readTime: '6 minutos',
-    sections: ['Reseñas'],
+    sections: ['IA', 'Programación'],
     title: '¿Qué es SearchGPT y por qué pondrá a temblar a Google?',
     mainImage: 'https://res.cloudinary.com/dis6nw4o7/image/upload/v1722102886/9b47cb0a-09ad-4fbc-bf21-d30ec83436d4.png',
     thumbnail: 'https://res.cloudinary.com/dis6nw4o7/image/upload/v1722102886/9b47cb0a-09ad-4fbc-bf21-d30ec83436d4.png',
@@ -1303,7 +1303,7 @@ const newsEn = [
     newCode: '7',
     lang: 'en',
     readTime: '4 minutes',
-    sections: ['Gaming', 'Pc & Laptops'],
+    sections: ['Smathphones & Tablets'],
     title: 'Google Pixel 9 Pro Fold: Details and Expectations',
     mainImage: 'https://res.cloudinary.com/dis6nw4o7/image/upload/v1722400968/pixel-fold_r9f5p5.jpg',
     thumbnail: 'https://res.cloudinary.com/dis6nw4o7/image/upload/v1722400964/pixel-fold-thumbnail_dtjctv.jpg',
@@ -1464,7 +1464,7 @@ const newsEn = [
     newCode: '9',
     lang: 'en',
     readTime: '6 minutes',
-    sections: ['AI'],
+    sections: ['Reviews', 'Gaming'],
     title: 'Thunderbolt K78 Keyboard Review',
     mainImage: 'https://res.cloudinary.com/dis6nw4o7/image/upload/v1722401307/thunder-teclado_dqf34g.jpg',
     thumbnail: 'https://res.cloudinary.com/dis6nw4o7/image/upload/v1722401305/thunder_teclado_thumbnail_cgjcs0.jpg',
@@ -1549,7 +1549,7 @@ const newsEn = [
     newCode: '10',
     lang: 'en',
     readTime: '6 minutes',
-    sections: ['Reviews'],
+    sections: ['AI'],
     title: 'What is SearchGPT and Why It Will Shake Google?',
     mainImage: 'https://res.cloudinary.com/dis6nw4o7/image/upload/v1722102886/9b47cb0a-09ad-4fbc-bf21-d30ec83436d4.png',
     thumbnail: 'https://res.cloudinary.com/dis6nw4o7/image/upload/v1722102886/9b47cb0a-09ad-4fbc-bf21-d30ec83436d4.png',

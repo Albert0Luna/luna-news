@@ -13,7 +13,10 @@ export async function generateMetadata ({ params }: { params: { id: string } }) 
   const parts = params.id.split('__');
   const newCode = parts[1];
 
-  if (lang?.value === 'en') {
+  const prefix = params.id.split('_');
+  const suffix = prefix[1].toLocaleLowerCase();
+
+  if (lang?.value === 'en' || suffix === 'en') {
     const newMetaData = await fetchMetaDataNewsEn(newCode);
     const newData = newMetaData[0];
     
@@ -75,7 +78,7 @@ export async function generateMetadata ({ params }: { params: { id: string } }) 
         },
       };
     }
-  } else if (lang?.value === 'es') {
+  } else if (lang?.value === 'es' || suffix === 'es') {
     const newMetaData = await fetchMetaDataNewsEs(newCode);
     const newData = newMetaData[0];
 
@@ -160,10 +163,12 @@ export default async function Page ({params}: {params: {id: string}}) {
   const cookieStore = cookies();
   const lang = cookieStore.get('NEXT_LOCALE');
 
+  const prefix = params.id.split('_');
+  const suffix = prefix[1].toLocaleLowerCase();
+
   let selectedNew;
 
-
-  if (lang?.value === 'en') {
+  if (lang?.value === 'en' || suffix === 'en') {
     //?Get the prefix
     const prefix = params.id.split('_');
     const suffix = prefix[1];
@@ -179,7 +184,7 @@ export default async function Page ({params}: {params: {id: string}}) {
     }
     selectedNew = selectedArticle;
     console.log(selectedNew);
-  } else if (lang?.value === 'es') {
+  } else if (lang?.value === 'es' || suffix === 'es') {
     //?Get the prefix
     const prefix = params.id.split('_');
     const suffix = prefix[1];
