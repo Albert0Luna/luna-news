@@ -11,7 +11,6 @@ export default async function RenderNews ({section}: {section: string | undefine
 
   let articles;
   
-  console.log(latest);
   if (latest) {
     (lang === 'en') 
       ? articles = await fetchAllNewsEn()
@@ -22,9 +21,6 @@ export default async function RenderNews ({section}: {section: string | undefine
       ? articles = await fetchSectionEn(section)
       : articles = await fetchSectionEs(section);
   }
-
-  
-
 
   return (
     <ul className='section_highlights_container'>

@@ -7,6 +7,7 @@ import { Metadata } from 'next';
 import { cookies } from 'next/headers';
 import { Analytics } from '@vercel/analytics/react';
 import Scroll from '@/src/home/components/Scroll';
+import Adsense from '@/src/rootComponents.tsx/components/Adsense';
 
 export function metadata () {
 
@@ -110,6 +111,7 @@ export default function RootLayout ({
 
   return (
     <html lang={locale} className={outfit.className}>
+      <Adsense />
       <Scroll />
       <body>
         <section className='header_and_content'>

@@ -14,9 +14,17 @@ export async function generateMetadata ({ params }: { params: { id: string } }) 
   const newCode = parts[1];
 
   const prefix = params.id.split('_');
-  const suffix = prefix[1].toLocaleLowerCase();
+  const suffixLower = prefix[1].toLowerCase();
+  
+  let defaultLang; 
+  
+  if (!lang?.value) {
+    defaultLang = suffixLower;
+  } else {
+    defaultLang = lang?.value;
+  }
 
-  if (lang?.value === 'en' || suffix === 'en') {
+  if (defaultLang === 'en') {
     const newMetaData = await fetchMetaDataNewsEn(newCode);
     const newData = newMetaData[0];
     
@@ -78,7 +86,7 @@ export async function generateMetadata ({ params }: { params: { id: string } }) 
         },
       };
     }
-  } else if (lang?.value === 'es' || suffix === 'es') {
+  } else if (defaultLang === 'es') {
     const newMetaData = await fetchMetaDataNewsEs(newCode);
     const newData = newMetaData[0];
 
@@ -164,11 +172,18 @@ export default async function Page ({params}: {params: {id: string}}) {
   const lang = cookieStore.get('NEXT_LOCALE');
 
   const prefix = params.id.split('_');
-  const suffix = prefix[1].toLocaleLowerCase();
+  const suffixLower = prefix[1].toLowerCase();
 
   let selectedNew;
+  let selectedLang;
 
-  if (lang?.value === 'en' || suffix === 'en') {
+  if (!lang?.value) {
+    selectedLang = suffixLower;
+  } else {
+    selectedLang = lang?.value;
+  }
+
+  if (selectedLang === 'en') {
     //?Get the prefix
     const prefix = params.id.split('_');
     const suffix = prefix[1];
@@ -176,15 +191,14 @@ export default async function Page ({params}: {params: {id: string}}) {
     const parts = params.id.split('__');
     const newCode = parts[1];
     const selectData = await fetchNewsEn(newCode);
-    console.log(selectData);
+
     const selectedArticle =  selectData[0];
     if (!(lang?.value.toUpperCase() === suffix)) {
       redirect(`/${selectedArticle?.id}`);
       return; 
     }
     selectedNew = selectedArticle;
-    console.log(selectedNew);
-  } else if (lang?.value === 'es' || suffix === 'es') {
+  } else if (selectedLang === 'es') {
     //?Get the prefix
     const prefix = params.id.split('_');
     const suffix = prefix[1];
@@ -192,7 +206,6 @@ export default async function Page ({params}: {params: {id: string}}) {
     const parts = params.id.split('__');
     const newCode = parts[1];
     const selectData = await fetchNewsEs(newCode);
-    console.log(selectData);
 
     const selectedArticle = selectData[0];
     if (!(lang?.value.toUpperCase() === suffix)) {
@@ -200,8 +213,6 @@ export default async function Page ({params}: {params: {id: string}}) {
       return;
     }
     selectedNew = selectedArticle;
-    console.log(selectedNew);
-
   }
 
   
@@ -292,5 +303,6 @@ export default async function Page ({params}: {params: {id: string}}) {
     </main>
   );
 }
+
 
 
