@@ -15,10 +15,10 @@ export function AuthorProfile ({ closeDialogFn, author }: { closeDialogFn: () =>
       name: 'Alberto Luna',
       picture: '/alberto-luna.jpg',
       descES: {
-        p1: 'Hola soy Alberto Luna,',
-        p2: 'Creador de Luna News, Ingeniero de Software, pero sobre todo soy un apacionado de la tecnologia',
-        p3: 'Espero el contenido que conpartimos de este sitio web de noticas tecnologicas sea de tu agrado.',
-        p4: 'Abrochate tus cinturones y preparate para este viaje de conocimeinto al estilo de Luna News.'
+        p1: 'Hola, soy Alberto Luna.',
+        p2: 'Creador de Luna News, Ingeniero de Software, pero sobre todo soy un apasionado de la tecnología.',
+        p3: 'Espero que el contenido que compartimos en este sitio web de noticias tecnológicas sea de tu agrado.',
+        p4: 'Abróchate el cinturón y prepárate para este viaje de conocimiento al estilo de Luna News.'    
       },
       descEN: {
         p1: 'Hi, I am Alberto Luna,',

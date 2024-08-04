@@ -6,6 +6,7 @@ import '@/src/home/styles/main.css';
 import { Metadata } from 'next';
 import { cookies } from 'next/headers';
 import { Analytics } from '@vercel/analytics/react';
+import Scroll from '@/src/home/components/Scroll';
 
 export function metadata () {
 
@@ -109,6 +110,7 @@ export default function RootLayout ({
 
   return (
     <html lang={locale} className={outfit.className}>
+      <Scroll />
       <body>
         <section className='header_and_content'>
           <Header translations={homeTranslations}/>

@@ -13,18 +13,24 @@ export default function Footer () {
   return (
     <footer className='footer'>
       <div className='footer_privacity'>
-        <Link href="/privacy" className='privacy'>
+        <Link href="/privacy" className='privacy_link'>
           {t('privacy')}
         </Link>
-        <Link href="/terms-and-conditions" className='terms'>
+        <Link href="/terms-and-conditions" className='terms_link'>
           {t('terms')}
         </Link>
       </div>
       <div className='footer_social_container'>
-        <YoutubeIcon />
-        <TiktokIcon />
-        <XIcon/>
-        <FacebookIcon />
+        <Link href='https://www.youtube.com/channel/UCHXjQcft2ZdyxYQHq6dsU0Q' target='_blank'>
+          <YoutubeIcon />
+        </Link>
+        <Link href='https://www.tiktok.com/@luna_digital_tech' target='_blank'>
+          <TiktokIcon />
+        </Link>
+        <Link href='https://x.com/NeonGeeksX' target='_blank'>
+          <XIcon/>
+        </Link>
+        {/* <FacebookIcon /> */}
       </div>
     </footer>
   );

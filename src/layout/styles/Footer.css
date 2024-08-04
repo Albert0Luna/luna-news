@@ -17,10 +17,9 @@
   letter-spacing: 0.2px;
   font-weight: 300;
   color: var(--ligth-color);
-
 }
 
-.privacy, .terms  {
+.privacy_link, .terms_link {
   color: white;
 }
 
@@ -38,7 +37,7 @@
     border-radius: 0px 0px 10px 10px;
   }
 
-  .privacy, .terms {
+  .privacy_link, .terms_link {
     text-decoration: none;
     color: white;
   }

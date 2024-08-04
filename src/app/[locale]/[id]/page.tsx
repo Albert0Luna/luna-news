@@ -1,5 +1,4 @@
 import '@/src/news/styles/News.css';
-import { useLocale, useTranslations } from 'next-intl';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import Profile from '@/src/news/components/Profile';
 import { redirect } from '@/src/navigation';
