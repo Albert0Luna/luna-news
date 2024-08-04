@@ -4,6 +4,7 @@ import Profile from '@/src/news/components/Profile';
 import { redirect } from '@/src/navigation';
 import { cookies } from 'next/headers';
 import {fetchNewsEn, fetchNewsEs, fetchMetaDataNewsEs, fetchMetaDataNewsEn} from '@/src/app/lib/data';
+import Adsense from '@/src/rootComponents.tsx/components/Adsense';
 
 export async function generateMetadata ({ params }: { params: { id: string } }) {
 
@@ -245,6 +246,7 @@ export default async function Page ({params}: {params: {id: string}}) {
 
   return (
     <main>
+      <Adsense />
       <section className='new'>
         <h1 className='new_title'>{selectedNew?.title}</h1>
         <p className='new_read_time'>{selectedNew?.read_time}</p>
