@@ -2,7 +2,6 @@
 import YoutubeIcon from '@/src/icons/social-media/YoutubeIcon';
 import TiktokIcon from '@/src/icons/social-media/TiktokIcon';
 import XIcon from '@/src/icons/social-media/XIcon';
-import FacebookIcon from '@/src/icons/social-media/FacebookIcon';
 import '@/src/layout/styles/Footer.css';
 import { Link } from '@/src/navigation';
 import { useTranslations } from 'next-intl';
