@@ -7,7 +7,7 @@ export async function fetchAllNewsEs () {
   noStore();
   try {
     const data = await sql`
-      SELECT * FROM newsEs
+      SELECT new_code, id, title, thumbnail, image_alt, mini_desc FROM newsEs
       ORDER BY date ASC
       LIMIT 10
     `;
@@ -24,7 +24,7 @@ export async function fetchNewsEs (newCode) {
   noStore();
   try {
     const data = await sql`
-      SELECT * FROM newsEs
+      SELECT date, lastModified, title, read_time, author_id, main_image, image_alt, content FROM newsEs
       WHERE new_code = ${newCode}
       ORDER BY date ASC
     `;
@@ -59,7 +59,7 @@ export async function fetchLatestNewsEs () {
   noStore();
   try {
     const data = await sql`
-      SELECT * FROM newsEs
+      SELECT new_code, id, title, thumbnail, image_alt, mini_desc FROM newsEs
       ORDER BY date ASC
       LIMIT 10
     `;
@@ -76,7 +76,7 @@ export async function fetchSectionEs (section) {
   noStore();
   try {
     const data = await sql`
-      SELECT * FROM newsEs
+      SELECT  new_code, id, title, thumbnail, image_alt, mini_desc FROM newsEs
       WHERE ${section} = ANY(sections)
       ORDER BY date ASC
       LIMIT 10
@@ -96,7 +96,7 @@ export async function fetchAllNewsEn () {
   noStore();
   try {
     const data = await sql`
-      SELECT * FROM newsEn
+      SELECT new_code, id, title, thumbnail, image_alt, mini_desc FROM newsEn
       ORDER BY date ASC
       LIMIT 10
     `;
@@ -147,7 +147,7 @@ export async function fetchLatestNewsEn () {
   noStore();
   try {
     const data = await sql`
-      SELECT * FROM newsEn
+      SELECT new_code, id, title, thumbnail, image_alt, mini_desc FROM newsEn
       ORDER BY date ASC
       LIMIT 10
     `;
@@ -164,7 +164,7 @@ export async function fetchSectionEn (section) {
   noStore();
   try {
     const data = await sql`
-      SELECT * FROM newsEn
+      SELECT  new_code, id, title, thumbnail, image_alt, mini_desc FROM newsEn
       WHERE ${section} = ANY(sections)
       ORDER BY date ASC
       LIMIT 10

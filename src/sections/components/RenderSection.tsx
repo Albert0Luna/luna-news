@@ -34,7 +34,7 @@ export default async function RenderNews ({section}: {section: string | undefine
               <div className='section_highlights_item_image_container'>
                 <img 
                   src={article.thumbnail}
-                  alt={article.ImageAlt}
+                  alt={article.image_alt}
                   className='section_highlights_item_image'
                 />
               </div>

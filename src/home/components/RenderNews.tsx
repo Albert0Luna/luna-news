@@ -26,7 +26,7 @@ export default async function RenderNews () {
               <div className='highlights_item_image_container'>
                 <img 
                   src={article.thumbnail}
-                  alt={article.ImageAlt}
+                  alt={article.image_alt}
                   className='highlights_item_image'
                 />
               </div>

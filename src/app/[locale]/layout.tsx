@@ -6,6 +6,7 @@ import '@/src/home/styles/main.css';
 import { Metadata } from 'next';
 import { cookies } from 'next/headers';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import Scroll from '@/src/home/components/Scroll';
 import Adsense from '@/src/rootComponents.tsx/components/Adsense';
 
@@ -118,6 +119,7 @@ export default function RootLayout ({
           <Header translations={homeTranslations}/>
           <main>
             {children}
+            <SpeedInsights />
             <Analytics />
           </main>
         </section>
