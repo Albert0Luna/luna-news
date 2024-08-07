@@ -15,10 +15,10 @@ export async function generateMetadata ({ params }: { params: { id: string } }) 
   const parts = params.id.split('__');
   const newCode = parts[1];
 
-  const prefix = params.id.split('_');
+  const prefix =  params.id.split('_');
   const suffixLower = prefix[1].toLowerCase();
   
-  let defaultLang; 
+  let defaultLang;
   
   if (!lang?.value) {
     defaultLang = suffixLower;
@@ -149,20 +149,10 @@ export async function generateMetadata ({ params }: { params: { id: string } }) 
           images: [`${newData?.thumbnail}`]
         },
       };
-    } else {
-      return {
-        title: 'Error - Luna News',
-        generator: 'Luna News',
-        applicationName: 'Luna News',
-        referrer: 'origin-when-cross-origin',
-        keywords: ['404', 'Not Found'],
-        authors: { name: 'Alberto' },
-        creator: 'Alberto Luna',
-        publisher: 'Alberto Luna',
-      };
     }
   }
 }
+
 
 export default async function Page ({params}: {params: {id: string}}) {
   
@@ -171,10 +161,10 @@ export default async function Page ({params}: {params: {id: string}}) {
   const cookieStore = cookies();
   const lang = cookieStore.get('NEXT_LOCALE');
 
-  const prefix = params.id.split('_');
-  const suffixLower = prefix[1].toLowerCase();
-
   let selectedNew;
+
+  const prefix =  params.id.split('_');
+  const suffixLower = prefix[1].toLowerCase();
   let selectedLang;
 
   if (!lang?.value) {
@@ -186,14 +176,14 @@ export default async function Page ({params}: {params: {id: string}}) {
   if (selectedLang === 'en') {
     //?Get the prefix
     const prefix = params.id.split('_');
-    const suffix = prefix[1];
+    const suffix = prefix[1].toLowerCase();
     //? Get the new code
     const parts = params.id.split('__');
     const newCode = parts[1];
     const selectData = await fetchNewsEn(newCode);
 
     const selectedArticle =  selectData[0];
-    if (!(lang?.value.toUpperCase() === suffix)) {
+    if (!(lang?.value === suffix)) {
       redirect(`/${selectedArticle?.id}`);
       return; 
     }
@@ -201,14 +191,14 @@ export default async function Page ({params}: {params: {id: string}}) {
   } else if (selectedLang === 'es') {
     //?Get the prefix
     const prefix = params.id.split('_');
-    const suffix = prefix[1];
+    const suffix = prefix[1].toLowerCase();
     //?Get the newCode
     const parts = params.id.split('__');
     const newCode = parts[1];
     const selectData = await fetchNewsEs(newCode);
 
     const selectedArticle = selectData[0];
-    if (!(lang?.value.toUpperCase() === suffix)) {
+    if (!(lang?.value === suffix)) {
       redirect(`/${selectedArticle?.id}`);
       return;
     }
@@ -227,7 +217,7 @@ export default async function Page ({params}: {params: {id: string}}) {
 
   const dateSinceUpdateYear = dateSinceUpdateDays / 365;
 
-  const rtf = new Intl.RelativeTimeFormat(lang?.value);
+  const rtf = new Intl.RelativeTimeFormat(lang?.value || suffixLower);
 
   //*? Last update
 
@@ -300,12 +290,12 @@ export default async function Page ({params}: {params: {id: string}}) {
             ))
           }
           <MDXRemote source={(selectedNew?.final as string)} />
+
         </article>
         
       </section>
     </main>
   );
 }
-
 
 

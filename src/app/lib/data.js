@@ -24,7 +24,7 @@ export async function fetchNewsEs (newCode) {
   noStore();
   try {
     const data = await sql`
-      SELECT date, lastModified, title, read_time, author_id, main_image, image_alt, content FROM newsEs
+      SELECT id, date, lastModified, title, read_time, author_id, main_image, image_alt, content FROM newsEs
       WHERE new_code = ${newCode}
       ORDER BY date ASC
     `;
@@ -113,7 +113,7 @@ export async function fetchNewsEn (newCode) {
   noStore();
   try {
     const data = await sql`
-      SELECT * FROM newsEn
+      SELECT id, date, lastModified, title, read_time, author_id, main_image, image_alt, content FROM newsEn
       WHERE new_code = ${newCode}
       ORDER BY date ASC
     `;

@@ -5,11 +5,11 @@ import { cookies } from 'next/headers';
 export default async function RenderNews () {
   
   const cookieStore = cookies();
-  const lang = cookieStore.get('NEXT_LOCALE')?.value;
+  const lang = cookieStore.get('NEXT_LOCALE');
 
   let articles;
 
-  (lang === 'en') 
+  (lang?.value === 'en') 
     ? articles = await fetchLatestNewsEn() 
     : articles = await fetchLatestNewsEs();
 

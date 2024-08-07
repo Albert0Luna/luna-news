@@ -22,8 +22,7 @@
     "next-intl": "^3.15.2",
     "next-mdx-remote": "^5.0.0",
     "react": "link:@vercel/analytics/react",
-    "react-dom": "^18",
-    "vercel": "^35.2.3"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "@types/node": "20.14.9",
