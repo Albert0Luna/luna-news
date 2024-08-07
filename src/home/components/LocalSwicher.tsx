@@ -17,7 +17,6 @@ export default function LocalSwicher ({changeLanguage}: {changeLanguage: string}
     startTransition(() => {
       router.push(`/${nextLocale + pathName.slice(3)}`, {scroll: true});
     });
-    router.refresh();
   };
   return (
     <label className='change_language'>

@@ -5,6 +5,7 @@
 import '@/src/globals.css';
 import '@/src/home/styles/main.css';
 import { outfit } from '@/src/fonts/fonts';
+import Link from 'next/link';
  
 export default function NotFound () {
   // const t = useTranslations('notFound');
@@ -16,6 +17,9 @@ export default function NotFound () {
           <section className='notFound'>
             <small>Error:</small>
             <h1>404</h1>
+            <Link href="/">
+              Go back
+            </Link>
             {/**
             <h2>{t('notFoundPage')}</h2>
             <p>{t('errorFound')}</p>

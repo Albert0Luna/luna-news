@@ -5,7 +5,7 @@ import { redirect } from '@/src/navigation';
 import { cookies } from 'next/headers';
 import {fetchNewsEn, fetchNewsEs, fetchMetaDataNewsEs, fetchMetaDataNewsEn} from '@/src/app/lib/data';
 import Adsense from '@/src/rootComponents.tsx/components/Adsense';
-import GoogleAdUnit from '@/src/rootComponents.tsx/components/GoogleAdUnit';
+// import GoogleAdUnit from '@/src/rootComponents.tsx/components/GoogleAdUnit';
 
 export async function generateMetadata ({ params }: { params: { id: string } }) {
 
@@ -47,10 +47,10 @@ export async function generateMetadata ({ params }: { params: { id: string } }) 
         formatDetection: { email: 'neongeeksofficial@gmail.com'},
         metadataBase: new URL('https://lunanews.tech'),
         alternates: {
-          canonical: '/',
+          canonical: `https://lunanews.tech/en/${newData?.id}`,
           languages: {
-            'en-US': '/en',
-            'es-MX': '/es',
+            'en-US': `https://lunanews.tech/en/${newData?.id}`,
+            'x-default': `https://lunanews.tech/en/${newData?.id}`,
           },
         },
   
@@ -109,10 +109,10 @@ export async function generateMetadata ({ params }: { params: { id: string } }) 
         formatDetection: { email: 'neongeeksofficial@gmail.com'},
         metadataBase: new URL('https://lunanews.tech'),
         alternates: {
-          canonical: '/',
+          canonical: `https://lunanews.tech/es/${newData?.id}`,
           languages: {
-            'en-US': '/en',
-            'es-MX': '/es',
+            'es-MX': `https://lunanews.tech/es/${newData?.id}`,
+            'x-default': `https://lunanews.tech/es/${newData?.id}`,
           },
         },
   
@@ -180,10 +180,10 @@ export default async function Page ({params}: {params: {id: string}}) {
     //? Get the new code
     const parts = params.id.split('__');
     const newCode = parts[1];
-    const selectData = await fetchNewsEn(newCode);
 
+    const selectData = await fetchNewsEn(newCode);
     const selectedArticle =  selectData[0];
-    if (!(lang?.value === suffix)) {
+    if (!(selectedLang === suffix)) {
       redirect(`/${selectedArticle?.id}`);
       return; 
     }
@@ -198,7 +198,7 @@ export default async function Page ({params}: {params: {id: string}}) {
     const selectData = await fetchNewsEs(newCode);
 
     const selectedArticle = selectData[0];
-    if (!(lang?.value === suffix)) {
+    if (!(selectedLang === suffix)) {
       redirect(`/${selectedArticle?.id}`);
       return;
     }
@@ -278,7 +278,8 @@ export default async function Page ({params}: {params: {id: string}}) {
             selectedNew?.content.map((item : string, index: number) => (
               <>
                 <MDXRemote key={index} source={item} />
-                <GoogleAdUnit>
+                {/*
+                 <GoogleAdUnit>
                   <ins className="adsbygoogle"
                     style={{display: 'block', textAlign: 'center'}}
                     data-ad-layout="in-article"
@@ -286,6 +287,9 @@ export default async function Page ({params}: {params: {id: string}}) {
                     data-ad-client="ca-pub-5368714617786898"
                     data-ad-slot="8032217154"></ins>
                 </GoogleAdUnit>
+  
+                 */}
+                
               </>
             ))
           }

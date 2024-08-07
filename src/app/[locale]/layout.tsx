@@ -112,7 +112,7 @@ export default function RootLayout ({
 
   return (
     <html lang={locale} className={outfit.className}>
-      <Adsense />
+      {/*<Adsense />*/}
       <Scroll />
       <body>
         <section className='header_and_content'>
