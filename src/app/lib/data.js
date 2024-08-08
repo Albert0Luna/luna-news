@@ -24,14 +24,14 @@ export async function fetchNewsEs (newCode) {
   noStore();
   try {
     const data = await sql`
-      SELECT id, date, lastModified, title, read_time, author_id, main_image, image_alt, content FROM newsEs
+      SELECT * FROM newsEs
       WHERE new_code = ${newCode}
       ORDER BY date ASC
     `;
 
-    const metaNewsEs = data.rows;
+    const selectedNew = data.rows;
 
-    return metaNewsEs;
+    return selectedNew;
   } catch (error) {
     throw new Error('Error fetching news', error);
   }
@@ -41,7 +41,7 @@ export async function fetchMetaDataNewsEs (newCode) {
   noStore();
   try {
     const data = await sql`
-      SELECT id, title, lang, keywords, author_id, mini_desc, thumbnail, date, lastModified, sections FROM newsEs
+      SELECT * FROM newsEs
       WHERE new_code = ${newCode}
       ORDER BY date ASC
     `;
@@ -113,14 +113,14 @@ export async function fetchNewsEn (newCode) {
   noStore();
   try {
     const data = await sql`
-      SELECT id, date, lastModified, title, read_time, author_id, main_image, image_alt, content FROM newsEn
+      SELECT * FROM newsEn
       WHERE new_code = ${newCode}
       ORDER BY date ASC
     `;
 
-    const metaNewsEn = data.rows;
+    const selectedNew = data.rows;
 
-    return metaNewsEn;
+    return selectedNew;
   } catch (error) {
     throw new Error('Error fetching news en', error);
   }

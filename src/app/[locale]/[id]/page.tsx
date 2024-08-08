@@ -5,7 +5,6 @@ import { redirect } from '@/src/navigation';
 import { cookies } from 'next/headers';
 import {fetchNewsEn, fetchNewsEs, fetchMetaDataNewsEs, fetchMetaDataNewsEn} from '@/src/app/lib/data';
 import Adsense from '@/src/rootComponents.tsx/components/Adsense';
-// import GoogleAdUnit from '@/src/rootComponents.tsx/components/GoogleAdUnit';
 
 export async function generateMetadata ({ params }: { params: { id: string } }) {
 
@@ -241,7 +240,7 @@ export default async function Page ({params}: {params: {id: string}}) {
         <p className='new_read_time'>{selectedNew?.read_time}</p>
         <div className='new_info'>
           <div className='new_info_text'>
-            <Profile authorId={selectedNew?.author_id}/>
+            {<Profile authorId={selectedNew?.author_id}/>}
 
             <p className='new_info_date'>
               {

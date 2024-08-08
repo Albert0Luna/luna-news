@@ -94,18 +94,25 @@ export default function Profile ({ authorId } : { authorId?: string }) {
 
   return (
     <div className='new_info_author'>
-      <button onClick={toggleDialog} className='new_info_author_container'>
+      <picture className='new_info_author_picture_container'>
+        <img src='/alberto-luna.jpg' alt={authorId} />
+      </picture>
+      <p className={`${outfit.className} antialiased`}>Alberto Luna</p>
+
+      {/* 
+            <button onClick={toggleDialog} className='new_info_author_container'>
         <picture className='new_info_author_picture_container'>
           <img src='/alberto-luna.jpg' alt={authorId} />
         </picture>
         <p className={`${outfit.className} antialiased`}>Alberto Luna</p>
       </button>
-      <dialog 
+            <dialog 
         open={isOpen} 
         className='author_profile'
       >
         <AuthorProfile closeDialogFn={closeDialog} author={authorId}/>
       </dialog>
+      */}
     </div>
   );
 }

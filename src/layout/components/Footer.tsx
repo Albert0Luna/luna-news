@@ -5,6 +5,7 @@ import XIcon from '@/src/icons/social-media/XIcon';
 import '@/src/layout/styles/Footer.css';
 import { Link } from '@/src/navigation';
 import { useTranslations } from 'next-intl';
+import FacebookIcon from '@/src/icons/social-media/FacebookIcon';
 
 export default function Footer () {
 
@@ -29,7 +30,9 @@ export default function Footer () {
         <Link href='https://x.com/NeonGeeksX' target='_blank'>
           <XIcon/>
         </Link>
-        {/* <FacebookIcon /> */}
+        <Link href='https://www.facebook.com/people/Luna-News/61563954901464/' target='_blank'>
+          <FacebookIcon />
+        </Link>
       </div>
     </footer>
   );

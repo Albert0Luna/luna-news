@@ -18,6 +18,9 @@
 
 .new_info_author {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .4rem;
 }
 
 .new_info_author_container {

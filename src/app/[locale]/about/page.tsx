@@ -4,7 +4,7 @@ import { useTranslations } from 'next-intl';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import { cookies } from 'next/headers';
 import { Metadata } from 'next';
-// import { fetchSectionEn } from '../../lib/data';
+import newsEs from '@/src/mock/newsEs.json';
 
 export function metadata () {
 
@@ -38,26 +38,29 @@ export function metadata () {
   return dynamicMetadata;
 };
 
-/**  /todo import {fetchNews} from '@/src/app/lib/data';
+function RenderData () {
 
-async function RenderData () {
-  const sections = await fetchSectionEn('Pc & Laptops');
+  const selectedNew = newsEs.find((item) => item.new_code === '2');
   return (
-    <>
-      <ul>
-        {sections?.map((item, index) => (
-          <li key={index}>{item.title}</li>
-        ))}
-      </ul>
-    </>
+    <section className='about_data'>
+      <h1>{selectedNew?.title}</h1>
+      <div>
+        {selectedNew?.content.map((item, index: number) => {
+          return (
+            <MDXRemote source={item} key={index}/>
+          );
+        })}
+      </div>
+    </section>
   );
 }
-*/
 
 export default function Page () {
   const t = useTranslations('About');
   return (
     <main className={'about'}>
+      {/*<RenderData />*/}
+
       <h1 className='title'>{t('title.p1')} <span>{t('title.p2')}</span></h1>
       <section className='about_content'>
         <h1><span>Luna</span> News</h1>
@@ -66,7 +69,6 @@ export default function Page () {
         />
       </section>
       {/* <FAQ /> */}
-      {/* <RenderData />*/}
     </main>
   );
 }

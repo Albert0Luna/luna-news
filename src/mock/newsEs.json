@@ -1,0 +1,45 @@
+[
+  {
+    "id": "las-nuevas-server-islands-de-astro-y-que-son",
+    "new_code": "1",
+    "language": "es",
+    "read_time": "5 minutos",
+    "sections": ["Programación"],
+    "title": "Las nuevas Server Islands de Astro y ¿Qué son?",
+    "main_image": "https://res.cloudinary.com/dis6nw4o7/image/upload/v1722377650/astro_zksruo.jpg",
+    "thumbnail_image": "https://res.cloudinary.com/dis6nw4o7/image/upload/v1722377705/astro_thumbnail_civqth.jpg",
+    "image_alt": "Imagen de las nuevas Server Islands de Astro",
+    "author_id": "alberto-luna",
+    "publish_date": "2024-07-31",
+    "last_edit_date": "",
+    "summary": "Astro ha lanzado una nueva característica llamada Server Islands que promete revolucionar la forma en que se crean sitios web. Descubre qué son y cómo funcionan.",
+    "content": [
+          "Si ya conoces <a href='https://astro.build/' target='_blank'>Astro</a>, sabrás que es un marco de trabajo moderno para la creación de sitios web, diseñado para ser rápido, sencillo y escalable.\n\nUna de las características más destacadas de <a href='https://astro.build/' target='_blank'>Astro</a> son las <a href='https://docs.astro.build/es/concepts/islands/' target='_blank'>\"islas\"</a>, una tecnología que ha popularizado, permitiendo que las páginas sean sorprendentemente rápidas gracias a su interactividad limitada a ciertas áreas.\n\nSin embargo, estas <a href='https://docs.astro.build/es/concepts/islands/' target='_blank'>\"islas\"</a> tradicionales tenían un inconveniente: se cargaban en el cliente. Esto funcionaba bien para sitios estáticos sin backend, como blogs o páginas de portafolio, pero se volvía complicado para sitios que requerían contenido de backend dinámico, como un e-commerce.\n\nAquí es donde las Server Islands se convierten en una solución ingeniosa, manteniendo el mismo concepto de las <a href='https://docs.astro.build/es/concepts/islands/' target='_blank'>\"islas\"</a> tradicionales pero con la capacidad de procesar código desde el backend.\n\n<div class='divisor'></div>\n\n## ¿Cómo funcionan y cuándo puedo utilizarlas?\n\n![Astro Server Islands Excalidraw](https://res.cloudinary.com/dis6nw4o7/image/upload/v1722377769/190c148b-758c-4506-aefd-1c649a689a95.png)\n\nLas <a href='https://astro.build/blog/astro-4120/#experimental-server-islands' target='_blank'>Server Islands</a> pueden procesar código de backend en el lado del servidor. Lo genial es que puedes tener varias islas sin tener que esperar a que carguen para que el contenido se renderice. Astro se encarga de renderizarlas en el servidor y enviarlas al cliente.\n\nEs importante tener en cuenta que las <a href='https://astro.build/blog/astro-4120/#experimental-server-islands' target='_blank'>Server Islands</a> son muy útiles para contenido dinámico que no cambia frecuentemente. Por ejemplo, pueden no ser la mejor opción para contenido que se actualiza constantemente, como una red social.\n\nActualmente, esta característica está en fase beta, pero puedes probarla de manera experimental en la versión <a href='https://astro.build/blog/astro-4120/' target='_blank'>Astro 4.12</a>, que aún no ha sido lanzada oficialmente.",
+          "<div class='divisor'></div>\n\n## ¿Qué tanto se parecen las Server Islands de Astro a las PPR de Next.js?\n\n![Astro = Next.js](https://res.cloudinary.com/dis6nw4o7/image/upload/v1722378234/astromasonext_ip6kkm.png)\n\nLas Server Islands de <a href='https://astro.build/' target='_blank'>Astro</a> son similares a las <a href='https://nextjs.org/docs/app/api-reference/next-config-js/partial-prerendering' target='_blank'>PPR (Pre-rendering con Prefetch) de Next.js</a>, ya que ambas tecnologías permiten renderizar contenido en el servidor y enviarlo al cliente. Sin embargo, las Server Islands de <a href='https://astro.build/' target='_blank'>Astro</a> son más fáciles de implementar y, en algunos benchmarks, se ha demostrado que son más rápidas que las PPR de Next.js."
+      ]
+  ,
+    "conclusion": "<div class='divisor'></div>)\n\n## Conclusión\n\nLas Server Islands de <a href='https://astro.build/' target='_blank'>Astro</a> son una característica muy interesante que promete revolucionar la forma en que se crean sitios web. Permiten tener un backend en un sitio estático sin sacrificar la velocidad y simplicidad de <a href='https://astro.build/' target='_blank'>Astro</a>. Aunque esta característica aún está en modo experimental, es algo a tener en cuenta para el futuro de Astro y la creación de sitios web modernos y rápidos."
+    ,
+    "keywords": ["Astro", "Server Islands", "Backend", "Astro 4.12", "Next.js", "PPR"]
+},
+{
+  "id": "los-nuevos-procesadores-chinos-que-amenazan-a-intel-y-amd_ES__2",
+  "new_code": "2",
+  "language": "es",
+  "read_time": "6 minutos",
+  "sections": ["Programación"],
+  "title": "Los nuevos procesadores chinos que amenazan a Intel y AMD",
+  "main_image": "https://res.cloudinary.com/dis6nw4o7/image/upload/v1722377650/astro_zksruo.jpg",
+  "thumbnail_image": "https://res.cloudinary.com/dis6nw4o7/image/upload/v1722377705/astro_thumbnail_civqth.jpg",
+  "image_alt": "Imagen de las nuevas Server Islands de Astro",
+  "author_id": "alberto-luna",
+  "publish_date": "2024-07-31",
+  "last_edit_date": "",
+  "summary": "Astro ha lanzado una nueva característica llamada Server Islands que promete revolucionar la forma en que se crean sitios web. Descubre qué son y cómo funcionan.",
+  "content": [ "Los nuevos procesadores <a href='https://www.loongson.cn' target='_blank'>Loongson</a> representan la respuesta del gigante asiático a la creencia de que China no puede desarrollar sus propios procesadores. En julio de 2024, se presentó el nuevo procesador <a href='https://www.loongson.cn/EN/product/show?id=11' target='_blank'>Loongson LS3C6000</a>, diseñado principalmente para servidores, pero también apto para equipos de escritorio. Este lanzamiento es un presagio de lo que podría ocurrir en un futuro no muy lejano.\n\n<div class='divisor'></div>\n\n## Características más destacadas\n\nEste procesador cuenta con características muy interesantes que no tienen nada que envidiar a los procesadores de Intel o AMD. Algunas de sus características más destacadas son:\n\n* **Frecuencia:** 2.0-2.5GHz\n* **Velocidad de cálculo máxima:** 240 GFLOPS\n* **Núcleos físicos:** 4\n* **Núcleos lógicos:** 8\n* **Caché de alta velocidad:** El procesador cuenta con una caché privada por cada núcleo y una caché compartida de 16MB.\n* **Empaquetado:** Viene en un paquete BGA de 35mm×35mm con 1,190 pines.\n* **Gestión de energía:** Compatible con la escala de voltaje dinámica en los dominios de voltaje principales.\n* **Consumo de energía típico:** 38W\n\n<div class='divisor'></div>\n\n## ¿Qué se puede hacer con este procesador?\n\n![loongson LS3C6000](https://res.cloudinary.com/dis6nw4o7/image/upload/v1721959602/imagen_1_ntatsf.jpg)\n\nDebido a sus destacadas características, este procesador puede ser utilizado en diversas áreas como:\n\n* **Servidores:** Ideal para servidores debido a su gran cantidad de núcleos y su velocidad de cálculo máxima de 240 GFLOPS.\n* **Estaciones de trabajo:** Con una frecuencia de 2.0-2.5GHz y 8 núcleos lógicos, es apto para estaciones de trabajo.\n* **Equipos de escritorio:** Suficiente para satisfacer las necesidades de un usuario común.\n* **Centros de datos:** Perfecto para centros de datos gracias a su velocidad de cálculo y numerosos núcleos.\n* **Gaming:** Aunque no es su principal enfoque, puede ser utilizado para gaming debido a sus 8 núcleos lógicos y su frecuencia."]
+,
+  "conclusion": "<div class='divisor'></div>)\n\n## Conclusión\n\nLas Server Islands de <a href='https://astro.build/' target='_blank'>Astro</a> son una característica muy interesante que promete revolucionar la forma en que se crean sitios web. Permiten tener un backend en un sitio estático sin sacrificar la velocidad y simplicidad de <a href='https://astro.build/' target='_blank'>Astro</a>. Aunque esta característica aún está en modo experimental, es algo a tener en cuenta para el futuro de Astro y la creación de sitios web modernos y rápidos."
+  ,
+  "keywords": ["Astro", "Server Islands", "Backend", "Astro 4.12", "Next.js", "PPR"]
+}
+]
