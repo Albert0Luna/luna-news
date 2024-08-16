@@ -9,6 +9,39 @@ import ProgrammerIcon from '@/src/icons/sections/ProgrammerIcon';
 import AIIcon from '@/src/icons/sections/AIIcon';
 import HotIcon from '@/src/icons/sections/FireIcon';
 import { Link } from '@/src/navigation';
+import { cookies } from 'next/headers';
+import { Metadata } from 'next';
+
+export function metadata () {
+
+  const cookieStore = cookies();
+  const data = cookieStore.get('NEXT_LOCALE')?.value;
+  const lang = data?.toLowerCase();
+
+  const dynamicMetadata: Metadata = {
+    //? Basic metadata
+    title: `${lang === 'es' ? 'Secciones' : 'Sections'}`,
+    generator: 'Luna News',
+    applicationName: 'Luna News',
+    referrer: 'origin-when-cross-origin',
+    keywords: `${lang === 'es' 
+      ? 'Secciones' 
+      : 'Sections'
+    }`,
+    authors: { name: 'Alberto' },
+    creator: 'Alberto Luna',
+    publisher: 'Alberto Luna',
+    metadataBase: new URL('https://www.lunanews.tech/en/sections'),
+    alternates: {
+      languages: {
+        'en-US': 'https://www.lunanews.tech/en/sections',
+        'es-MX': 'https://www.lunanews.tech/es/sections',
+      },
+    },
+  };
+
+  return dynamicMetadata;
+};
 
 function Sections () {
   const t = useTranslations('Coverpage');

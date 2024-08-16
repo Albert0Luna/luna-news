@@ -22,6 +22,7 @@
   gap: 2rem;
   align-items: center;
   margin: 0 1rem;
+  max-width: 450px;
 }
 
 .highlights_item {
@@ -113,6 +114,7 @@
     gap: 2rem;
     align-items: center;
     margin: 0 1rem;
+    max-width: 90%;
   }
 
   .highlight_name {

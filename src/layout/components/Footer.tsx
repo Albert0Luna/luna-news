@@ -27,7 +27,7 @@ export default function Footer () {
         <Link href='https://www.tiktok.com/@luna_digital_tech' target='_blank'>
           <TiktokIcon />
         </Link>
-        <Link href='https://x.com/NeonGeeksX' target='_blank'>
+        <Link href='https://x.com/LunaNewsX' target='_blank'>
           <XIcon/>
         </Link>
         <Link href='https://www.facebook.com/people/Luna-News/61563954901464/' target='_blank'>

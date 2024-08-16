@@ -3,8 +3,24 @@ import { MDXRemote } from 'next-mdx-remote/rsc';
 import Profile from '@/src/news/components/Profile';
 import { redirect } from '@/src/navigation';
 import { cookies } from 'next/headers';
-import {fetchNewsEn, fetchNewsEs, fetchMetaDataNewsEs, fetchMetaDataNewsEn} from '@/src/app/lib/data';
+import { fetchMetaDataNewsEs, fetchMetaDataNewsEn} from '@/src/app/lib/data';
 import Adsense from '@/src/rootComponents.tsx/components/Adsense';
+import GoogleAdUnit from '@/src/rootComponents.tsx/components/GoogleAdUnit';
+
+export async function fetchNewsEs (new_code: string) {
+  const response = await fetch('http://www.lunanews.tech/api/esNews');
+  const data = await response.json();
+  const filteredSection = data.find((item : any) => item.new_code === new_code);
+  return filteredSection;
+}
+
+export async function fetchNewsEn (new_code: string) {
+  const response = await fetch('http://www.lunanews.tech/api/enNews');
+  const data = await response.json();
+  const filteredSection = data.find((item : any) => item.new_code === new_code);
+  return filteredSection;
+}
+
 
 export async function generateMetadata ({ params }: { params: { id: string } }) {
 
@@ -26,8 +42,7 @@ export async function generateMetadata ({ params }: { params: { id: string } }) 
   }
 
   if (defaultLang === 'en') {
-    const newMetaData = await fetchMetaDataNewsEn(newCode);
-    const newData = newMetaData[0];
+    const newData = await fetchNewsEn(newCode);
     
     if (!newData) {
       return redirect('https://www.lunanews.tech');
@@ -36,41 +51,42 @@ export async function generateMetadata ({ params }: { params: { id: string } }) 
       return {
       //? Basic metadata
         title: `${newData?.title}`,
-        generator: 'Luna News',
+        generator: 'Next.js',
         applicationName: 'Luna News',
         referrer: 'origin-when-cross-origin',
         keywords: [`${newData?.keywords}`],
         authors: { name: newData?.author_id === 'alberto-luna' ? 'Alberto' : 'Unknown' },
         creator: 'Alberto Luna',
-        publisher: 'Alberto Luna',
+        publisher: 'Luna News',
         formatDetection: { email: 'neongeeksofficial@gmail.com'},
-        metadataBase: new URL('https://lunanews.tech'),
+        metadataBase: new URL('https://www.lunanews.tech'),
         alternates: {
-          canonical: `https://lunanews.tech/en/${newData?.id}`,
+          canonical: `https://www.lunanews.tech/en/${newData._id}`,
           languages: {
-            'en-US': `https://lunanews.tech/en/${newData?.id}`,
-            'x-default': `https://lunanews.tech/en/${newData?.id}`,
+            'en-US': `${newData.url_en}`,
+            'es-MX': `${newData.url_es}`,
+            'x-default': `${newData.url_en}`,
           },
         },
   
         //? Open Graph metadata
         openGraph: {
           title: `${newData?.title} - Luna News`,
-          description: `${newData?.mini_desc}`,
-          url: `https://lunanews.tech/${newData?.lang}/${newData?.id}`,
+          description: `${newData?.summary}`,
+          url: `${newData.url_en}`,
           siteName: 'Luna News',
           images: [
             {
-              url: `${newData?.thumbnail}`, 
+              url: `${newData?.thumbnail_image}`, 
               width: 800,
               height: 600,
             }
           ],
           locale: ['en_US', 'es_MX'],
           type: 'article',
-          publishedTime: `${new Date(newData?.date)}`,
-          modifiedTime: `${new Date(newData?.lastModified)}`,
-          author: `${newData?.author_id === 'alberto-luna' ? 'Alberto' : 'Unknown'}`,
+          publishedTime: `${new Date(newData?.createdAt)}`,
+          modifiedTime: `${new Date(newData?.updatedAt)}`,
+          author: `${newData?.author_id === 'alberto-luna' ? 'Alberto Luna' : 'Unknown'}`,
           section: `${newData?.sections}`,
           tags: [`${newData?.keywords}`]
         },
@@ -79,79 +95,78 @@ export async function generateMetadata ({ params }: { params: { id: string } }) 
         twitter: {
           card: 'summary_large_image',
           title: `${newData?.title} - Luna News`,
-          description: `${newData?.mini_desc}`,
-          siteId: '1467726470533754880',
-          creator: '@NeonGeeksX',
-          creatorId: '1467726470533754880',
-          images: [`${newData?.thumbnail}`]
+          description: `${newData?.summary}`,
+          siteId: '@LunaNewsX',
+          creator: '@LunaNewsX',
+          creatorId: '@LunaNewsX',
+          images: [`${newData?.thumbnail_image}`]
         },
       };
     }
   } else if (defaultLang === 'es') {
-    const newMetaData = await fetchMetaDataNewsEs(newCode);
-    const newData = newMetaData[0];
+    const newData = await fetchNewsEs(newCode);
 
     if (!newData) {
       return redirect('https://www.lunanews.tech');
     }
     if (newData) {
       return {
-      //? Basic metadata
-        title: `${newData?.title} - Luna News`,
-        generator: 'Luna News',
+        //? Basic metadata
+        title: `${newData?.title}`,
+        generator: 'Next.js',
         applicationName: 'Luna News',
         referrer: 'origin-when-cross-origin',
         keywords: [`${newData?.keywords}`],
         authors: { name: newData?.author_id === 'alberto-luna' ? 'Alberto' : 'Unknown' },
         creator: 'Alberto Luna',
-        publisher: 'Alberto Luna',
+        publisher: 'Luna News',
         formatDetection: { email: 'neongeeksofficial@gmail.com'},
-        metadataBase: new URL('https://lunanews.tech'),
+        metadataBase: new URL('https://www.lunanews.tech'),
         alternates: {
-          canonical: `https://lunanews.tech/es/${newData?.id}`,
+          canonical: `https://www.lunanews.tech/es/${newData._id}`,
           languages: {
-            'es-MX': `https://lunanews.tech/es/${newData?.id}`,
-            'x-default': `https://lunanews.tech/es/${newData?.id}`,
+            'en-US': `${newData.url_en}`,
+            'es-MX': `${newData.url_es}`,
+            'x-default': `${newData.url_en}`,
           },
         },
-  
+    
         //? Open Graph metadata
         openGraph: {
           title: `${newData?.title} - Luna News`,
-          description: `${newData?.mini_desc}`,
-          url: `https://lunanews.tech/${newData?.lang}/${newData?.id}`,
+          description: `${newData?.summary}`,
+          url: `${newData.url_en}`,
           siteName: 'Luna News',
           images: [
             {
-              url: `${newData?.thumbnail}`, 
+              url: `${newData?.thumbnail_image}`, 
               width: 800,
               height: 600,
             }
           ],
           locale: ['en_US', 'es_MX'],
           type: 'article',
-          publishedTime: `${new Date(newData?.date)}`,
-          modifiedTime: `${new Date(newData?.lastModified)}`,
-          author: `${newData?.author_id === 'alberto-luna' ? 'Alberto' : 'Unknown'}`,
+          publishedTime: `${new Date(newData?.createdAt)}`,
+          modifiedTime: `${new Date(newData?.updatedAt)}`,
+          author: `${newData?.author_id === 'alberto-luna' ? 'Alberto Luna' : 'Unknown'}`,
           section: `${newData?.sections}`,
           tags: [`${newData?.keywords}`]
         },
-  
+    
         //? Twitter metadata
         twitter: {
           card: 'summary_large_image',
           title: `${newData?.title} - Luna News`,
-          description: `${newData?.mini_desc}`,
-          siteId: '1467726470533754880',
-          creator: '@NeonGeeksX',
-          creatorId: '1467726470533754880',
-          images: [`${newData?.thumbnail}`]
+          description: `${newData?.summary}`,
+          siteId: '@LunaNewsX',
+          creator: '@LunaNewsX',
+          creatorId: '@LunaNewsX',
+          images: [`${newData?.thumbnail_image}`]
         },
       };
     }
   }
 }
-
 
 export default async function Page ({params}: {params: {id: string}}) {
   
@@ -179,14 +194,13 @@ export default async function Page ({params}: {params: {id: string}}) {
     //? Get the new code
     const parts = params.id.split('__');
     const newCode = parts[1];
-
     const selectData = await fetchNewsEn(newCode);
-    const selectedArticle =  selectData[0];
+
     if (!(selectedLang === suffix)) {
-      redirect(`/${selectedArticle?.id}`);
+      redirect(`/${selectData?._id}`);
       return; 
     }
-    selectedNew = selectedArticle;
+    selectedNew = selectData;
   } else if (selectedLang === 'es') {
     //?Get the prefix
     const prefix = params.id.split('_');
@@ -196,16 +210,15 @@ export default async function Page ({params}: {params: {id: string}}) {
     const newCode = parts[1];
     const selectData = await fetchNewsEs(newCode);
 
-    const selectedArticle = selectData[0];
     if (!(selectedLang === suffix)) {
-      redirect(`/${selectedArticle?.id}`);
+      redirect(`/${selectData?._id}`);
       return;
     }
-    selectedNew = selectedArticle;
+    selectedNew = selectData;
   }
 
   
-  const fechaDB = selectedNew?.date;
+  const fechaDB = selectedNew?.createdAt;
 
   const currentDate = new Date();
   const updateDate = new Date((fechaDB) as string);
@@ -220,7 +233,7 @@ export default async function Page ({params}: {params: {id: string}}) {
 
   //*? Last update
 
-  const lastUpdate = selectedNew?.lastModified;
+  const lastUpdate = selectedNew?.updatedAt;
 
   const lastUpdateDate = new Date((lastUpdate as string));
 
@@ -234,17 +247,18 @@ export default async function Page ({params}: {params: {id: string}}) {
 
   return (
     <main>
-      <Adsense />
+      {/**<Adsense /> */}
       <section className='new'>
         <h1 className='new_title'>{selectedNew?.title}</h1>
         <p className='new_read_time'>{selectedNew?.read_time}</p>
         <div className='new_info'>
+      
           <div className='new_info_text'>
             {<Profile authorId={selectedNew?.author_id}/>}
 
             <p className='new_info_date'>
               {
-                lastUpdate 
+                lastUpdate !== fechaDB
                   ? Number.isFinite(Math.round(lastUpdateYear)) && Math.round(lastUpdateYear) < 0
                     ? `${lang?.value === 'en' ? 'Last update' : 'Última actualización'} ${rtf.format(Math.round(lastUpdateYear), 'year')}`
                     : Number.isFinite(Math.round(lastUpdateMonth)) && Math.round(lastUpdateMonth) < 0
@@ -269,6 +283,9 @@ export default async function Page ({params}: {params: {id: string}}) {
               src={selectedNew?.main_image} 
               alt={selectedNew?.image_alt} 
             />
+            <small>
+              {`${selectedNew === 'en' ? 'Fuente:' : 'Source:'}`} <a href={selectedNew?.main_image_source.url} className='new_info_source' >{selectedNew?.main_image_source.source_name}</a>
+            </small>
           </picture>
         </div>
 
@@ -277,8 +294,9 @@ export default async function Page ({params}: {params: {id: string}}) {
             selectedNew?.content.map((item : string, index: number) => (
               <>
                 <MDXRemote key={index} source={item} />
-                {/*
-                 <GoogleAdUnit>
+
+
+                {/*<GoogleAdUnit>
                   <ins className="adsbygoogle"
                     style={{display: 'block', textAlign: 'center'}}
                     data-ad-layout="in-article"
@@ -286,16 +304,14 @@ export default async function Page ({params}: {params: {id: string}}) {
                     data-ad-client="ca-pub-5368714617786898"
                     data-ad-slot="8032217154"></ins>
                 </GoogleAdUnit>
-  
-                 */}
+                */}
                 
               </>
             ))
           }
-          <MDXRemote source={(selectedNew?.final as string)} />
+          <MDXRemote source={(selectedNew?.conclusion as string)} />
 
         </article>
-        
       </section>
     </main>
   );

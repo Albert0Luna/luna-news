@@ -1,0 +1,446 @@
+[{
+  "_id": "las-nuevas-server-islands-de-astro-y-que-json_ES__1",
+  "new_code": "1",
+  "url_es": "https://lunanews.tech/es/las-nuevas-server-islands-de-astro-y-que-json_ES__1",
+  "url_en": "https://lunanews.tech/en/the-new-server-islands-of-astro-and-what-they-are_EN__1",
+  "language": "es",
+  "read_time": "5 minutos",
+  "sections": [
+    "Programación"
+  ],
+  "title": "Las nuevas Server Islands de Astro y ¿Qué son?",
+  "main_image": "https://res.cloudinary.com/dis6nw4o7/image/upload/v1722377650/astro_zksruo.jpg",
+  "thumbnail_image": "https://res.cloudinary.com/dis6nw4o7/image/upload/v1722377705/astro_thumbnail_civqth.jpg",
+  "image_alt": "Imagen de las nuevas Server Islands de Astro",
+  "main_image_source": {
+    "source_name": "Astro",
+    "url": "https://astro.build/"
+  },
+  "author_id": "alberto-luna",
+  "summary": "Astro ha lanzado una nueva característica llamada Server Islands que promete revolucionar la forma en que se crean sitios web. Descubre qué son y cómo funcionan.",
+  "content": [
+    "Si ya conoces <a href='https://astro.build/' target='_blank'>Astro</a>, sabrás que es un marco de trabajo moderno para la creación de sitios web, diseñado para ser rápido, sencillo y escalable.\n\nUna de las características más destacadas de <a href='https://astro.build/' target='_blank'>Astro</a> son las <a href='https://docs.astro.build/es/concepts/islands/' target='_blank'>\"islas\"</a>, una tecnología que ha popularizado, permitiendo que las páginas sean sorprendentemente rápidas gracias a su interactividad limitada a ciertas áreas.\n\nSin embargo, estas <a href='https://docs.astro.build/es/concepts/islands/' target='_blank'>\"islas\"</a> tradicionales tenían un inconveniente: se cargaban en el cliente. Esto funcionaba bien para sitios estáticos sin backend, como blogs o páginas de portafolio, pero se volvía complicado para sitios que requerían contenido de backend dinámico, como un e-commerce.\n\nAquí es donde las Server Islands se convierten en una solución ingeniosa, manteniendo el mismo concepto de las <a href='https://docs.astro.build/es/concepts/islands/' target='_blank'>\"islas\"</a> tradicionales pero con la capacidad de procesar código desde el backend.\n\n<div class='divisor'></div>\n\n## ¿Cómo funcionan y cuándo puedo utilizarlas?\n\n<picture>\n\n<img src='https://res.cloudinary.com/dis6nw4o7/image/upload/v1722377769/190c148b-758c-4506-aefd-1c649a689a95.png' alt='Astro Server Islands Excalidraw' /><small>\n\nFuente:\n<a href='https://astro.build/' target='_blank' >\n\nAstro\n\n</a>\n\n</small>\n\n</picture>\n\nLas <a href='https://astro.build/blog/astro-4120/#experimental-server-islands' target='_blank'>Server Islands</a> pueden procesar código de backend en el lado del servidor. Lo genial es que puedes tener varias islas sin tener que esperar a que carguen para que el contenido se renderice. Astro se encarga de renderizarlas en el servidor y enviarlas al cliente.\n\nEs importante tener en cuenta que las <a href='https://astro.build/blog/astro-4120/#experimental-server-islands' target='_blank'>Server Islands</a> son muy útiles para contenido dinámico que no cambia frecuentemente. Por ejemplo, pueden no ser la mejor opción para contenido que se actualiza constantemente, como una red social.\n\nActualmente, esta característica está en fase beta, pero puedes probarla de manera experimental en la versión <a href='https://astro.build/blog/astro-4120/' target='_blank'>Astro 4.12</a>, que aún no ha sido lanzada oficialmente.",
+    "<div class='divisor'></div>\n\n## ¿Qué tanto se parecen las Server Islands de Astro a las PPR de Next.js?\n\n\n\n\n\n<picture>\n\n<img src='https://res.cloudinary.com/dis6nw4o7/image/upload/v1722378234/astromasonext_ip6kkm.png' alt='Astro = Next.js' /><small>\n\nFuente:\n<a href='/' target='_blank' >\n\nLuna News\n\n</a>\n\n</small>\n\n</picture>\n\n\n\n\n\nLas Server Islands de <a href='https://astro.build/' target='_blank'>Astro</a> son similares a las <a href='https://nextjs.org/docs/app/api-reference/next-config-js/partial-prerendering' target='_blank'>PPR (Pre-rendering con Prefetch) de Next.js</a>, ya que ambas tecnologías permiten renderizar contenido en el servidor y enviarlo al cliente. Sin embargo, las Server Islands de <a href='https://astro.build/' target='_blank'>Astro</a> son más fáciles de implementar y, en algunos benchmarks, se ha demostrado que son más rápidas que las PPR de Next.js."
+  ],
+  "conclusion": "<div class='divisor'></div>)\n\n## Conclusión\n\nLas Server Islands de <a href='https://astro.build/' target='_blank'>Astro</a> son una característica muy interesante que promete revolucionar la forma en que se crean sitios web. Permiten tener un backend en un sitio estático sin sacrificar la velocidad y simplicidad de <a href='https://astro.build/' target='_blank'>Astro</a>. Aunque esta característica aún está en modo experimental, es algo a tener en cuenta para el futuro de Astro y la creación de sitios web modernos y rápidos.",
+  "keywords": [
+    "Astro",
+    "Server Islands",
+    "Backend",
+    "Astro 4.12",
+    "Next.js",
+    "PPR"
+  ],
+  "createdAt": {
+    "$date": "2024-07-30T01:54:13.738Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-16T01:37:21.168Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "los-nuevos-procesadores-chinos-que-amenazan-a-intel-y-amd_ES__2",
+  "new_code": "2",
+  "url_es": "https://lunanews.tech/es/los-nuevos-procesadores-chinos-que-amenazan-a-intel-y-amd_ES__2",
+  "url_en": "https://lunanews.tech/en/the-new-chinese-processors-that-threaten-intel-and-amd_EN__2",
+  "language": "es",
+  "read_time": "6 minutos",
+  "sections": [
+    "Pc & Laptops"
+  ],
+  "title": "Los nuevos procesadores chinos que amenazan a Intel y AMD",
+  "main_image": "https://res.cloudinary.com/dis6nw4o7/image/upload/v1723260272/imagen_3_wcod7a.jpg",
+  "thumbnail_image": "https://res.cloudinary.com/dis6nw4o7/image/upload/v1721959902/loongson_thumbnail_xfq7dk.jpg",
+  "image_alt": "Imagen de los nuevos procesadores chinos",
+  "main_image_source": {
+    "source_name": "Loongson",
+    "url": "https://www.loongson.cn/"
+  },
+  "author_id": "alberto-luna",
+  "summary": "Los nuevos procesadores Loongson representan una amenaza para Intel y AMD. Descubre sus características y cómo podrían cambiar el panorama de la industria de los semiconductores.",
+  "content": [
+    "Los nuevos procesadores <a href='https://www.loongson.cn' target='_blank'>Loongson</a> representan la respuesta del gigante asiático a la creencia de que China no puede desarrollar sus propios procesadores. En julio de 2024, se presentó el nuevo procesador <a href='https://www.loongson.cn/EN/product/show?id=11' target='_blank'>Loongson LS3C6000</a>, diseñado principalmente para servidores, pero también apto para equipos de escritorio. Este lanzamiento es un presagio de lo que podría ocurrir en un futuro no muy lejano.\n\n<div class='divisor'></div>\n\n## Características más destacadas\n\nEste procesador cuenta con características muy interesantes que no tienen nada que envidiar a los procesadores de Intel o AMD. Algunas de sus características más destacadas son:\n\n* **Frecuencia:** 2.0-2.5GHz\n\n* **Velocidad de cálculo máxima:** 240 GFLOPS\n\n* **Núcleos físicos:** 4\n\n* **Núcleos lógicos:** 8\n\n* **Caché de alta velocidad:** El procesador cuenta con una caché privada por cada núcleo y una caché compartida de 16MB.\n\n* **Empaquetado:** Viene en un paquete BGA de 35mm×35mm con 1,190 pines.\n\n* **Gestión de energía:** Compatible con la escala de voltaje dinámica en los dominios de voltaje principales.\n\n* **Consumo de energía típico:** 38W\n\n<div class='divisor'></div>\n\n## ¿Qué se puede hacer con este procesador?\n\n\n\n\n\n<picture>\n\n<img src='https://res.cloudinary.com/dis6nw4o7/image/upload/v1721959602/imagen_1_ntatsf.jpg' alt='loongson LS3C6000' /><small>\n\nFuente:\n<a href='https://www.loongson.cn' target='_blank' >\n\nLoongson\n\n</a>\n\n</small>\n\n</picture>\n\n\n\n\n\nDebido a sus destacadas características, este procesador puede ser utilizado en diversas áreas como:\n\n* **Servidores:** Ideal para servidores debido a su gran cantidad de núcleos y su velocidad de cálculo máxima de 240 GFLOPS.\n\n* **Estaciones de trabajo:** Con una frecuencia de 2.0-2.5GHz y 8 núcleos lógicos, es apto para estaciones de trabajo.\n\n* **Equipos de escritorio:** Suficiente para satisfacer las necesidades de un usuario común.\n\n* **Centros de datos:** Perfecto para centros de datos gracias a su velocidad de cálculo y numerosos núcleos.\n\n* **Gaming:** Aunque no es su principal enfoque, puede ser utilizado para gaming debido a sus 8 núcleos lógicos y su frecuencia.",
+    "<div class='divisor'></div>\n\n## ¿Son estos nuevos procesadores una amenaza para Intel y AMD?\n\nSi bien este procesador no es tan potente como los procesadores tope de gama de Intel o AMD, representa una amenaza para estos dos gigantes. El Loongson 3A6000 presenta una mejora significativa del rendimiento en <a href='https://www.loongson.cn/EN/product/show?id=11' target='_blank'>comparación con el Loongson 3A5000, con un aumento del 60% y el 90%</a>. Si esta evolución continúa, podría convertirse en una gran competencia para Intel y AMD en un futuro no muy lejano.\n\n<div class='divisor'></div>\n\n## ¿Cuál sería la posición de Estados Unidos y Occidente?\n\nAunque actualmente este procesador no representa una gran amenaza para la industria, es un ejemplo de lo que China puede lograr en un futuro. Estados Unidos y Occidente deben estar preparados para lo que pueda suceder. La posibilidad de que este procesador se venda de manera masiva en Occidente es complicada debido a la guerra comercial entre China y Estados Unidos, y la situación de Taiwán. En 2024, China inyectó más de <a href='https://www.france24.com/es/minuto-a-minuto/20240528-china-invierte-m%C3%A1s-de-47-000-millones-de-d%C3%B3lares-para-reforzar-su-industria-de-chips' target='_blank'>47.000 millones de dólares</a> en un fondo de inversión para reforzar su industria de desarrollo e investigación de semiconductores, lo que indica su fuerte compromiso con este sector."
+  ],
+  "conclusion": "## Conclusión\n\nLos nuevos procesadores Loongson representan un avance significativo en la industria de los semiconductores y una muestra del potencial de China en este campo. Aunque actualmente no representan una gran amenaza para Intel y AMD, es un presagio de lo que podría ocurrir en un futuro no muy lejano. Estados Unidos y Occidente deben estar preparados para lo que pueda suceder y no subestimar el potencial de China en este sector.\n\n<div class='divisor'></div>",
+  "keywords": [
+    "Loongson",
+    "Procesadores",
+    "China",
+    "Intel",
+    "AMD"
+  ],
+  "createdAt": {
+    "$date": "2024-07-30T01:54:13.738Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-16T01:37:21.168Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "lubuntu-el-sistema-operativo-ligero-para-ordenadores-antiguos_ES__3",
+  "new_code": "3",
+  "url_es": "https://lunanews.tech/es/lubuntu-el-sistema-operativo-ligero-para-ordenadores-antiguos_ES__3",
+  "url_en": "https://lunanews.tech/en/lubuntu-the-lightweight-operating-system-for-old-computers_EN__3",
+  "language": "es",
+  "read_time": "6 minutos",
+  "sections": [
+    "Pc & Laptops"
+  ],
+  "title": "Lubuntu: El Sistema Operativo Ligero para Ordenadores Antiguos",
+  "main_image": "https://res.cloudinary.com/dis6nw4o7/image/upload/v1722379967/astro_thumbnail_w1hzc9.jpg",
+  "thumbnail_image": "https://res.cloudinary.com/dis6nw4o7/image/upload/v1722380053/astro_thumbnail_1_asxc6z.jpg",
+  "image_alt": "Imagen de Lubuntu",
+  "main_image_source": {
+    "source_name": "Lubuntu",
+    "url": "https://lubuntu.me/"
+  },
+  "author_id": "alberto-luna",
+  "summary": "Qué es Lubuntu y cómo puede ayudarte a revivir tu ordenador antiguo. Descubre sus características, ventajas e inconvenientes, y si es recomendable para ti.",
+  "content": [
+    "<a href='https://lubuntu.me/' target='_blank'>Lubuntu</a> es una variante de <a href='https://ubuntu.com/' target='_blank'>Ubuntu</a> diseñada para ofrecer un rendimiento eficiente en ordenadores con hardware más antiguo o menos potente.\n\nSu nombre, una combinación de “lightweight” y <a href='https://ubuntu.com/' target='_blank'>Ubuntu</a>,” refleja su objetivo: proporcionar un sistema operativo ligero pero funcional. Utiliza el entorno de escritorio LXQt para minimizar los requisitos de hardware mientras mantiene una apariencia moderna y clara.\n\n<div class='divisor'></div>\n\n## Historia y Evolución\n\n<a href='https://lubuntu.me/' target='_blank'>Lubuntu</a> comenzó en 2009 como un proyecto comunitario liderado por Mario Behling, que buscaba desarrollar una versión minimalista de <a href='https://ubuntu.com/' target='_blank'>Ubuntu</a>.\n\nLa primera versión se lanzó como live CD en septiembre de 2009, y la instalación completa se hizo disponible al año siguiente. Desde entonces, <a href='https://lubuntu.me/' target='_blank'>Lubuntu</a> se ha convertido en una opción oficial dentro de la familia Ubuntu, con versiones lanzadas cada seis meses y la versión LTS (Long-Term Support) comenzando en 2013.\n\n<div class='divisor'></div>\n\n## Requisitos de Sistema\n\nUno de los mayores atractivos de <a href='https://lubuntu.me/' target='_blank'>Lubuntu</a> es su bajo consumo de recursos. Los requisitos mínimos incluyen un procesador de 700 MHz, 512 MB de RAM y 5 GB de almacenamiento.\n\nA partir de la versión 19.04, <a href='https://lubuntu.me/' target='_blank'>Lubuntu</a> ya no soporta sistemas de 32 bits, enfocándose en hardware más moderno para ofrecer una mejor experiencia.\n\n<div class='divisor'></div>\n\n## Programas y Aplicaciones\n\n<a href='https://lubuntu.me/' target='_blank'>Lubuntu</a> viene con una selección de programas preinstalados adecuados para tareas diarias, incluyendo Featherpad para edición de texto, LibreOffice Writer y Calc para trabajos de oficina, y Mozilla Firefox como navegador web. También cuenta con el reproductor VLC y el gestor de red NetworkManager. Los usuarios pueden instalar una amplia gama de aplicaciones adicionales según sus necesidades.",
+    "<div class='divisor'></div>\n\n## Características Distintiva\n\n<a href='https://lubuntu.me/' target='_blank'>Lubuntu</a> se diferencia de Ubuntu principalmente en su entorno de usuario y en sus requisitos de hardware. LXQt proporciona una interfaz clara y minimalista que ahorra recursos y asegura un rendimiento fluido incluso en equipos más antiguos. Este enfoque permite que los usuarios nuevos se adapten rápidamente, aunque el sistema omite algunos efectos gráficos avanzados.\n\n<div class='divisor'></div>\n\n## Ventajas e Inconvenientes\n\n### Ventajas\n\n- **Bajos Requisitos de Hardware**: Ideal para ordenadores antiguos o menos potentes, <a href='https://lubuntu.me/' target='_blank'>Lubuntu</a> ofrece un rendimiento eficiente con un mínimo consumo de recursos.\n\n- **Gratuito y Libre de Publicidad**: Sin costes asociados y sin anuncios intrusivos.\n\n- **Software Abundante**: Compatible con numerosas aplicaciones gratuitas y accesibles.\n\n- **Facilidad de Uso**: La interfaz LXQt es intuitiva y accesible, con soporte en español.\n\n- **Soporte y Comunidad**: Actualizaciones periódicas y una activa comunidad de usuarios.\n\n<div class='divisor'></div>\n\n### Inconvenientes\n\n- **Limitaciones de Software:** Algunas aplicaciones más grandes pueden no funcionar adecuadamente, y las aplicaciones de Windows pueden requerir herramientas adicionales.\n\n- **Aspecto Visual:** El diseño minimalista puede carecer de algunos efectos gráficos y funcionalidades avanzadas.\n\n- **Configuración Inicial:** Puede requerir conocimientos adicionales para usuarios que vienen de otros sistemas operativos como Windows o macOS.\n\n<div class='divisor'></div>\n\n## ¿Para Quién es Recomendable Lubuntu?\n\n\n\n\n\n<picture>\n\n<img src='https://lubuntu.me/wp-content/uploads/2024/04/try-or-install.png' alt='App de ubuntu abiertas' /><small>\n\nFuente:\n<a href='https://lubuntu.me/' target='_blank' >\n\nLubuntu\n\n</a></small>\n\n</picture>\n\n\n\n\n\n<a href='https://lubuntu.me/' target='_blank'>Lubuntu</a> es especialmente adecuado para usuarios que necesitan revitalizar hardware antiguo o limitado. Con su enfoque en la eficiencia y su entorno de escritorio moderno, puede ser una opción viable incluso para ordenadores más nuevos. \n\nSin embargo, si se prioriza la ejecución de aplicaciones pesadas o se busca una experiencia gráfica avanzada, otras distribuciones de Linux pueden ser más apropiadas.\n\n<a href='https://lubuntu.me/' target='_blank'>Lubuntu</a> 20.04: Ligereza y Eficiencia en Acción\n\n<div class='divisor'></div>\n\n## Descripción y Características\n\n<a href='https://lubuntu.me/' target='_blank'>Lubuntu</a> 20.04 se destaca por su ligereza y su entorno de escritorio LXQt, que minimiza el consumo de recursos del sistema.\n\nEste sistema operativo es ideal para rejuvenecer ordenadores antiguos, permitiéndoles funcionar como centros multimedia o máquinas de respaldo. Con un kernel 5.4, <a href='https://lubuntu.me/' target='_blank'>Lubuntu</a> 20.04 se mantiene alineado con el resto de las distribuciones de su versión.\n\n<div class='divisor'></div>\n\n## Gestión y Configuración\n\nEl gestor de ventanas de <a href='https://lubuntu.me/' target='_blank'>Lubuntu</a> es ágil y confiable, aunque la personalización del sistema, como cambiar el fondo de pantalla, puede ser menos intuitiva para los nuevos usuarios. La falta de un centro de software integrado es otro punto a considerar, aunque se puede instalar la Snap Store u otros centros de software."
+  ],
+  "conclusion": "<div class='divisor'></div>\n\n## Recomendaciones\n\n<a href='https://lubuntu.me/' target='_blank'>Lubuntu</a> 20.04 es ideal para usuarios con experiencia en Linux que buscan optimizar hardware antiguo.\n\nLa distribución ofrece una experiencia sólida, pero puede no ser la opción más amigable para principiantes debido a la necesidad de conocimientos adicionales para la configuración. \n\nLa recomendación es probarla si tienes experiencia en Linux y quieres revivir un ordenador antiguo.\n\n<div class='divisor'></div>",
+  "keywords": [
+    "Lubuntu",
+    "Ubuntu",
+    "LXQt",
+    "Sistema Operativo",
+    "Hardware Antiguo"
+  ],
+  "createdAt": {
+    "$date": "2024-07-30T01:54:13.738Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-16T01:37:21.168Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "mejor-pc-gamer-por-menos-de-500-usd_ES__6",
+  "new_code": "6",
+  "url_es": "https://lunanews.tech/es/mejor-pc-gamer-por-menos-de-500-usd_ES__6",
+  "url_en": "https://lunanews.tech/en/best-gaming-pc-under-500-usd_EN__6",
+  "language": "es",
+  "read_time": "5 minutos",
+  "sections": [
+    "Gaming",
+    "Pc & Laptops"
+  ],
+  "title": "Mejor PC Gamer por menos de $500 USD",
+  "main_image": "https://res.cloudinary.com/dis6nw4o7/image/upload/v1722400055/pc-corsair_um3x3c.jpg",
+  "thumbnail_image": "https://res.cloudinary.com/dis6nw4o7/image/upload/v1722400055/pc-corsair_um3x3c.jpg",
+  "image_alt": "Imagen de PC Gamer",
+  "main_image_source": {
+    "source_name": "Corsair",
+    "url": "https://www.corsair.com"
+  },
+  "author_id": "alberto-luna",
+  "summary": "Descubre cómo armar una PC gamer económica por menos de $500 USD. Conoce los componentes necesarios y las recomendaciones para disfrutar de tus juegos favoritos.",
+  "content": [
+    "Hoy vamos a ver una PC gamer económica que puedes armar por menos de $500 USD. \n\nEste presupuesto es ideal para aquellos que quieren iniciarse en el mundo del gaming sin gastar una fortuna. \n\nAunque no es un equipo de gama alta, es capaz de correr la mayoría de los juegos actuales con una calidad gráfica decente a buena. Además, este PC tiene una ventaja que veremos más adelante.\n\n<div class='divisor'></div>\n\n## (Gabinete) Corsair 4000D Airflow Chasis ATX\n\n![Corsair 4000D](https://res.cloudinary.com/dis6nw4o7/image/upload/v1722400678/40c8f07e-407e-423f-abe1-ced4c8d19e6e.png)\n\nEl <a href='https://www.amazon.com.mx/Corsair-4000D-Airflow-Templado-Media-Torre/dp/B08C74694Z/ref=sr_1_1?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3I0ONEEK6NVHM&dib=eyJ2IjoiMSJ9.fbOupylx0kZoWtLTxSA2U4ug1xKXVF5RQyQsCkxs3el2N7Uz_1jnTtnPBUJ4NAV_Cy8AeYKLe-gt_ZP5gE10SpdbT4CHhfrvISKHuIay732eumOCgOhTWMbSz8jk1o5F2F7wIt0_osgvoxzUSxwhhY4RrKrd4xxZelRhtekHmNDJA5wDSFS6FbOpDzwUS0zmoDbzRQUxr7xxEaFYmUKHqH_jpDRPTJPkvkDqaeuPnJAui7n4eHf3Z4uWrtLn4ItSBgVXoWZBdQ3uR7NsCB85lr7KA0tKk80MkoDZhIy3WuQ.O8zUFMmnX7cwW6G2LcuP5OMXqOI2R-Ki9MLM6TOlboQ&dib_tag=se&keywords=Corsair+4000D+Airflow+Chasis+ATX&qid=1722282398&s=electronics&sprefix=%2Celectronics%2C314&sr=1-1&ufe=app_do%3Aamzn1.fos.242f5c11-6cfd-40d6-91f6-be3d1974080c' target='_blank'>Corsair 4000D</a> es un gabinete de PC de alta calidad diseñado para ofrecer un excelente flujo de aire y una construcción robusta. Cuenta con un panel frontal de acero sólido con amplios canales de ventilación, lo que garantiza una refrigeración eficiente.\n\n**Nota:** El gabinete incluye dos ventiladores de 120 mm preinstalados, pero puedes agregar más ventiladores o un sistema de refrigeración líquida para mejorar aún más la refrigeración de tu PC.\n\n<div class='divisor'></div>\n\n## (Tarjeta madre) GIGABYTE B550M DS3H\n\n![GIGABYTE B550M DS3H](https://res.cloudinary.com/dis6nw4o7/image/upload/v1722281805/0ac90f2d-ef44-4f6a-b898-68e0f155d742.png)\n\nLa placa base <a href='https://www.amazon.com.mx/Gigabyte-889523022917-B550M-DS3H/dp/B089FY7QT1/ref=sr_1_1?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=L9MPCJT1PS4V&dib=eyJ2IjoiMSJ9.fbhUYdqrZF10AAoIZbnfp6t6fne_xwpUL07OpIsL1gPS_ygwwpIqkz_3J_3BXpUbEzIyOAIbKYJez-_65GLRyB-GxC-xSrTKDXW5t6D_fDhc6p-EHlDG1HrcbFQG7lKzACDKEbq744JSSSZkVxp0Vs1hvRyjfE2hNaD9NhpjXRGK33IvUZJ8wL82ey8y11S9HeJc2DNqD54rqwIxJdSBbvESQMUtmzlnO9ul4fOgwHx-zE-YIV0j3cSEL4tXA_JF4GOLARSEYLUE54TU_UircTVqdNhOKuzXpsHGOOf4u74.m2SLhMRy6aeb4Nisphj2EeqhY4dHioB-0LgNGON_UxI&dib_tag=se&keywords=GIGABYTE+B550M+DS3H&qid=1722282439&sprefix=gigabyte+b550m+ds3h%2Caps%2C296&sr=8-1&ufe=app_do%3Aamzn1.fos.242f5c11-6cfd-40d6-91f6-be3d1974080c' target='_blank'>GIGABYTE B550M DS3H</a> es una excelente opción para ensamblar un PC potente y versátil. Está diseñada para funcionar con los procesadores AMD Ryzen de 3ª generación y ofrece una alimentación estable y eficiente gracias a su sistema VRM digital. Disfruta de altas velocidades de transferencia de datos con las ranuras PCIe 4.0.\n\n**Nota:** Esta tarjeta madre es compatible con los procesadores Ryzen de 5ª generación, así que puedes actualizar tu procesador en el futuro.",
+    "<div class='divisor'></div>\n\n## (Procesador) AMD Ryzen 5 5600G\n\n![AMD Ryzen 5 5600G](https://res.cloudinary.com/dis6nw4o7/image/upload/v1722281861/dd7753d8-159d-486e-a89a-f7902c254199.png)\n\n<a href='https://www.amazon.com.mx/AMD-Procesador-RyzenTM-5600G-Socket-AM4-3-90GHz/dp/B092L9GF5N/ref=asc_df_B092L9GF5N/?tag=gledskshopmx-20&linkCode=df0&hvadid=522538993191&hvpos=&hvnetw=g&hvrand=5150667329080268141&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9129474&hvtargid=pla-1250272768452&psc=1&mcid=b0e71b2a988b3c9ab87a5068dd10bf63' target='_blank'>El Ryzen 5 5600G</a> es un procesador de alto rendimiento diseñado para ofrecer una experiencia de juego y creación de contenido fluida. Combina una potente CPU de 6 núcleos con una gráfica integrada Radeon, lo que lo convierte en una excelente opción para aquellos que buscan construir un PC versátil sin la necesidad de una tarjeta gráfica dedicada.\n\n**Nota:** Este procesador es compatible con la tarjeta madre que elegimos, por lo que no tendrás problemas de compatibilidad.\n\n<div class='divisor'></div>\n\n## (Memoria RAM) XPG SPECTRIX D50 DDR4 RGB\n\n![XPG SPECTRIX D50](https://res.cloudinary.com/dis6nw4o7/image/upload/v1722282035/c49fdda7-5bdb-4029-bee8-0b3d2faad91e.png)\n\nAlcanzando velocidades de hasta 4133 MHz y con una capacidad máxima de 32 GB, el módulo XPG <a href='https://www.amazon.com.mx/XPG-D50-PC4-25600-288-Pins-AX4U32008G16A-DW50/dp/B092G5Y6QP/ref=sr_1_8?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=EBI6IDCIGXJJ&dib=eyJ2IjoiMSJ9.hIT5D5EetKTlhQnOOY-dZ49jjQ9NQbuvTMcb5iaU53VI-PV5Ho5Br041XQoZhnYKLfstj4ZJ2NfoLH82rZ4VNX7k14DGEFx1oq2hLrX_j21X4e8jMFZvYg2l6AkrKJJBXZlDGPEIVUHj9qInr-7EdjW8nIlb8ukdJKuPZZ3BIJ-U_CC73nvXo2uYtNIt0k44o2BVRy1_9LrcrqaOq7hgVg9H3qzwI9Qxqyodz_DPkBwOxKHbqF-kN3caYh6PqjrUV4usHKQjK2MePOgu1wkLeWZ1KDG_-AFzmacvQPVQAfs.BNfQgOevIjyEyG6-yZ2elbBvCpSG-KCae4toBM3dbd8&dib_tag=se&keywords=XPG+SPECTRIX+D50+DDR4+RGB&qid=1722282463&sprefix=xpg+spectrix+d50+ddr4+rgb%2Caps%2C150&sr=8-8&ufe=app_do%3Aamzn1.fos.242f5c11-6cfd-40d6-91f6-be3d1974080c' target='_blank'>SPECTRIX D50</a> es una excelente opción de memoria. Además, cuenta con un diseño elegante y una impresionante barra de luz RGB triangular.\n\n**Nota:** Con 16 GB de RAM, tendrás suficiente memoria para la mayoría de los juegos y tareas diarias. Si necesitas más, puedes comprar dos módulos de 16 GB para un total de 32 GB, aunque esto implicaría un gasto adicional.",
+    "<div class='divisor'></div>\n\n## (Almacenamiento) Kingston M.2, Capacidad: 1000 GB\n\n![Kingston M.2](https://res.cloudinary.com/dis6nw4o7/image/upload/v1722281964/2e882e47-a6a5-4c1e-a83e-7d615244cfde.png)\n\nEste <a href='https://www.amazon.com.mx/Kingston-SSD-NV2-Capacidad-Escritura/dp/B0BBWH1R8H/ref=sr_1_1?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3ND4QXJJ47AST&dib=eyJ2IjoiMSJ9.vKY1xmCpeCeXv_wCylORVJkksyMSpmRtyAPJ92INk9TQmvSumwBhCIGEU2dxBk69xlh9c3gp7Jid4jKz7OGnqG_CbIYkGmm-vvcpzSjZyAm6eR3ShPE-GwzmMUUWKEE3vEddI2bZXMFCkUIKkAQkBw1q9L0ks-ONfT1F9iaQ4hb5qy7W-iiY9cuan5g0bcz44VEZxqQx2-RIuV2UMPJSjgneHu2Z5dW-yIecIE24L88-Aglp3vuBk-3eqZg1x9YCVDMQTsrWDRV0wEJqU55nsvwH_DSSx8oKFs_i63Yr1q0.FDcwJ02eyMzbG70oRLhCk8ht3ht7jJ83cll5o2Ny7EM&dib_tag=se&keywords=Kingston+M.2%2C+Capacidad%3A+1000+GB&qid=1722282491&sprefix=kingston+m.2+capacidad+1000+gb%2Caps%2C137&sr=8-1&ufe=app_do%3Aamzn1.fos.19d97c10-80a3-4566-8ed8-d0331185c744' target='_blank'>SSD NVMe Gen 4x4 de Kingston</a> es perfecto para equipos compactos como laptops y PCs de factor de forma pequeño. Gracias a su diseño delgado de un solo lado, se adapta fácilmente a espacios reducidos. Con velocidades de lectura y escritura ultrarrápidas, podrás cargar aplicaciones y archivos en un abrir y cerrar de ojos.\n\n**Nota:** Podríamos haber ahorrado más con solo 500 GB o eligiendo un SSD de estado sólido, pero esta memoria ofrece mayor velocidad y capacidad por una diferencia de precio mínima.\n\n<div class='divisor'></div>\n\n## (Fuente de poder) EVGA N1, 550W\n\n![EVGA N1, 550W](https://res.cloudinary.com/dis6nw4o7/image/upload/v1722282085/c4af53f8-be74-4564-b7a8-2c5ce8d15e27.png)\n\nLa fuente de poder <a href='https://www.amazon.com.mx/EVGA-550W-Power-Supply-100-N1-0550-L1/dp/B01LYGJL0E/ref=sr_1_1?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1TC9EOKWZTUR4&dib=eyJ2IjoiMSJ9.hXNucVNx7dK9_tQRnpAS9Lo9AFa2xH0TWhDstZ8WogYYM_opRqrQknNmJaqMfwpFd1WLxrGcmdo3MOVHIGjYiHLWXQOgDBKswiavZy3jkgQyJsD1xouAfBk_-G85k_FdlvDX3nCIIztJU8zvP_TdUeAmst1v1JC2rQBMZqaL-kKyFSTx-LiIdgEle-0wQRtrAu_tZTChVaZaarcbDklzq7QVUjGPYsG58UtOzHzc21tZHkW__YV8p1mVj2dFHzkSWozk_MnwNYVi4yp3z97iwq4Iuswr3hCjv8CVPkpQJ0c.X15umhfov218hYP9dxNEMapLIrp9vIh7pzPOyKoU3GY&dib_tag=se&keywords=EVGA+N1%2C+550W&qid=1722282541&sprefix=evga+n1+550w%2Caps%2C152&sr=8-1&ufe=app_do%3Aamzn1.fos.242f5c11-6cfd-40d6-91f6-be3d1974080c' target='_blank'>EVGA de 550W</a> cuenta con un ventilador de 120 mm que utiliza un cojinete de manguito. Este diseño, combinado con un sistema de control inteligente, permite un funcionamiento casi silencioso. Además, incorpora múltiples protecciones electrónicas como OVP, UVP, OCP, OPP y SCP para garantizar la seguridad de tu equipo y evitar daños.\n\n**Nota:** Muchas personas piensan que este es el componente menos importante, pero una mala elección de fuente de poder puede arruinar todo tu PC. Con esta fuente de poder, no tendrás problemas."
+  ],
+  "conclusion": "<div class='divisor'></div>\n\n## Total: $9,226.37 MXN = 491,4 USD\n\n![Total PC](https://res.cloudinary.com/dis6nw4o7/image/upload/v1722282205/da095e3e-fedb-42a9-a60f-c48213175655.png)\n\n<div class='divisor'></div>\n\n## Agrega una tarjeta gráfica en el futuro\n\n### Para juegos a 1080p con detalles altos\n\n- **NVIDIA GeForce RTX 3060:** Ofrece un excelente equilibrio entre precio y rendimiento, permitiendo jugar a la mayoría de los títulos actuales con detalles altos y altas tasas de refresco.\n- **AMD Radeon RX 6600 XT:** Otra excelente opción con un rendimiento similar a la RTX 3060, pero con un precio ligeramente más bajo.\n\n### Para juegos a 1440p o 4K\n\n- **NVIDIA GeForce RTX 3070:** Ideal para aquellos que buscan jugar en resoluciones más altas y con detalles ultra.\n- **AMD Radeon RX 6700 XT:** Una alternativa sólida a la RTX 3070, ofreciendo un rendimiento similar en muchos juegos.\n\n### Para un presupuesto ajustado\n\n- **NVIDIA GeForce RTX 3050:**  Una opción más económica para aquellos que buscan mejorar el rendimiento de su sistema sin gastar demasiado.\n- **AMD Radeon RX 6600:** Similar a la RTX 3050, pero con un enfoque diferente en ciertas tecnologías.\n\n<div class='divisor'></div>",
+  "keywords": [
+    "PC Gamer",
+    "Gaming",
+    "Corsair",
+    "AMD Ryzen 5 5600G",
+    "EVGA N1"
+  ],
+  "createdAt": {
+    "$date": "2024-07-30T01:54:13.738Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-16T01:37:21.168Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "cmf-la-submarca-económica-de-nothing_ES__7",
+  "new_code": "7",
+  "url_es": "https://lunanews.tech/es/cmf-la-submarca-económica-de-nothing_ES__7",
+  "url_en": "https://lunanews.tech/en/cmf-the-new-budget-sub-brand-from-nothing_EN__7",
+  "language": "es",
+  "read_time": "4 minutos",
+  "sections": [
+    "Smathphones & Tablets"
+  ],
+  "title": "CMF la NUEVA submarca 'económica' de Nothing?",
+  "main_image": "https://res.cloudinary.com/dis6nw4o7/image/upload/v1723479558/62353036-2c2c-4e7f-93f1-4794f139c0e3.png",
+  "thumbnail_image": "https://res.cloudinary.com/dis6nw4o7/image/upload/v1723653630/cmf_thumbnail_sp4y4r.jpg",
+  "image_alt": "Imagen de CMF",
+  "main_image_source": {
+    "source_name": "Luna News",
+    "url": "https://www.lunanews.tech/"
+  },
+  "author_id": "alberto-luna",
+  "summary": "Nothing y CMF, la nueva submarca orientada a productos más económicos. El catálogo incluye el CMF PHONE 1 y los BUDS PRO, ofreciendo calidad e innovación a precios accesibles.",
+  "content": [
+    "Desde sus inicios la marca <a href='https://us.nothing.tech/' target='_blank'>Nothing</a> creada en octubre de 2020 por Carl Pei que como sabemos fue cofundador de OnePlus, ha tenido un enfoque muy claro en la calidad de sus productos y en la innovación.\n\nEs sumamente interesante ver como la marca ha ido evolucionando y como ha ido creciendo en tan poco tiempo, y es que en tan solo 4 años se han hecho un pequeño hueco en el mercado de los smartphones y de los wearables.\n\nEsto gracias a su gran e inovador diseño con un toque industrial y con una calidad de construcción que no deja indiferente a nadie. Aunado a esos su catalogo de productos tiene un costo que no es para nada costoso de hecho algunos han dicho que su marca es la 'Apple de los pobres'.\n\nPero ahora la marca ha decidido dar un paso más allá y con la submarca llamada <a href='https://cmf.tech/' target='_blank'>CMF</a>.\n\n<div class='divisor'></div>\n\n## ¿Qué es CMF?\n\n<picture> <img src='https://res.cloudinary.com/dis6nw4o7/image/upload/b_rgb:FFFFFF/v1723428303/82a70b4b-0bff-4fb0-a2dc-79350cc66988.png' alt='CMF' /> <p>Fuente: <a href='https://cmf.tech/'  target='_blank' >CMF</a></p> </picture> \n\nCMF es la submarca de Nothing y se enfoca en productos más económicos, pero sin perder la calidad y la innovación que caracteriza a Nothing.\n\nEsto de por si ya es una sorpresa ya que la marca se ha caracterizado por tener productos de calidad a un precio accesible, pero ahora con CMF los productos serán aún más accesibles.\n\n<div class='divisor'></div>\n\n## ¿Qué productos tiene CMF?\n\nPor el momento CMF tiene un catálogo algo reducido pero sus productos más interesantes son:\n\n- **<a href='https://cmf.tech/en-us/pages/phone-1' target='_blank' >CMF PHONE 1</a>**: Un smartphone con un diseño inspirado en el Nothing Phone 1 pero con un precio más accesible y con unos colores más llamativos saliendo de los clásicos colores blanco y negro de Nothing.\n\n<picture><img src='https://res.cloudinary.com/dis6nw4o7/image/upload/v1723430258/4193a7c0-94e8-4fbd-a945-c59d24159634.png' alt='CMF Phone 1' / ><small>Fuente: <a href='https://us.nothing.tech/products/cmf-phone-1?variant=45068151095448' target='_blank'>cmf</a></small></picture>\n\n- **<a href='https://cmf.tech/en-us/pages/buds-pro' target='_blank'>BUDS PRO</a>**: Unos audífonos con un diseño muy bueno y con una visible buena calidad de construcción.\n\n<picture><img src='https://res.cloudinary.com/dis6nw4o7/image/upload/v1723430451/6d517512-afcc-4b3c-885a-cf493a88b7f4.png' /><small>Fuente: <a href='https://us.nothing.tech/products/cmf-buds' target='_blank'>cmf</a></small></picture>\n\n- **<a href='https://cmf.tech/en-us/pages/buds-pro-2' target='_blank'>BUDS PRO 2</a>**: La siguiente generación de los BUDS PRO con mejoras en cuanto a la CMF PHONE 1, además de implementar la tecnología LDAC.\n\n<picture><img src='https://res.cloudinary.com/dis6nw4o7/image/upload/v1723430604/62a863fd-9338-40fd-ba06-dbeffaf758e1.png' / ><small>Fuente: <a href='https://us.nothing.tech/products/cmf-buds-pro-2?variant=45068151816344' target='_blank'>cmf</a></small></picture>\n\n- **<a href='https://cmf.tech/en-us/pages/watch-pro' target='_blank'>WATCH PRO</a>**: Un smartwatch con un diseño rectangular que recuerda bastante al Apple Watch.\n\n<picture><img src='https://res.cloudinary.com/dis6nw4o7/image/upload/v1723479868/watch-cmf_batdkj.jpg' / ><small>Fuente: <a href='https://cmf.tech/es-mx/pages/watch-pro' target='_blank'>cmf</a></small></picture>\n\n- **<a href='https://cmf.tech/en-us/pages/watch-pro-2' target='_blank'>WATCH PRO 2</a>**: La siguiente generación del WATCH PRO con un diseño circular y con la promesa de ser más resistente.\n\n<picture><img src='https://res.cloudinary.com/dis6nw4o7/image/upload/v1723480065/watch-pro2_pfctrk.jpg'/ ><small>Fuente: <a href='https://us.nothing.tech/products/cmf-buds-pro-2?variant=45068151816344' target='_blank'>cmf</a></small></picture>"
+  ],
+  "conclusion": "<div class='divisor'></div>\n\n## Conclusión\n\nEn definitiva, podemos estar frente a un gran competidor frente a marcas como Xiaomi o Realme, pero añadiendo el clásico toque de diseño industrial de la marca Nothing.",
+  "keywords": [
+    "CMF",
+    "Nothing",
+    "Smartphones",
+    "Wearables"
+  ],
+  "createdAt": {
+    "$date": "2024-07-30T01:54:13.738Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-16T01:37:21.168Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "como-mejorar-el-rendimiento-de-visual-studio-code_ES__8",
+  "new_code": "8",
+  "url_es": "https://lunanews.tech/es/como-mejorar-el-rendimiento-de-visual-studio-code_ES__8",
+  "url_en": "https://lunanews.tech/es/como-mejorar-el-rendimiento-de-visual-studio-code_ES__8",
+  "language": "es",
+  "read_time": "5 minutos",
+  "sections": [
+    "Programación",
+    "Tutoriales"
+  ],
+  "title": "Cómo mejorar el rendimiento de Visual Studio Code",
+  "main_image": "https://res.cloudinary.com/dis6nw4o7/image/upload/v1722131896/fab76d7c-5235-41ef-a82a-90b365ba4fc6.png",
+  "thumbnail_image": "https://res.cloudinary.com/dis6nw4o7/image/upload/v1722131896/fab76d7c-5235-41ef-a82a-90b365ba4fc6.png",
+  "image_alt": "Visual Studio Code",
+  "main_image_source": {
+    "source_name": "Google",
+    "url": "https://www.lunanews.tech/"
+  },
+  "author_id": "alberto-luna",
+  "summary": "Conoce cómo mejorar el rendimiento de Visual Studio Code con estos consejos y trucos. Aprende a desactivar extensiones innecesarias, optimizaciones y más.",
+  "content": [
+    "## 1. Desactiva extensiones innecesarias\n\n<picture>\n  <img src=\"https://res.cloudinary.com/dis6nw4o7/image/upload/v1722131687/8270978d-d108-4824-8b4a-995587b572a9.png\" alt=\"Desactivar extensiones de Visual Studio Code\" />\n  <small>\n    Fuente: <a href=\"https://www.lunanews.tech/\" target=\"_blank\">Luna News</a>\n  </small>\n</picture>\n\nEs muy común que algunas extensiones de Visual Studio Code consuman muchos recursos del sistema, lo que puede ralentizar el rendimiento del editor. Para mejorar el rendimiento de Visual Studio Code, es recomendable deshabilitar las extensiones que no se utilizan con frecuencia o que no son esenciales para el flujo de trabajo. Para deshabilitar una extensión, sigue estos pasos:\n\n1. Abre Visual Studio Code.\n2. Haz clic en la pestaña de \"Extensiones\" en la barra lateral izquierda.\n3. Busca la extensión que deseas deshabilitar.\n4. Haz clic en el botón de engranaje junto a la extensión y selecciona \"Deshabilitar\".\n\n## 2. Actualiza las extensiones y ajusta la configuración\n\n<picture>\n  <img src=\"https://res.cloudinary.com/dis6nw4o7/image/upload/v1723517796/1fef45cd-aae2-4fd6-b57c-6f5f94e01aa1.png\" alt=\"Actualizar extensiones de Visual Studio Code\" />\n  <small>\n    Fuente: <a href=\"https://www.lunanews.tech/\" target=\"_blank\">Luna News</a>\n  </small>\n</picture>\n\nLas extensiones de Visual Studio Code son una de las razones por las que es tan popular, pero a veces estas pueden ser la causa de que el editor se vuelva lento. \nPara mejorar el rendimiento de Visual Studio Code, es importante mantener actualizadas las extensiones y ajustar la configuración según sea necesario.\n\nEsto debido a que algunos errores de Visual Studio Code pueden ser causados por extensiones desactualizadas o por configuraciones incorrectas.\n\nPara actualizar las extensiones de Visual Studio Code, sigue estos pasos:\n\n1. Abre Visual Studio Code.\n2. Haz clic en la pestaña de \"Extensiones\" en la barra lateral izquierda.\n3. Haz clic en el botón de actualización en la parte superior de la lista de extensiones.\n4. (Opcional) Puedes seleccionar Auto-Update para que las extensiones se actualicen automáticamente.\n\n## 3. Limpia la caché de Visual Studio Code \n\n<picture>\n  <img src=\"https://res.cloudinary.com/dis6nw4o7/image/upload/v1723485119/c1e33c9e-3188-4c13-8a6a-0095f2dc2a91.png\" />\n  <small>\n    Fuente: <a href=\"https://www.lunanews.tech/\" target=\"_blank\">Luna News</a>\n  </small>\n</picture>\n\nVisual Studio Code almacena en caché los archivos y datos para mejorar el rendimiento del editor. \nSin embargo, a veces la caché puede crecer demasiado y ralentizar el rendimiento de Visual Studio Code.\n\nPara limpiar la caché de Visual Studio Code, sigue estos pasos:\n\n* **Localiza la carpeta de datos de usuario de VS Code:** La ubicación de esta carpeta varía según tu sistema operativo:\n    * **Windows:** `%APPDATA%\\Code\\User\\` o `%USERPROFILE%\\.vscode\\`\n    * **macOS:** `$HOME/Library/Application Support/Code/User/`\n    * **Linux:** `$HOME/.config/Code/User/`\n* **Dentro de la carpeta \"User\", busca y elimina las siguientes carpetas:**\n    * `Cache`\n    * `CachedData`\n    * `Code Cache` (opcional, esta carpeta almacena la caché del proceso principal de VS Code)\n\n## 4. Cambia a un tema ligero\n\n<picture>\n  <img src=\"https://res.cloudinary.com/dis6nw4o7/image/upload/v1723485430/3b66efc1-feb9-44cd-bf1b-3150c5a25f5c.png\" alt=\"Cambiar tema de Visual Studio Code\" />\n  <small>\n  Fuente: <a href=\"https://www.pexels.com\" target=\"_blank\">Pexels</a>\n  </small>\n</picture>\n\n\nUna de las razones menos conocidas por las que Visual Studio Code puede ser tener un bajo rendimiento es el tema que estás utilizando.\n\nLos temas oscuros son populares entre los desarrolladores, pero pueden consumir más recursos del sistema que los temas claros.\n\nPara cambiar el tema de Visual Studio Code, sigue estos pasos:\n\n1. Abre Visual Studio Code.\n2. Introducte `Ctrl + Shift + P` para abrir la paleta de comandos o `Cmd + Shift + P` en macOS.\n3. Escribe \"Preferences: Color Theme\" y selecciona la opción deseada (preferible los que vienen por defecto).\n\n## 5. Considera cambiar el SSD de tu computadora\n\n<picture>\n  <img src=\"https://res.cloudinary.com/dis6nw4o7/image/upload/v1723518248/ssd_bc90bz.jpg\" alt=\"Hombre con un SDD\" />\n  <small>\n    Fuente: <a href=\"https://www.lunanews.tech/\" target=\"_blank\" >Luna News</a>\n  </small>\n</picture>\n\n\nSi tu computadora tiene un disco duro mecánico (HDD) en lugar de un disco de estado sólido (SSD), considera actualizar a un SSD para mejorar el rendimiento general de Visual Studio Code y de tu sistema en general. Los SSD son considerablemente más rápidos que los HDD y pueden acelerar significativamente la velocidad de carga de archivos y la respuesta del sistema en general."
+  ],
+  "conclusion": "<div class='divisor'></div>\n\n## Conclusion\n\nEl chatbot de Meta AI en WhatsApp se presenta como un asistente digital versátil y amigable, capaz de interactuar en múltiples áreas de interés.\n\nSu capacidad para ofrecer recomendaciones, asesoría y entretenimiento lo convierte en una herramienta valiosa para usuarios de todas las edades.\n\nSin embargo, es importante recordar que, al tratarse de una inteligencia artificial, sus respuestas pueden ser limitadas en ciertos contextos, por lo que se recomienda complementar su uso con fuentes adicionales de información.",
+  "keywords": [
+    "Visual Studio Code",
+    "Desarrollo de Software",
+    "Programación",
+    "Extensiones de Visual Studio Code",
+    "Rendimiento de Visual Studio Code"
+  ],
+  "createdAt": {
+    "$date": "2024-07-30T01:54:13.738Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-16T01:37:21.168Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "review-del-teclado-thunderbolt-k78_ES__9",
+  "new_code": "9",
+  "url_es": "https://lunanews.tech/es/review-del-teclado-thunderbolt-k78_ES__9",
+  "url_en": "https://lunanews.tech/en/thunderbolt-k78-keyboard-review_EN__9",
+  "language": "es",
+  "read_time": "6 minutos",
+  "sections": [
+    "Reseñas"
+  ],
+  "title": "Review del Teclado Thunderbolt K78",
+  "main_image": "https://res.cloudinary.com/dis6nw4o7/image/upload/v1723268552/ded385c8-a584-4945-be50-cb8e127388a0.png",
+  "thumbnail_image": "https://res.cloudinary.com/dis6nw4o7/image/upload/v1723268552/ded385c8-a584-4945-be50-cb8e127388a0.png",
+  "image_alt": "Teclado Thunderbolt K78",
+  "main_image_source": {
+    "source_name": "Mercado Libre",
+    "url": "https://www.mercadolibre.com/"
+  },
+  "author_id": "alberto-luna",
+  "summary": "Descubre los pros y contras del teclado Thunderbolt K78 después de uso continuo. Conoce sus características, lo que incluye en la caja y nuestra conclusión.",
+  "content": [
+    "El teclado <a href='https://articulo.mercadolibre.com.mx/MLM-2473633700-espanol-teclado-mecanico-gamer-wired-thunderobot-k78-rgb-_JM' target='_blank'>Thunderbolt K78</a> es un teclado mecánico que es una alternativa mas economica a los teclado mecanicos de gama alta sin embargo esto no significa que sea un mal teclado, de hecho es un teclado bastante aceptable por el precio y ahora te vamos a decir despues de dos meses de uso continuo los pros y contras de este teclado.\n\n<div class='divisor'></div>\n\n## Caracteristicas\n\n- **Idioma:** Español Latinoamérica\n\n- **Layout:** QWERTY\n\n- **Switches:** Outemu Red o Brown.\n\n- **Retroiluminación:** RGB\n\n- **Color del teclado:** Blanco/Negro\n\n- **Ergonómico y apto para diversos usos.**\n\n- **Contiene teclado numérico.**\n\n- **Tipo de teclado:** mecánico.\n\n - **Con conector USB-C.**\n\n- **Con cable removible.**\n\n- **Medidas:** 100.6cm de ancho, 347.6mm de alto y 33.5cm de profundidad.\n\n<div class='divisor'></div>\n\n## Que hay en la caja\n\n- Teclado Thunderbolt K78\n\n- Cable USB-C\n\n- 2 switches Outemu Red o Brown adicionales\n\n- Extractor de teclas\n\n- Manual de usuario",
+    "<div class='divisor'></div>\n\n## Pros\n\n- **Precio:** El precio de este teclado es bastante accesible en comparación con otros teclados mecánicos teniendo un costo aprox de $200 USD.\n\n- **Retroiluminación:** La retroiluminación RGB es bastante buena, puedes configurar la intensidad o la velocidad de RGB.\n\n- **Switches:** Los switches Outemu Red o Brown son bastante buenos, los switches Red son lineales y los Brown son táctiles, ambos son bastante buenos para escribir y jugar (Personalmente preferimos los Brow debido a su equilibrio de siliencio y confort).\n\n- **Cable removible:** El cable USB-C es removible, lo que facilita el transporte del teclado.\n\n- **PBT Keycaps:** Las teclas del teclado son de PBT, lo que las hace más resistentes al desgaste y a la decoloración.\n\n- **Diseño:** El diseño del teclado es bastante bueno siendo 78% del tamaño de un teclado completo, lo que lo hace bastante compacto y cómodo para llevar a cualquier lugar.\n\n- **Listo para usar:** El teclado es plug and play, no necesitas instalar ningún driver para usarlo.\n\n<div class='divisor'></div>\n\n## Contras\n\n- **Calidad de construcción:** La calidad de construcción del teclado es bastante buena, sin embargo es de plastico en su totalidad.\n\n- **Software:** Solo puedes modificar la retroiluminación del teclado con sus configuraciones predefinidas, no puedes personalizar la retroiluminación a tu gusto.\n\n- **Ruido:** Los switches Red e incluso los brown son bastante ruidosos, si buscas un teclado silencioso este no es el teclado para ti.\n\n- **No tiene reposamuñecas:** El teclado no tiene reposamuñecas, lo que puede ser incómodo para algunas personas.\n\n- **Limitacion de algunas teclas:** Si utilizas todas las teclas de función del teclado o algunas otras como inicio, fin o supr tendras que usar Fn para acceder a ellas."
+  ],
+  "conclusion": "<div class='divisor'></div>\n\n## Conclusion\n\nEl teclado <a href='https://articulo.mercadolibre.com.mx/MLM-2473633700-espanol-teclado-mecanico-gamer-wired-thunderobot-k78-rgb-_JM' target='_blank'>Thunderbolt K78</a> es un teclado bastante bueno para su precio, si buscas un teclado mecánico económico y de buena calidad este es el teclado para ti, sin embargo si buscas un teclado silencioso o con un diseño más premium te recomendamos optar por una opcion de gama un poco mas alta.\n\n<div class='divisor'></div>",
+  "keywords": [
+    "Thunderbolt K78",
+    "Teclado Mecánico",
+    "Teclado Gamer",
+    "Outemu Red",
+    "Outemu Brown"
+  ],
+  "createdAt": {
+    "$date": "2024-07-30T01:54:13.738Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-16T01:37:21.168Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "que-es-searchgpt-y-como-funciona_ES__10",
+  "new_code": "10",
+  "url_es": "https://lunanews.tech/es/que-es-searchgpt-y-como-funciona_ES__10",
+  "url_en": "https://lunanews.tech/en/what-is-searchgpt-and-how-does-it-work_EN__10",
+  "language": "es",
+  "read_time": "6 minutos",
+  "sections": [
+    "IA",
+    "Programación"
+  ],
+  "title": "¿Qué es SearchGPT y como funciona?",
+  "main_image": "https://res.cloudinary.com/dis6nw4o7/image/upload/v1722095060/aea31278-0cfe-43ad-a635-57485eb32559.png",
+  "thumbnail_image": "https://res.cloudinary.com/dis6nw4o7/image/upload/v1722095060/aea31278-0cfe-43ad-a635-57485eb32559.png",
+  "image_alt": "SearchGPT",
+  "main_image_source": {
+    "source_name": "OpenAI",
+    "url": "https://www.openai.com/"
+  },
+  "author_id": "alberto-luna",
+  "summary": "SearchGPT, el nuevo motor de búsqueda de OpenAI, usa GPT-4 para ofrecer resultados más precisos y relevantes. Inscríbete en la lista de espera para probarlo.",
+  "content": [
+    "<a href='https://openai.com/' target='_blank'>OpenAI</a>, la empresa fundadora de <a href='https://chatgpt.com/' target='_blank'>ChatGPT</a>, <a href='https://openai.com/index/dall-e-3/' target='_blank'>DALLE</a> y otras herramientas de inteligencia artificial que hoy en día son utilizadas por millones de usuarios, ha dado a conocer este 25 de julio de 2024 su nuevo producto que promete revolucionar el mundo de las búsquedas en internet.\n\n<a href='https://openai.com/index/searchgpt-prototype/' target='_blank'>SearchGPT</a> es un motor de búsqueda basado en inteligencia artificial que utiliza el modelo GPT-4 de OpenAI para proporcionar resultados de búsqueda más precisos y relevantes. Este motor de búsqueda utiliza el poder de la inteligencia artificial para comprender mejor las consultas de los usuarios y ofrecer resultados más relevantes en menos tiempo.\n\n## ¿Cómo funciona SearchGPT y cuáles son sus características?\n\nCaracterísticas principales de SearchGPT:\n\n![Characteristics](https://res.cloudinary.com/dis6nw4o7/image/upload/v1722102759/imagen_2_roqspb.jpg)\n\n* **Respuestas rápidas y directas**: Proporciona información actualizada de la web con enlaces claros a fuentes relevantes.\n* **Conversación continua**: Permite hacer preguntas de seguimiento, construyendo un contexto compartido con cada consulta.\n* **Colaboración con editores y creadores**: Promueve el descubrimiento de sitios de editores, destacando contenido de alta calidad en una interfaz conversacional.\n* **Atribución clara**: Las respuestas tienen una atribución clara y enlaces para que los usuarios sepan de dónde proviene la información.\n\n* **Mejoras continuas**: Planean mejorar la experiencia en áreas como información local y comercio.\n* **Integración con ChatGPT**: Los comentarios de usuarios y editores ayudarán a integrar las mejores funciones de SearchGPT en ChatGPT.\n\n## ¿Cómo puedo usar SearchGPT?\n\n![SearchGPT waitlist](https://res.cloudinary.com/dis6nw4o7/image/upload/v1722102886/9b47cb0a-09ad-4fbc-bf21-d30ec83436d4.png)\n\nAunque por ahora SearchGPT no está disponible para el público en general, puedes inscribirte en la <a href='https://chatgpt.com/search' target='_blank'>lista de espera</a> para ser notificado cuando esté disponible y así tener acceso a esta nueva herramienta de búsqueda basada en inteligencia artificial."
+  ],
+  "conclusion": "<div class='divisor'></div>\n\n ## Conclusión\n\nSearchGPT es un motor de búsqueda basado en inteligencia artificial que promete revolucionar la forma en que buscamos información en internet.\n\nCon su capacidad para comprender mejor las consultas de los usuarios y ofrecer resultados más precisos y relevantes.\n\nSi bien aún no está disponible para el público en general, es una herramienta a tener en cuenta para el futuro de las búsquedas en línea.",
+  "keywords": [
+    "SearchGPT",
+    "OpenAI",
+    "Inteligencia Artificial",
+    "Google",
+    "ChatGPT"
+  ],
+  "createdAt": {
+    "$date": "2024-07-30T01:54:13.738Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-16T01:37:21.168Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "nvidia-de-tarjetas-graficas-a-lider-en-inteligencia-artificial_ES__11",
+  "new_code": "11",
+  "url_es": "https://lunanews.tech/es/nvidia-de-tarjetas-graficas-a-lider-en-inteligencia-artificial_ES__11",
+  "url_en": "https://lunanews.tech/en/nvidia-from-graphics-cards-to-leader-in-artificial-intelligence_EN__11",
+  "language": "es",
+  "read_time": "6 minutos",
+  "sections": [
+    "IA",
+    "Gaming"
+  ],
+  "title": "Nvidia: De Tarjetas Gráficas a Líder en Inteligencia Artificial",
+  "main_image": "https://res.cloudinary.com/dis6nw4o7/image/upload/v1723523152/nvidia_d7g6o8.jpg",
+  "thumbnail_image": "https://res.cloudinary.com/dis6nw4o7/image/upload/v1723655639/nvidia_thumbnail_bpyjpe.jpg",
+  "image_alt": "Nvidia",
+  "main_image_source": {
+    "source_name": "Unsplash",
+    "url": "https://www.unsplash.com/"
+  },
+  "author_id": "alberto-luna",
+  "summary": "Nvidia, aprovechando el auge de los videojuegos, las criptomonedas y la IA, se ha transformado en una potencia en inteligencia artificial, superando incluso a Tesla y Meta.",
+  "content": [
+    "¿Cómo es que la empresa <a href=\"https://www.nvidia.com\" target=\"_blank\">Nvidia</a> se ha convertido en una de las empresas más valiosas del mundo por encima de gigantes como <a href=\"https://www.tesla.com\" target=\"_blank\">Tesla</a> o <a href=\"https://www.meta.com\" target=\"_blank\">Meta</a>?\n\nEs muy interesante ver cómo Nvidia ha pasado de ser una empresa de tarjetas gráficas a sobrepasar a gigantes tecnológicos, pero para entender esto veremos a continuación cuáles han sido los factores que han llevado a Nvidia a ser una de las empresas más valiosas del mundo.\n\n## 1. Nvidia y el crecimiento del mundo de los videojuegos\n\n<picture>\n  <img src=\"https://res.cloudinary.com/dis6nw4o7/image/upload/v1723522499/nvidia-gaming-light_gwbwdm.jpg\" alt=\"Nvidia y joystick\" />\n  <small>\n    Fuente: <a href=\"https://www.lunanews.tech\" target=\"_blank\">Luna News</a>\n  </small>\n</picture>\n\nEl mundo de los videojuegos es algo que ha crecido de manera exponencial en los últimos años y Nvidia ha sabido aprovechar esto.\n\nDesde los inicios del gaming moderno se ha sabido que los procesadores convencionales no eran suficientes para poder correr los juegos de manera óptima.\n\nEntonces empresas como Nvidia supieron aprovechar este tipo de nuevos procesadores conocidos como <a href=\"https://en.wikipedia.org/wiki/Graphics_processing_unit\" target=\"_blank\">GPU</a> y desde entonces hasta ahora Nvidia ha sido una de las empresas líderes en el mercado de las tarjetas gráficas.\n\n## 2. La fiebre de la minería de criptomonedas\n\n<picture>\n  <img src=\"https://res.cloudinary.com/dis6nw4o7/image/upload/v1723522681/crypto_fplqrx.jpg\" alt=\"criptomonedas\" />\n  <small>\n    Fuente: <a href=\"https://www.lunanews.tech\" target=\"_blank\">Luna News</a>\n  </small>\n</picture>\n\nLa minería de criptomonedas al principio se hizo con procesadores convencionales, pero se descubrió que las tarjetas gráficas eran mucho más eficientes para este tipo de tareas debido a que las <a href=\"https://en.wikipedia.org/wiki/Graphics_processing_unit\" target=\"_blank\">GPU</a> son mucho más eficientes en tareas paralelas.\n\nEntre los años 2017 y 2021 hubo una fiebre por la minería de criptomonedas. En ese tiempo era casi imposible conseguir una tarjeta gráfica y la cola de espera para algunos modelos era de meses.\n\nDebido a esto los precios de las tarjetas gráficas se dispararon. Las empresas de tarjetas gráficas se vieron beneficiadas por esto, especialmente Nvidia, pero el momento que dispararía las acciones y haría que Nvidia fuera de las empresas más valiosas del mundo estaría por llegar.\n\n## 3. El boom de la inteligencia artificial\n\n<picture>\n  <img src=\"https://res.cloudinary.com/dis6nw4o7/image/upload/v1723522901/ia-nvidialight_emr4gq.jpg\" alt=\"Nvidia y la Inteligencia Artificial\" />\n  <small>\n    Fuente: <a href=\"https://www.lunanews.tech\" target=\"_blank\">Luna News</a>\n  </small>\n</picture>\n\nPara nadie es un secreto que la inteligencia artificial es algo que llegó para quedarse y, al contrario de lo que se piensa, la inteligencia artificial no es algo nuevo sino algo que tiene <a href=\"https://en.wikipedia.org/wiki/History_of_artificial_intelligence\" target=\"_blank\">décadas de desarrollo</a>.\n\nSin embargo, una vez más los procesadores convencionales no eran suficientes para poder correr los algoritmos de inteligencia artificial de manera óptima, ya que procesos como el entrenamiento de redes neuronales o el embedding requieren de una gran cantidad de cálculos.\n\nAhí es donde Nvidia entra nuevamente en juego con sus tarjetas gráficas, ya que como ya sabemos estas son mucho más eficientes en tareas paralelas y son perfectas para tareas de inteligencia artificial.\n\nDebido a esto Nvidia ha sabido aprovechar el boom de la inteligencia artificial y ha sabido capitalizarlo de manera muy eficiente, cambiando incluso su estrategia de mercado para enfocarse más en la inteligencia artificial. Esto al grado de que ahora sí mismos dejan de llamarse una empresa de tarjetas gráficas para llamarse una empresa de inteligencia artificial."
+  ],
+  "conclusion": "<div class='divisor'></div>\n\n ## Conclusión final\n\n Nvidia ha sabido aprovechar muy bien las oportunidades que el mercado le ha dado y ha sabido capitalizarlas de manera muy eficiente en el mundo de los videojuegos, la mineria de criptomonedas pero mas en la inteligencia artificial.",
+  "keywords": [
+    "Nvidia",
+    "Tarjetas gráficas",
+    "Videojuegos",
+    "Minería de criptomonedas",
+    "Inteligencia artificial",
+    "GPU",
+    "Tesla",
+    "Meta",
+    "Crecimiento tecnológico"
+  ],
+  "createdAt": {
+    "$date": "2024-08-16T01:37:21.168Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-16T01:37:21.168Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "mac-mini-con-m4-mas-cerca-de-lo-que-crees_ES__4",
+  "new_code": "4",
+  "url_es": "https://lunanews.tech/es/mac-mini-con-m4-mas-cerca-de-lo-que-crees_ES__4",
+  "url_en": "https://lunanews.tech/en/mac-mini-with-m4-closer-than-you-think_EN__4",
+  "language": "es",
+  "read_time": "4 minutos",
+  "sections": [
+    "Pc & Laptops"
+  ],
+  "title": "Mac mini con M4: ¿Más cerca de lo que Crees?",
+  "main_image": "https://res.cloudinary.com/dis6nw4o7/image/upload/v1722380582/mac-mini_ajccfc.jpg",
+  "thumbnail_image": "https://res.cloudinary.com/dis6nw4o7/image/upload/v1722380579/mac_mini_thumbnail_baszqp.jpg",
+  "image_alt": "Imagen de Mac mini",
+  "main_image_source": {
+    "source_name": "Apple",
+    "url": "https://apple.com/"
+  },
+  "author_id": "alberto-luna",
+  "summary": "El Mac mini con M4 podría ser una realidad más pronto de lo que piensas. Descubre por qué Apple podría estar saltándose el M3 y qué esperar de esta nueva versión.",
+  "content": [
+    "El Mac mini es una computadora de escritorio compacta y versátil que ha sido popular entre los usuarios de Apple durante años, gracias a su diseño minimalista y su buena relación calidad-precio, algo poco común en el mundo de Apple. \n\nLa incorporación de un <a href='https://www.apple.com/mx/newsroom/2024/05/apple-introduces-m4-chip/' target='_blank'>Chip M4</a> en el Mac mini representaría una opción atractiva para quienes buscan un rendimiento mejorado y una mayor eficiencia energética. \n\nCon el <a href='https://www.apple.com/mx/newsroom/2024/05/apple-introduces-m4-chip/' target='_blank'>chip M4</a>, Apple podría ofrecer una experiencia de usuario más rápida y fluida, además de una mayor duración de la batería.\n\n<div class='divisor'></div>\n\n## ¿Por Qué no hay un mac mini con M3?\n\nHan pasado ya dos años desde el lanzamiento del Mac mini con M2, y los usuarios han estado esperando ansiosamente una actualización. \n\nAunque el <a href='https://www.apple.com/mx/mac-mini/' target='_blank'>Mac Mini con el M2</a> sigue siendo una opción sólida para muchos, la posibilidad de un Mac mini con chip M3 parece cada vez más lejana. \n\nEn cambio, los chips M4 de Apple ya son una realidad, lo que sugiere que Apple podría estar saltándose la generación de procesadores M3 para algunos equipos, especialmente el Mac mini.",
+    "<div class='divisor'></div>\n\n## ¿Qué Esperar de un Mac mini con M4 \n\n\n\n\n\n<picture>\n\n<img src='https://res.cloudinary.com/dis6nw4o7/image/upload/v1722380578/m4_chip_mhiu0f.jpg' alt='Chip M4' /> <small>\n\nFuente:\n\n<a href='https://www.apple.com/' target='_blank' >\n\nApple\n\n</a></small>\n\n</picture>\n\n\n\n\n\nUn Mac mini con M4 podría ofrecer un rendimiento significativamente mejorado en comparación con el modelo con M2. \n\nCon el <a href='https://www.apple.com/mx/newsroom/2024/05/apple-introduces-m4-chip/' target='_blank'>chip M4</a>, Apple tendría la oportunidad de introducir nuevas funciones y características que no eran posibles con el chip M2, gracias a sus 10 núcleos y una GPU mejorada. Esto permitiría a los usuarios disfrutar de una experiencia general más fluida y eficiente."
+  ],
+  "conclusion": "<div class='divisor'></div>\n\n## ¿Cuándo se Espera un Mac mini con M4?\n\nLa última actualización del Mac mini fue en enero de 2022, por lo que se espera que Apple lance una actualización del Mac mini con M4 en sea muy pronto.\n\nAunque aún no hay una fecha de lanzamiento oficial, los rumores sugieren que Apple podría anunciar el nuevo Mac mini con M4 a finales de 2024.\n\n<div class='divisor'></div>",
+  "keywords": [
+    "Mac mini",
+    "M4",
+    "Apple",
+    "Chip M4",
+    "Mac mini con M4"
+  ],
+  "createdAt": {
+    "$date": "2024-07-30T01:54:13.738Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-16T01:37:21.168Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "meta-ai-en-whatsapp-un-asistente-digital_ES__5",
+  "new_code": "5",
+  "url_es": "https://lunanews.tech/es/meta-ai-en-whatsapp-un-asistente-digital_ES__5",
+  "url_en": "https://lunanews.tech/en/meta-ai-on-whatsapp-a-digital-assistant_EN__5",
+  "language": "es",
+  "read_time": "5 minutos",
+  "sections": [
+    "IA",
+    "Smathphones & Tablets"
+  ],
+  "title": "Meta AI en WhatsApp: Un Asistente Digital",
+  "main_image": "https://res.cloudinary.com/dis6nw4o7/image/upload/v1723263814/ia-wtap_xpnsdo.jpg",
+  "thumbnail_image": "https://res.cloudinary.com/dis6nw4o7/image/upload/v1723263814/ia-wtap_xpnsdo.jpg",
+  "image_alt": "Imagen de WhatsApp con Meta AI",
+  "main_image_source": {
+    "source_name": "Luna News",
+    "url": "https://www.lunanews.tech/"
+  },
+  "author_id": "alberto-luna",
+  "summary": "Descubre cómo Meta AI se integra en WhatsApp para ofrecer un asistente digital versátil y amigable. Conoce sus áreas de especialización y los temas de conversación permitidos.",
+  "content": [
+    "Desde su lanzamiento, el chatbot de inteligencia artificial de Meta AI, marcado con un círculo azul en WhatsApp, ha captado la atención de numerosos usuarios.\n\nEl chatbot se integra en la lista de contactos de los usuarios, quienes lo utilizan para diversos propósitos. Desde interacciones casuales, similares a las que se tendrían con un amigo, hasta asistencia en trabajos académicos, especialmente útil para estudiantes.\n\n<div class='divisor'></div>\n\n## Áreas de Especialización de Meta AI\n\nMeta AI se destaca por su capacidad para ofrecer recomendaciones de lectura, análisis y reseñas de libros, lo cual resulta valioso para los entusiastas de la lectura y los clubes de lectura. \n\nEn el ámbito educativo, proporciona estrategias de aprendizaje y recursos tecnológicos para estudiantes y educadores.\n\nAdemás, el chatbot brinda asesoría sobre la compra de teléfonos móviles y el uso de la inteligencia artificial. También cubre temas de actualidad, incluyendo noticias políticas, medioambientales, deportivas y mucho, mucho más.\n\n<div class='divisor'></div>\n\n## ✅ Temas de Conversación Permitidos \n\nMeta AI puede participar en discusiones sobre una amplia variedad de temas, entre ellos:\n\n- **Ciencia:** biología, física, química, espacio, etc.\n- **Arte y cultura:** música, películas, literatura, historia, etc.\n- **Salud y bienestar:** nutrición, ejercicio, mindfulness, etc.\n- **Viajes y aventuras:** destinos, experiencias, consejos, etc.\n- **Cocina y gastronomía:** recetas, técnicas, restaurantes, etc.\n- **Deportes y fitness:** entrenamiento, equipos, eventos, etc.\n- **Filosofía y psicología:** pensamientos, teorías, autoayuda, etc.\n\nMeta AI asegura que no hay límites en las temáticas de conversación y está dispuesto a escuchar y proporcionar información en cualquier área de interés.\n\n<div class='divisor'></div>\n\n## 🚫 Temas Restringidos por Meta AI\n\nEl chatbot tiene restricciones diseñadas para mantener un entorno seguro y respetuoso. Entre los temas prohibidos se encuentran:\n\n- **Contenido explícito o inapropiado:** evita conversaciones sobre material sexual, ofensivo o grosero.\n- **Incitación a la violencia y discriminación:** bloquea mensajes racistas, homofóbicos, xenofóbicos, y cualquier discurso de odio.\n- **Divulgación de información personal:** protege datos sensibles como direcciones y números de teléfono.",
+    "<div class='divisor'></div>\n\n## Recomendaciones Médicas y Legales\n\n\n\n\n\n<picture>\n\n<img src='https://res.cloudinary.com/dis6nw4o7/image/upload/v1723264166/imagen_4_x2dqv7.jpg' alt='IA no capacitada' /><small>\n\nFuente:\n<a href='https://www.pexels.com' target='_blank' >\n\nPexels\n\n</a>\n\n</small>\n\n</picture>\n\n\n\n\n\nMeta AI no está capacitado para realizar diagnósticos médicos ni ofrecer asesoría legal. Aunque puede proporcionar información general, no sustituye la consulta con profesionales en estas áreas. \n\nAdemás, evita discusiones sobre actividades ilegales o dañinas, como drogas o piratería informática, redirigiendo las conversaciones hacia temas positivos y constructivos."
+  ],
+  "conclusion": "<div class='divisor'></div>\n\n## Conclusion\n\nEl chatbot de Meta AI en WhatsApp se presenta como un asistente digital versátil y amigable, capaz de interactuar en múltiples áreas de interés.\n\nSu capacidad para ofrecer recomendaciones, asesoría y entretenimiento lo convierte en una herramienta valiosa para usuarios de todas las edades.\n\nSin embargo, es importante recordar que, al tratarse de una inteligencia artificial, sus respuestas pueden ser limitadas en ciertos contextos, por lo que se recomienda complementar su uso con fuentes adicionales de información.",
+  "keywords": [
+    "Meta AI",
+    "WhatsApp",
+    "Asistente Digital",
+    "Chatbot",
+    "Inteligencia Artificial"
+  ],
+  "createdAt": {
+    "$date": "2024-07-30T01:54:13.738Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-16T01:37:21.168Z"
+  },
+  "__v": 0
+}]

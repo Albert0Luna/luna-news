@@ -150,6 +150,14 @@
   height: 100%;
 }
 
+small:has(.new_info_source) {
+  opacity: .7;
+}
+
+.new_info_source {
+  color: var(--primary-color-link);
+}
+
 .new_info_date {
   font-size: 1rem;
   color: var(--gray-light);

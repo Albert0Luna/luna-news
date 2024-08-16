@@ -1,6 +1,36 @@
-import { fetchSectionEn, fetchSectionEs, fetchAllNewsEs, fetchAllNewsEn } from '@/src/app/lib/data';
 import { Link } from '@/src/navigation';
 import { cookies } from 'next/headers';
+import Sections from './Sections';
+
+export async function fetchAllNewsEn () {
+  const response = await fetch('http://www.lunanews.tech/api/enNews');
+  const data = await response.json();
+  return data;
+}
+
+export async function fetchAllNewsEs () {
+  const response = await fetch('http://www.lunanews.tech/api/esNews');
+  const data = await response.json();
+  return data;
+}
+
+export async function fetchSectionEs (section: string) {
+  const response = await fetch('http://www.lunanews.tech/api/esNews');
+  const data = await response.json();
+  const filteredSection = data.filter(
+    (item : any) => item.sections.some((s : any) => s.toLowerCase() === section.toLowerCase())
+  );
+  return filteredSection;
+}
+
+export async function fetchSectionEn (section: string) {
+  const response = await fetch('http://www.lunanews.tech/api/enNews');
+  const data = await response.json();
+  const filteredSection = data.filter(
+    (item : any) => item.sections.some((s : any) => s.toLowerCase() === section.toLowerCase())
+  );
+  return filteredSection;
+}
 
 export default async function RenderNews ({section}: {section: string | undefined}) {
   
@@ -18,22 +48,22 @@ export default async function RenderNews ({section}: {section: string | undefine
 
   } else {
     (lang === 'en') 
-      ? articles = await fetchSectionEn(section)
-      : articles = await fetchSectionEs(section);
+      ? articles = await fetchSectionEn(section as string)
+      : articles = await fetchSectionEs(section  as string);
   }
 
   return (
     <ul className='section_highlights_container'>
       {articles.map((article: any) => (
         <li key={article.new_code} className='section_highlights_item'>
-          <Link href={`/${article.id}`} className='section_highlights_item_link' scroll={true}>
+          <Link href={`/${article._id}`} className='section_highlights_item_link' scroll={true}>
             <h5 className='section_highlights_item_title'>
               {article.title}
             </h5>
             <div className='section_highlights_s1'>
               <div className='section_highlights_item_image_container'>
                 <img 
-                  src={article.thumbnail}
+                  src={article.thumbnail_image}
                   alt={article.image_alt}
                   className='section_highlights_item_image'
                 />
@@ -46,10 +76,10 @@ export default async function RenderNews ({section}: {section: string | undefine
                 <p 
                   className='section_highlights_item_body'
                 >
-                  {article.mini_desc}
+                  {article.summary}
                 </p>
               
-                <small className='section_highlights_item_more'>Read more</small>
+                <small className='section_highlights_item_more'>{lang === 'es' ? 'Leer más' : 'Read more'}</small>
               
               </div>
             </div>

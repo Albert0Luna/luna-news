@@ -602,7 +602,7 @@ Actualmente, esta característica está en fase beta, pero puedes probarla de ma
     ImageAlt: 'Visual Studio Code',
     authorId: 'alberto-luna',
     date: '07-31-2024',
-    miniDesc: 'Conoce cómo mejorar el rendimiento de Visual Studio Code con estos consejos y trucos. Aprende a desactivar extensiones innecesarias, optimizar la configuración y asignar más memoria RAM.',
+    miniDesc: 'Conoce cómo mejorar el rendimiento de Visual Studio Code con estos consejos y trucos. Aprende a desactivar extensiones innecesarias, optimizaciones y más.',
     content: [
       `
   ## 1. Desactiva extensiones innecesarias
@@ -690,7 +690,7 @@ Actualmente, esta característica está en fase beta, pero puedes probarla de ma
   - **Idioma:** Español Latinoamérica
   - **Layout:** QWERTY
   - **Switches:** Outemu Red o Brown.
-  - **Color de la retroiluminación:** RGB
+  - **Retroiluminación:** RGB
   - **Color del teclado:** Blanco/Negro
   - **Ergonómico y apto para diversos usos.**
   - **Contiene teclado numérico.**

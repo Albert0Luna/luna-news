@@ -4,7 +4,9 @@ import { useTranslations } from 'next-intl';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import { cookies } from 'next/headers';
 import { Metadata } from 'next';
-import newsEs from '@/src/mock/newsEs.json';
+// import newsEs from '@/src/mock/newsEs.json';
+// import newsEn from '@/src/mock/newsEn.json';
+// import Link from 'next/link';
 
 export function metadata () {
 
@@ -24,13 +26,13 @@ export function metadata () {
     }`,
     authors: { name: 'Alberto' },
     creator: 'Alberto Luna',
-    publisher: 'Alberto Luna',
+    publisher: 'Luna News',
     metadataBase: new URL('https://lunanews.tech'),
     alternates: {
-      canonical: '/',
+      canonical: 'https://lunanews.tech/en/about',
       languages: {
-        'en-US': '/en',
-        'es-MX': '/es',
+        'en-US': 'https://www.lunanews.tech/en/about',
+        'es-MX': 'https://www.lunanews.tech/es/about',
       },
     },
   };
@@ -38,12 +40,21 @@ export function metadata () {
   return dynamicMetadata;
 };
 
+/*
 function RenderData () {
 
-  const selectedNew = newsEs.find((item) => item.new_code === '2');
+  const selectedNew = newsEn.find((item) => item.new_code === '8');
   return (
-    <section className='about_data'>
+    <section className='about_data' style={{maxWidth: '500px'}}>
       <h1>{selectedNew?.title}</h1>
+      <picture>
+        <img src={selectedNew?.main_image} alt={selectedNew?.image_alt} width={100}/>
+        <small>Fuente:
+          <Link href={selectedNew?.main_image_source?.url as string}>
+            {selectedNew?.main_image_source?.source_name}
+          </Link>
+        </small>
+      </picture>
       <div>
         {selectedNew?.content.map((item, index: number) => {
           return (
@@ -51,9 +62,18 @@ function RenderData () {
           );
         })}
       </div>
+      <MDXRemote source={selectedNew?.conclusion as string}/>
+      <ul>
+        {selectedNew?.keywords.map(item => {
+          return (
+            <li key={item}>{item}</li>
+          );
+        })}
+      </ul>
     </section>
   );
 }
+*/
 
 export default function Page () {
   const t = useTranslations('About');

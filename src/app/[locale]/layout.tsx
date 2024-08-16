@@ -35,7 +35,7 @@ export function metadata () {
     publisher: 'Alberto Luna',
     metadataBase: new URL('https://lunanews.tech'),
     alternates: {
-      canonical: `https://lunanews.tech/${lang}`,
+      canonical: `https://lunanews.tech/${lang ?? 'en'}`,
       languages: {
         'en-US': 'https://lunanews.tech/es',
         'es-MX': 'https://lunanews.tech/en',
@@ -77,7 +77,7 @@ export function metadata () {
         : 'A technology blog that covers the latest news, reviews, analysis, tutorials, and guides on smartphones, gadgets, AI, programming, gaming, and more.'
       }`,
       siteId: '1467726470533754880',
-      creator: '@NeonGeeksX',
+      creator: '@LunaNewsX',
       creatorId: '1467726470533754880',
       images: ['https://res.cloudinary.com/dis6nw4o7/image/upload/v1722011361/Dise%C3%B1o_sin_t%C3%ADtulo_pbzi1s.png', 'https://res.cloudinary.com/dis6nw4o7/image/upload/v1722011063/reviews_NOTICIAS_Y_CURIOSIDADEs_DEl_MUNDO_TECH_oxrcd2.png']
     },

@@ -26,10 +26,10 @@ export function metadata () {
     publisher: 'Alberto Luna',
     metadataBase: new URL('https://lunanews.tech'),
     alternates: {
-      canonical: '/',
+      canonical: 'https://lunanews.tech/en/privacy',
       languages: {
-        'en-US': '/en',
-        'es-MX': '/es',
+        'en-US': 'https://lunanews.tech/en/privacy',
+        'es-MX': 'https://lunanews.tech/es/privacy',
       },
     },
   };

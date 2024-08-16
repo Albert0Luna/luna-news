@@ -67,9 +67,9 @@ export function generateMetadata ({params}: {params: {id: string}}) {
     authors: { name: 'Alberto' },
     creator: 'Alberto Luna',
     publisher: 'Alberto Luna',
-    metadataBase: new URL('https://lunanews.tech'),
+    metadataBase: new URL('https://www.lunanews.tech'),
     alternates: {
-      canonical: '/',
+      canonical: `https://www.lunanews.tech/en/${sectionTitle?.path}`,
       languages: {
         'en-US': '/en',
         'es-MX': '/es',
@@ -104,7 +104,7 @@ export function generateMetadata ({params}: {params: {id: string}}) {
       title: `${lang === 'es' ? sectionTitle?.title[0] : sectionTitle?.title[1]}`,
       description: `${lang === 'es' ? sectionTitle?.desc[0] : sectionTitle?.desc[1]}`,
       siteId: '1467726470533754880',
-      creator: '@NeonGeeksX',
+      creator: '@LunaNewsX',
       creatorId: '1467726470533754880',
       images: ['https://res.cloudinary.com/dis6nw4o7/image/upload/v1722011361/Dise%C3%B1o_sin_t%C3%ADtulo_pbzi1s.png', 'https://res.cloudinary.com/dis6nw4o7/image/upload/v1722011063/reviews_NOTICIAS_Y_CURIOSIDADEs_DEl_MUNDO_TECH_oxrcd2.png']
     },
