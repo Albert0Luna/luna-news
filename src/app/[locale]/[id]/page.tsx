@@ -7,14 +7,14 @@ import { fetchMetaDataNewsEs, fetchMetaDataNewsEn} from '@/src/app/lib/data';
 import Adsense from '@/src/rootComponents.tsx/components/Adsense';
 import GoogleAdUnit from '@/src/rootComponents.tsx/components/GoogleAdUnit';
 
-export async function fetchNewsEs (new_code: string) {
+async function fetchNewsEs (new_code: string) {
   const response = await fetch('http://www.lunanews.tech/api/esNews');
   const data = await response.json();
   const filteredSection = data.find((item : any) => item.new_code === new_code);
   return filteredSection;
 }
 
-export async function fetchNewsEn (new_code: string) {
+async function fetchNewsEn (new_code: string) {
   const response = await fetch('http://www.lunanews.tech/api/enNews');
   const data = await response.json();
   const filteredSection = data.find((item : any) => item.new_code === new_code);

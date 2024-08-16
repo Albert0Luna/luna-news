@@ -2,19 +2,19 @@ import { Link } from '@/src/navigation';
 import { cookies } from 'next/headers';
 import Sections from './Sections';
 
-export async function fetchAllNewsEn () {
+async function fetchAllNewsEn () {
   const response = await fetch('http://www.lunanews.tech/api/enNews');
   const data = await response.json();
   return data;
 }
 
-export async function fetchAllNewsEs () {
+async function fetchAllNewsEs () {
   const response = await fetch('http://www.lunanews.tech/api/esNews');
   const data = await response.json();
   return data;
 }
 
-export async function fetchSectionEs (section: string) {
+async function fetchSectionEs (section: string) {
   const response = await fetch('http://www.lunanews.tech/api/esNews');
   const data = await response.json();
   const filteredSection = data.filter(
@@ -23,7 +23,7 @@ export async function fetchSectionEs (section: string) {
   return filteredSection;
 }
 
-export async function fetchSectionEn (section: string) {
+async function fetchSectionEn (section: string) {
   const response = await fetch('http://www.lunanews.tech/api/enNews');
   const data = await response.json();
   const filteredSection = data.filter(

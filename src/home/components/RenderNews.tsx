@@ -1,13 +1,13 @@
 import { Link } from '@/src/navigation';
 import { cookies } from 'next/headers';
 
-export async function fetchLatestNewsEn () {
+async function fetchLatestNewsEn () {
   const response = await fetch('http://www.lunanews.tech/api/enNews');
   const data = await response.json();
   return data;
 }
 
-export async function fetchLatestNewsEs () {
+async function fetchLatestNewsEs () {
   const response = await fetch('http://www.lunanews.tech/api/esNews');
   const data = await response.json();
   return data;
