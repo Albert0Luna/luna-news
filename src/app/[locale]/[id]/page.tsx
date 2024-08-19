@@ -3,21 +3,60 @@ import { MDXRemote } from 'next-mdx-remote/rsc';
 import Profile from '@/src/news/components/Profile';
 import { redirect } from '@/src/navigation';
 import { cookies } from 'next/headers';
-import { fetchMetaDataNewsEs, fetchMetaDataNewsEn} from '@/src/app/lib/data';
-import Adsense from '@/src/rootComponents.tsx/components/Adsense';
-import GoogleAdUnit from '@/src/rootComponents.tsx/components/GoogleAdUnit';
+// import Adsense from '@/src/rootComponents.tsx/components/Adsense';
+// import GoogleAdUnit from '@/src/rootComponents.tsx/components/GoogleAdUnit';
 
-async function fetchNewsEs (new_code: string) {
-  const response = await fetch('http://www.lunanews.tech/api/esNews');
-  const data = await response.json();
-  const filteredSection = data.find((item : any) => item.new_code === new_code);
-  return filteredSection;
+async function fetchNewsDataEn (new_code: string) {
+  try {
+    const [newsEnData, metadataNewsEnData] = await Promise.all([
+      fetchNewsEn(new_code), 
+      fetchMetadataNewsEn(new_code)
+    ]);
+
+    return { newsEn: newsEnData, metadataNewsEn: metadataNewsEnData };
+  } catch (error) {
+    console.error('Error fetching data:', error);
+    // Handle the error appropriately (e.g., return an error object)
+    throw error; // Re-throw to propagate the error if needed
+  }
+}
+
+async function fetchNewsDataEs (new_code: string) {
+  try {
+    const [newsEnData, metadataNewsEnData] = await Promise.all([
+      fetchNewsEs(new_code), 
+      fetchMetadataNewsEs(new_code)
+    ]);
+
+    return { newsEs: newsEnData, metadataNewsEs: metadataNewsEnData };
+  } catch (error) {
+    console.error('Error fetching data:', error);
+    // Handle the error appropriately (e.g., return an error object)
+    throw error; // Re-throw to propagate the error if needed
+  }
 }
 
 async function fetchNewsEn (new_code: string) {
-  const response = await fetch('http://www.lunanews.tech/api/enNews');
-  const data = await response.json();
-  const filteredSection = data.find((item : any) => item.new_code === new_code);
+  const response = await fetch(`https://www.lunanews.tech/api/newEnSearched/${new_code}`);
+  const filteredSection = await response.json();
+  return filteredSection;
+}
+
+async function fetchMetadataNewsEn (new_code: string) {
+  const response = await fetch(`https://www.lunanews.tech/api/newEnMetadataSearched/${new_code}`);
+  const filteredSection = await response.json();
+  return filteredSection;
+}
+
+async function fetchNewsEs (new_code: string) {
+  const response = await fetch(`https://www.lunanews.tech/api/newEsSearched/${new_code}`);
+  const filteredSection = await response.json();
+  return filteredSection;
+}
+
+async function fetchMetadataNewsEs (new_code: string) {
+  const response = await fetch(`https://www.lunanews.tech/api/newEsMetadataSearched/${new_code}`);
+  const filteredSection = await response.json();
   return filteredSection;
 }
 
@@ -42,7 +81,8 @@ export async function generateMetadata ({ params }: { params: { id: string } }) 
   }
 
   if (defaultLang === 'en') {
-    const newData = await fetchNewsEn(newCode);
+    const data = await fetchNewsDataEn(newCode);
+    const newData = await data.metadataNewsEn;
     
     if (!newData) {
       return redirect('https://www.lunanews.tech');
@@ -104,7 +144,8 @@ export async function generateMetadata ({ params }: { params: { id: string } }) 
       };
     }
   } else if (defaultLang === 'es') {
-    const newData = await fetchNewsEs(newCode);
+    const data = await fetchNewsDataEs(newCode);
+    const newData = await data.metadataNewsEs;
 
     if (!newData) {
       return redirect('https://www.lunanews.tech');
@@ -168,6 +209,7 @@ export async function generateMetadata ({ params }: { params: { id: string } }) 
   }
 }
 
+
 export default async function Page ({params}: {params: {id: string}}) {
   
   //const t = await useTranslations('Date');
@@ -194,7 +236,8 @@ export default async function Page ({params}: {params: {id: string}}) {
     //? Get the new code
     const parts = params.id.split('__');
     const newCode = parts[1];
-    const selectData = await fetchNewsEn(newCode);
+    const data = await fetchNewsDataEn(newCode);
+    const selectData = data.newsEn;
 
     if (!(selectedLang === suffix)) {
       redirect(`/${selectData?._id}`);
@@ -208,7 +251,8 @@ export default async function Page ({params}: {params: {id: string}}) {
     //?Get the newCode
     const parts = params.id.split('__');
     const newCode = parts[1];
-    const selectData = await fetchNewsEs(newCode);
+    const data = await fetchNewsDataEs(newCode);
+    const selectData = data.newsEs;
 
     if (!(selectedLang === suffix)) {
       redirect(`/${selectData?._id}`);
@@ -242,8 +286,6 @@ export default async function Page ({params}: {params: {id: string}}) {
   const lastUpdateMonth = lastUpdateDays / 31;
 
   const lastUpdateYear = lastUpdateDays / 365;
-
-
 
   return (
     <main>
@@ -316,5 +358,6 @@ export default async function Page ({params}: {params: {id: string}}) {
     </main>
   );
 }
+
 
 
