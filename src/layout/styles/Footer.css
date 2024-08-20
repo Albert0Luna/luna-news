@@ -5,22 +5,25 @@
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  gap: .5rem;
   width: 100%;
   border-top: 2px solid var(--gray-light);
 }
 
 .footer_privacity {
   display: flex;
-  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  gap: .5rem;
   font-size: 1.2rem;
   letter-spacing: 0.2px;
   font-weight: 300;
+  margin-bottom: 1rem;
   color: var(--ligth-color);
 }
 
 .privacy_link, .terms_link {
   color: white;
+  text-align: center;
 }
 
 .footer_social_container {

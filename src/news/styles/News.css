@@ -6,14 +6,14 @@
 .new_read_time {
   display: flex;
   font-size: 1.15rem;
-  justify-content: flex-end;
   color: var(--gray-strong);
 }
 
 .new_title {
-  font-size: 2.2rem;
-  margin-top: 1rem;
+  font-size: 2.3rem;
   text-wrap: balance;
+  font-weight: 500;
+  letter-spacing: .5px;
 }
 
 .new_info_author {
@@ -34,8 +34,8 @@
 }
 
 .new_info_author_picture_container {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
   overflow: hidden;
 }
@@ -128,7 +128,7 @@
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-between;
-  margin: 1rem 0;
+  margin: .5rem 0;
 }
 
 .new_info_text {
@@ -142,7 +142,7 @@
 .new_info_image_container {
   width: auto;
   height: auto;
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
 }
 
 .new_info_image {
@@ -159,18 +159,22 @@ small:has(.new_info_source) {
 }
 
 .new_info_date {
-  font-size: 1rem;
-  color: var(--gray-light);
+  font-size: .8rem;
+  margin: .4rem 0;
+  text-align: end;
+  flex-direction: flex-end;
+  color: var(--gray-strong);
 }
 
 .article {
   line-height: 25px;
   text-wrap: balance;
+  margin-top: 1rem;
 }
 
 .article h1 {
   font-size: 2rem;
-  font-weight: 650;
+  font-weight: 500;
   margin-bottom: .4rem;
   margin-top: .5rem;
   letter-spacing: .4px;
@@ -179,7 +183,7 @@ small:has(.new_info_source) {
 
 .article h2 {
   font-size: 1.6rem;
-  font-weight: 600;
+  font-weight: 500;
   margin-top: .5rem;
   letter-spacing: .4px;
   margin-bottom: .7rem;
@@ -188,7 +192,7 @@ small:has(.new_info_source) {
 
 .article h3 {
   font-size: 1.30rem;
-  font-weight: 600;
+  font-weight: 500;
   margin-top: .35rem;
   letter-spacing: .3px;
   margin-bottom: .4rem;
@@ -197,8 +201,8 @@ small:has(.new_info_source) {
 
 .article p {
   font-size: 1.1rem;
-  color: var(--gray-light);
-  margin-bottom: .4rem;
+  color: #dedede;
+  margin-bottom: .5rem;
   text-wrap: pretty;
 }
 
@@ -265,7 +269,7 @@ small:has(.new_info_source) {
   height: 2.5px;
   margin: 1.5rem 0 0rem 0;
   background-color: var(--primary-color-dark);
-  opacity: .7;
+  opacity: .55;
 }
 
 .article a {

@@ -53,29 +53,15 @@ export default function Header (
   {translations}: {translations: HomeTranslations}
 ) {
   const [showNav, setShowNav] = useState(false);
-  const [background, setBackground] = useState(false);
 
   const {changeLanguage, routes} = translations;
-  
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setBackground(true);
-      } else {
-        setBackground(false);
-      }
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+
 
   const hideNav = (value: boolean) => {
     setShowNav(value);
   };
   return (
-    <header className={clsx({
-      'header_background': background
-    })}>
+    <header>
       <div>
       </div>
       <div className='brand_menu'>
