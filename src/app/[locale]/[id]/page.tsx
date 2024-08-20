@@ -302,19 +302,19 @@ export default async function Page ({params}: {params: {id: string}}) {
               {
                 lastUpdate !== fechaDB
                   ? Number.isFinite(Math.round(lastUpdateYear)) && Math.round(lastUpdateYear) < 0
-                    ? `${lang?.value === 'en' ? 'Last update' : 'Última actualización'} ${rtf.format(Math.round(lastUpdateYear), 'year')}`
+                    ? `${selectedLang === 'en' ? 'Last update' : 'Última actualización'} ${rtf.format(Math.round(lastUpdateYear), 'year')}`
                     : Number.isFinite(Math.round(lastUpdateMonth)) && Math.round(lastUpdateMonth) < 0
-                      ? `${lang?.value === 'en' ? 'Last update' : 'Última actualización'} ${rtf.format(Math.round(lastUpdateMonth), 'month')}`
+                      ? `${selectedLang === 'en' ? 'Last update' : 'Última actualización'} ${rtf.format(Math.round(lastUpdateMonth), 'month')}`
                       : Number.isFinite(Math.round(lastUpdateDays)) && Math.round(lastUpdateDays) === -1
-                        ? `${lang?.value === 'en' ? 'Last update today' : 'Última actualización hoy'}`
-                        : `${lang?.value === 'en' ? 'Last update' : 'Última actualización'} ${rtf.format(Math.round(lastUpdateDays) + 1, 'day')}`
+                        ? `${selectedLang === 'en' ? 'Last update today' : 'Última actualización hoy'}`
+                        : `${selectedLang === 'en' ? 'Last update' : 'Última actualización'} ${rtf.format(Math.round(lastUpdateDays) + 1, 'day')}`
                   : Number.isFinite(Math.round(dateSinceUpdateYear)) && Math.round(dateSinceUpdateYear) < 0
-                    ? `${lang?.value === 'en' ? 'Written' : 'Escrito'} ${rtf.format(Math.round(dateSinceUpdateYear), 'year')}`
+                    ? `${selectedLang === 'en' ? 'Written' : 'Escrito'} ${rtf.format(Math.round(dateSinceUpdateYear), 'year')}`
                     : Number.isFinite(Math.round(dateSinceUpdateMonth)) && Math.round(dateSinceUpdateMonth) < 0
-                      ? `${lang?.value === 'en' ? 'Written' : 'Escrito'} ${rtf.format(Math.round(dateSinceUpdateMonth), 'month')}`
+                      ? `${selectedLang === 'en' ? 'Written' : 'Escrito'} ${rtf.format(Math.round(dateSinceUpdateMonth), 'month')}`
                       : Number.isFinite(Math.round(dateSinceUpdateDays)) && Math.round(dateSinceUpdateDays) === -1
-                        ? `${lang?.value === 'en' ? 'Written today' : 'Escrito hoy'}`
-                        : `${lang?.value === 'en' ? 'Written' : 'Escrito'} ${rtf.format(Math.round(dateSinceUpdateDays) + 1, 'day')}`
+                        ? `${selectedLang === 'en' ? 'Written today' : 'Escrito hoy'}`
+                        : `${selectedLang === 'en' ? 'Written' : 'Escrito'} ${rtf.format(Math.round(dateSinceUpdateDays) + 1, 'day')}`
               }
             </p>
           </div>
