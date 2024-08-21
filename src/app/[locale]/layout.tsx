@@ -8,7 +8,7 @@ import { cookies } from 'next/headers'
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import Scroll from '@/src/home/components/Scroll';
-import { GoogleAnalytics } from '@next/third-parties/google'
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 export function metadata () {
 
