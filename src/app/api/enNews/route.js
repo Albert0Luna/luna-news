@@ -6,7 +6,7 @@ export async function GET() {
   try {
     await connectDB();
 
-    const news = await NewsEn.find().limit(9);
+    const news = await NewsEn.find();
 
     return NextResponse.json(news);
   } catch (error) {

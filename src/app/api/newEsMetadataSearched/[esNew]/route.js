@@ -16,8 +16,8 @@ export async function GET (req, { params }) {
       thumbnail_image: 1, 
       createdAt: 1, 
       updatedAt: 1, 
-      sections: 1
-      
+      sections: 1,
+      summary: 1,
     });
 
     if (!filteredNew) {

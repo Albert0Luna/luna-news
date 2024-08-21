@@ -1,7 +1,7 @@
-GET http://127.0.0.1:3000/api/newEnSearched/12
+GET https://www.lunanews.tech/api/newEsSearched/12
 
 ###
-POST http://127.0.0.1:3000/api/esNews
+POST https://www.lunanews.tech/api/esNews
 Content-Type: application/json
 
 {

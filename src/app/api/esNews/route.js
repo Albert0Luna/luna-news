@@ -5,7 +5,7 @@ import { NextResponse } from 'next/server';
 export async function GET () {
   await connectDB();
 
-  const news = await NewsEs.find().limit(9);
+  const news = await NewsEs.find();
   return NextResponse.json(news);
 }
 
