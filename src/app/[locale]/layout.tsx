@@ -33,6 +33,7 @@ export function metadata () {
       : 'Sections, Luna News, Luna, News, Technology, Smarthphones, Gadgets, AI, Tutorial, Programming, Gaming, Reviews, Analysis, Pc & Laptops, Mobile, Tablets, Wearables, VR, AR, IoT, Apps, Software, Hardware, Opinion, Analysis, Editorial, Interview, Report, Review, Tutorial, Guide, Tips, Tricks, How to, Best, Top, Popular, Trending, Latest, Breaking, Exclusive, Special, Comparison, Versus, Versus'}`,
     authors: { name: 'Alberto' },
     creator: 'Alberto Luna',
+    description: `${lang === 'es' ? 'Un blog de tecnología que cubre las últimas noticias, reseñas, análisis, tutoriales y guías sobre teléfonos inteligentes, gadgets, IA, programación, juegos y más.' : 'A technology blog that covers the latest news, reviews, analysis, tutorials, and guides on smartphones, gadgets, AI, programming, gaming, and more.' }`,
     publisher: 'Alberto Luna',
     metadataBase: new URL('https://lunanews.tech'),
     alternates: {

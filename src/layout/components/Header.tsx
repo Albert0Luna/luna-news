@@ -66,7 +66,7 @@ export default function Header (
       </div>
       <div className='brand_menu'>
         <div className='brand'>
-          <Link href='/' className='brand_logo'>
+          <Link href='/' className='brand_logo' aria-label="Go to home">
             <LogoIcon width={40} alt='LUNA NEWS logo'/>
           </Link>
           <Link
@@ -78,6 +78,7 @@ export default function Header (
 
         <button 
           className='menu_button'
+          aria-label="Show navigation menu"
           onClick={() => setShowNav(prev => !prev)}  
         >
           <MenuIcon width={50} height={50} alt='Menu' />

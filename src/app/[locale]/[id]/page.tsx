@@ -10,7 +10,7 @@ function Profile ({ authorId } : { authorId?: string }) {
   return (
     <div className='new_info_author'>
       <picture className='new_info_author_picture_container'>
-        <img src='/alberto-luna.jpg' alt={authorId} />
+        <img src='/alberto-luna.jpg' alt={authorId} aria-label='profile photo'/>
       </picture>
       <p className='antialiased'>Alberto Luna</p>
     </div>
