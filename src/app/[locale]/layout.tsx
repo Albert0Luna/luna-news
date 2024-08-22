@@ -4,11 +4,12 @@ import Header from '@/src/layout/components/Header';
 import Footer from '@/src/layout/components/Footer';
 import '@/src/home/styles/main.css';
 import { Metadata } from 'next';
-import { cookies } from 'next/headers'
+import { cookies } from 'next/headers';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import Scroll from '@/src/home/components/Scroll';
 import { GoogleAnalytics } from '@next/third-parties/google';
+import Script from 'next/script';
 
 export function metadata () {
 
@@ -114,6 +115,18 @@ export default function RootLayout ({
     <html lang={locale} className={outfit.className}>
       <Scroll />
       <body>
+        <Script
+          id='gtm'
+          strategy='afterInteractive'
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MNZW4T6Q');`
+          }}
+        >
+        </Script>
         <GoogleAnalytics gaId='G-48F051V7CK' />
         <section className='header_and_content'>
           <Header translations={homeTranslations}/>
