@@ -100,7 +100,7 @@ function Sections () {
             sections && sections.map(item => {
               return (
                 <li key={item.title} className='section_item_container'>
-                  <Link  href={`/sections/${item.link}`} className='section_item' >
+                  <Link  href={`/sections/${item.link}/1`} className='section_item' >
                     <picture className='section_item_svg_container'>
                       {item.icon()}
                     </picture>

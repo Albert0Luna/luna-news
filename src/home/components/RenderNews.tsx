@@ -2,15 +2,16 @@ import { Link } from '@/src/navigation';
 import { cookies } from 'next/headers';
 
 async function fetchLatestNewsEn () {
-  const response = await fetch('https://www.lunanews.tech/api/enNews');
-  const data = await response.json();
-  return data;
+  const response = await fetch('http://127.0.0.1:3000/api/enNews/Latest/1');
+  const {fechedNews, allNews} = await response.json();
+  return {fechedNews, allNews};
 }
 
+
 async function fetchLatestNewsEs () {
-  const response = await fetch('https://www.lunanews.tech/api/esNews');
-  const data = await response.json();
-  return data;
+  const response = await fetch('http://127.0.0.1:3000/api/esNews/Lo último/1');
+  const {fechedNews, allNews} = await response.json();
+  return {fechedNews, allNews};
 }
 
 export default async function RenderNews () {
@@ -24,10 +25,12 @@ export default async function RenderNews () {
     ? articles = await fetchLatestNewsEn() 
     : articles = await fetchLatestNewsEs();
 
+  const {fechedNews} = articles;
+
 
   return (
     <ul className='highlights_container'>
-      {articles.map((article: any) => (
+      {fechedNews.map((article: any) => (
         <li key={article.new_code} className='highlights_item'>
           <Link href={`/${article._id}`} className='highlights_item_link' scroll={true}>
             <h5 className='highlights_item_title'>

@@ -1,91 +1,86 @@
-import { Link } from '@/src/navigation';
+import { Link, redirect } from '@/src/navigation';
 import { cookies } from 'next/headers';
-import Sections from './Sections';
+import { Pagination } from './Pagination';
 
-async function fetchAllNewsEn () {
-  const response = await fetch('http://www.lunanews.tech/api/enNews');
-  const data = await response.json();
-  return data;
+async function fetchSectionEs (section: string, page: string) {
+  const response = await fetch(`http://127.0.0.1:3000/api/esNews/${section}/${page ?? 0}`);
+  const {fechedNews, allNews} = await response.json();
+  return {fechedNews, allNews};
 }
 
-async function fetchAllNewsEs () {
-  const response = await fetch('http://www.lunanews.tech/api/esNews');
-  const data = await response.json();
-  return data;
+async function fetchSectionEn (section: string, page: string) {
+  const response = await fetch(`http://127.0.0.1:3000/api/enNews/${section}/${page ?? 0}`);
+  const {fechedNews, allNews} = await response.json();
+  return {fechedNews, allNews};
 }
 
-async function fetchSectionEs (section: string) {
-  const response = await fetch('http://www.lunanews.tech/api/esNews');
-  const data = await response.json();
-  const filteredSection = data.filter(
-    (item : any) => item.sections.some((s : any) => s.toLowerCase() === section.toLowerCase())
-  );
-  return filteredSection;
-}
-
-async function fetchSectionEn (section: string) {
-  const response = await fetch('http://www.lunanews.tech/api/enNews');
-  const data = await response.json();
-  const filteredSection = data.filter(
-    (item : any) => item.sections.some((s : any) => s.toLowerCase() === section.toLowerCase())
-  );
-  return filteredSection;
-}
-
-export default async function RenderNews ({section}: {section: string | undefined}) {
+export default async function RenderNews ({section, sectionPath, page}: {
+  section: string | undefined, 
+  sectionPath: string | undefined,
+  page: string
+}) {
   
   const cookieStore = cookies();
-  const lang = cookieStore.get('NEXT_LOCALE')?.value;
-
-  const latest = section === 'Latest' || section === 'Lo último';
+  const lang = cookieStore.get('NEXT_LOCALE')?.value ?? 'en';
 
   let articles;
   
-  if (latest) {
-    (lang === 'en') 
-      ? articles = await fetchAllNewsEn()
-      : articles = await fetchAllNewsEs();
+  lang === 'en'
+    ? articles = await fetchSectionEn(section as string, page as string)
+    : articles = await fetchSectionEs(section as string, page as string);
 
-  } else {
-    (lang === 'en') 
-      ? articles = await fetchSectionEn(section as string)
-      : articles = await fetchSectionEs(section  as string);
+  const {fechedNews, allNews} = articles;
+  const totalPages = Math.floor(allNews / 5) + 1;
+
+  if (parseInt(page) < 1) {
+    redirect(`/sections/${sectionPath}/1`);
+    return;
+  } else if (parseInt(page) > totalPages) {
+    redirect(`/sections/${sectionPath}/${totalPages}`);
   }
 
   return (
-    <ul className='section_highlights_container'>
-      {articles.map((article: any) => (
-        <li key={article.new_code} className='section_highlights_item'>
-          <Link href={`/${article._id}`} className='section_highlights_item_link' scroll={true}>
-            <h5 className='section_highlights_item_title'>
-              {article.title}
-            </h5>
-            <div className='section_highlights_s1'>
-              <div className='section_highlights_item_image_container'>
-                <img 
-                  src={article.thumbnail_image}
-                  alt={article.image_alt}
-                  className='section_highlights_item_image'
-                />
-              </div>
-              <div className='section_highlights_item_content'>
-                {/*  
+    <section className='news_pages'>  
+      <ul className='section_highlights_container'>
+        {
+          fechedNews.map((article: any) => (
+            <li key={article.new_code} className='section_highlights_item'>
+              <Link href={`/${article._id}`} className='section_highlights_item_link' scroll={true}>
+                <h5 className='section_highlights_item_title'>
+                  {article.title}
+                </h5>
+                <div className='section_highlights_s1'>
+                  <div className='section_highlights_item_image_container'>
+                    <img 
+                      src={article.thumbnail_image}
+                      alt={article.image_alt}
+                      className='section_highlights_item_image'
+                    />
+                  </div>
+                  <div className='section_highlights_item_content'>
+                    {/*  
                 <p className='section_highlights_item_date'> 2021-09-09</p> 
                 <p className='section_highlights_item_readtime'> readtime 5 min</p>
               */}
-                <p 
-                  className='section_highlights_item_body'
-                >
-                  {article.summary}
-                </p>
+                    <p 
+                      className='section_highlights_item_body'
+                    >
+                      {article.summary}
+                    </p>
               
-                <small className='section_highlights_item_more'>{lang === 'es' ? 'Leer más' : 'Read more'}</small>
+                    <small className='section_highlights_item_more'>{lang === 'es' ? 'Leer más' : 'Read more'}</small>
               
-              </div>
-            </div>
-          </Link>
-        </li>
-      ))}
-    </ul>
+                  </div>
+                </div>
+              </Link>
+            </li>
+          ))}
+      </ul>
+      <Pagination
+        section={sectionPath}
+        page={page}
+        allNews={allNews}
+      />
+    </section>
   );
 }

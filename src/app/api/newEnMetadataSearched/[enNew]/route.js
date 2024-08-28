@@ -9,6 +9,7 @@ export async function GET (req, { params }) {
 
     const filteredNew = await NewsEn.findOne({ new_code: idNew}, {
       title: 1, 
+      new_code: 1,
       keywords: 1, 
       author_id: 1, 
       url_en: 1, 

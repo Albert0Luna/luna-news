@@ -86,7 +86,7 @@ export default function CoverPage () {
                 sections.map((section) => (
                   <li key={section.title} className='section_item'>
                     <Link 
-                      href={`/sections/${section.link}`} 
+                      href={`/sections/${section.link}/1`} 
                       className='section_item_link'
                     >
                       <div className='section_icon'>

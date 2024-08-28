@@ -113,7 +113,15 @@ export function generateMetadata ({params}: {params: {id: string}}) {
   return dynamicMetadata;
 };
 
-function Page ({params}: {params: {id: string}}) {
+function Page ({
+  params,
+  searchParams
+}: {
+  searchParams: {[key: string]: string | string[] | undefined},
+  params: {id: string}
+}) {
+
+  console.log('params', params);
 
   const t = useTranslations('Coverpage');
 
@@ -128,15 +136,14 @@ function Page ({params}: {params: {id: string}}) {
     {path: 'ai', title: t('sections.AI')},
   ];
 
-  const section = sections.find((section) => section.path === params.id);
+  const section = sections.find((section) => section.path === params.id[0]); 
 
   return (
     <main>
       <h1 className='title_section'>
         {section?.title}
       </h1>
-      <hr className='section_divisor'/>
-      <RenderSection section={section?.title}/>
+      <RenderSection section={section?.title} sectionPath={section?.path} page={params.id[1]}/>
     </main>
   );
 }
