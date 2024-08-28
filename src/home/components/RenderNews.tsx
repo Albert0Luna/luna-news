@@ -21,9 +21,9 @@ export default async function RenderNews () {
 
   let articles;
 
-  (lang?.value === 'en') 
-    ? articles = await fetchLatestNewsEn() 
-    : articles = await fetchLatestNewsEs();
+  (lang?.value === 'es') 
+    ? articles = await fetchLatestNewsEs()
+    : articles = await fetchLatestNewsEn();
 
   const {fechedNews} = articles;
 
