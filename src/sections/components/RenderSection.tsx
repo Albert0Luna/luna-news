@@ -3,13 +3,13 @@ import { cookies } from 'next/headers';
 import { Pagination } from './Pagination';
 
 async function fetchSectionEs (section: string, page: string) {
-  const response = await fetch(`http://127.0.0.1:3000/api/esNews/${section}/${page ?? 0}`);
+  const response = await fetch(`https://www.lunanews.tech/api/esNews/${section}/${page ?? 0}`);
   const {fechedNews, allNews} = await response.json();
   return {fechedNews, allNews};
 }
 
 async function fetchSectionEn (section: string, page: string) {
-  const response = await fetch(`http://127.0.0.1:3000/api/enNews/${section}/${page ?? 0}`);
+  const response = await fetch(`https://www.lunanews.tech/api/enNews/${section}/${page ?? 0}`);
   const {fechedNews, allNews} = await response.json();
   return {fechedNews, allNews};
 }

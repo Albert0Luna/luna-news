@@ -2,14 +2,14 @@ import { Link } from '@/src/navigation';
 import { cookies } from 'next/headers';
 
 async function fetchLatestNewsEn () {
-  const response = await fetch('http://127.0.0.1:3000/api/enNews/Latest/1');
+  const response = await fetch('https://www.lunanews.tech/api/enNews/Latest/1');
   const {fechedNews, allNews} = await response.json();
   return {fechedNews, allNews};
 }
 
 
 async function fetchLatestNewsEs () {
-  const response = await fetch('http://127.0.0.1:3000/api/esNews/Lo último/1');
+  const response = await fetch('https://www.lunanews.tech/api/esNews/Lo último/1');
   const {fechedNews, allNews} = await response.json();
   return {fechedNews, allNews};
 }
