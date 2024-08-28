@@ -121,8 +121,6 @@ function Page ({
   params: {id: string}
 }) {
 
-  console.log('params', params);
-
   const t = useTranslations('Coverpage');
 
   const sections = [
