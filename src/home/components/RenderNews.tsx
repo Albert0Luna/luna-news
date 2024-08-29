@@ -1,5 +1,4 @@
 import { Link } from '@/src/navigation';
-import { cookies } from 'next/headers';
 
 async function fetchLatestNewsEn () {
   const response = await fetch('https://www.lunanews.tech/api/enNews/Latest/1');
@@ -14,19 +13,15 @@ async function fetchLatestNewsEs () {
   return {fechedNews, allNews};
 }
 
-export default async function RenderNews () {
-  
-  const cookieStore = cookies();
-  const lang = cookieStore.get('NEXT_LOCALE');
+export default async function RenderNews ({locale}: {locale: string}) {
 
   let articles;
 
-  (lang?.value === 'es') 
+  (locale === 'es') 
     ? articles = await fetchLatestNewsEs()
     : articles = await fetchLatestNewsEn();
 
   const {fechedNews} = articles;
-
 
   return (
     <ul className='highlights_container'>
@@ -55,7 +50,7 @@ export default async function RenderNews () {
                   {article.summary}
                 </p>
               
-                <small className='highlights_item_more'>{lang?.value === 'es' ? 'Leer más' : 'Read more'}</small>
+                <small className='highlights_item_more'>{locale === 'es' ? 'Leer más' : 'Read more'}</small>
               
               </div>
             </div>

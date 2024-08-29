@@ -3,11 +3,19 @@ import Highlights from '@/src/home/components/Highlights';
 import '@/src/home/styles/main.css';
 import '@/src/layout/styles/Footer.css';
 
-export default function Page () {
+interface RootLayoutProps {
+  children: React.ReactNode
+  params: {
+    locale: 'en' | 'es'
+  }
+}
+
+export default function Page ({params: { locale }}: Readonly<RootLayoutProps>) {
+
   return (
     <main>
       <CoverPage />
-      <Highlights />
+      <Highlights lang={locale}/>
     </main>
   );
 }

@@ -55,7 +55,7 @@ export function generateMetadata ({params}: {params: {id: string}}) {
     },
   ];
 
-  const sectionTitle = sections.find(section => section.path === params.id);
+  const sectionTitle = sections.find((section) => section.path === params.id[0]);
 
   const dynamicMetadata: Metadata = {
     //? Basic metadata
