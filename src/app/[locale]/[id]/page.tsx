@@ -3,6 +3,7 @@ import { MDXRemote } from 'next-mdx-remote/rsc';
 // import Profile from '@/src/news/components/Profile';
 import { redirect } from '@/src/navigation';
 import { cookies } from 'next/headers';
+import ReloadPage from '@/src/news/components/ReloadPage';
 // import Adsense from '@/src/rootComponents.tsx/components/Adsense';
 // import GoogleAdUnit from '@/src/rootComponents.tsx/components/GoogleAdUnit';
 
@@ -71,7 +72,7 @@ async function fetchMetadataNewsEs (new_code: string) {
   return filteredSection;
 }
 
-/*
+
 export async function generateMetadata ({ params }: { params: { id: string } }) {
 
   const cookieStore = cookies();
@@ -219,8 +220,6 @@ export async function generateMetadata ({ params }: { params: { id: string } }) 
     }
   }
 }
-  */
-
 
 export default async function Page ({params}: {params: {id: string}}) {
 
@@ -299,6 +298,7 @@ export default async function Page ({params}: {params: {id: string}}) {
 
   return (
     <main>
+      <ReloadPage />
       <section className='new'>
         <h1 className='new_title'>{selectedNew?.title}</h1>
         <p className='new_info_date'>

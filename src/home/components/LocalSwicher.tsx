@@ -15,7 +15,7 @@ export default function LocalSwicher ({changeLanguage}: {changeLanguage: string}
   const onSelectChange = (e: ChangeEvent<HTMLSelectElement>) => {
     const nextLocale = e.target.value;
     startTransition(() => {
-      router.push(`/${nextLocale + pathName.slice(3)}`);
+      router.push(`/${nextLocale + pathName.slice(3)}`, {scroll: true});
     });
   };
   return (
