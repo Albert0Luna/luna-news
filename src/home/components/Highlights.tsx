@@ -2,7 +2,6 @@ import '@/src/home/styles/Highlights.css';
 import RenderNews from '@/src/home/components/RenderNews';
 import { Suspense } from 'react';
 import { useTranslations } from 'next-intl';
-
 const HighlightSkeleton = () => {
   return (
     <div className="loader"></div>

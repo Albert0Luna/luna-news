@@ -222,8 +222,6 @@ export async function generateMetadata ({ params }: { params: { id: string } }) 
 
 
 export default async function Page ({params}: {params: {id: string}}) {
-  
-  //const t = await useTranslations('Date');
 
   const cookieStore = cookies();
   const lang = cookieStore.get('NEXT_LOCALE');
@@ -301,6 +299,7 @@ export default async function Page ({params}: {params: {id: string}}) {
   return (
     <main>
       <section className='new'>
+        <h1>{lang?.value}</h1>
         <h1 className='new_title'>{selectedNew?.title}</h1>
         <p className='new_info_date'>
           {
