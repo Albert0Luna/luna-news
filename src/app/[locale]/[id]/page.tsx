@@ -71,7 +71,7 @@ async function fetchMetadataNewsEs (new_code: string) {
   return filteredSection;
 }
 
-
+/*
 export async function generateMetadata ({ params }: { params: { id: string } }) {
 
   const cookieStore = cookies();
@@ -84,7 +84,7 @@ export async function generateMetadata ({ params }: { params: { id: string } }) 
   const suffixLower = prefix[1].toLowerCase();
   
   let defaultLang;
-  
+
   if (!lang?.value) {
     defaultLang = suffixLower;
   } else {
@@ -219,6 +219,7 @@ export async function generateMetadata ({ params }: { params: { id: string } }) 
     }
   }
 }
+  */
 
 
 export default async function Page ({params}: {params: {id: string}}) {
@@ -228,7 +229,7 @@ export default async function Page ({params}: {params: {id: string}}) {
 
   let selectedNew;
 
-  const prefix =  params.id.split('_');
+  const prefix = params.id.split('_');
   const suffixLower = prefix[1].toLowerCase();
   let selectedLang;
 
@@ -299,7 +300,6 @@ export default async function Page ({params}: {params: {id: string}}) {
   return (
     <main>
       <section className='new'>
-        <h1>{lang?.value}</h1>
         <h1 className='new_title'>{selectedNew?.title}</h1>
         <p className='new_info_date'>
           {
