@@ -15,7 +15,7 @@
   
   --background-color: #222;
 
-  --background-gradient-dark: linear-gradient(95deg, #000 0%, #1d1d1d 70%);
+  --background-gradient-dark: linear-gradient(180deg, #111 0%, #333 70%);
 
   --backgorund-code: linear-gradient(95deg, #2c2c2c 20%, #3a3939 70%);
 
@@ -32,6 +32,9 @@ html {
 @media screen and (min-width: 1030px) {
   html {
     background-color: #000;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
   }
 }
 

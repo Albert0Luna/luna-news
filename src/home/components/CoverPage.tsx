@@ -1,7 +1,6 @@
 import { useTranslations } from 'next-intl';
 import LogoIcon from '@/src/icons/ui-icons/LogoIcon';
 import { Link } from '@/src/navigation';
-import {oxygen} from '@/src/fonts/fonts';
 import BookIcon from '@/src/icons/sections/BookIcon';
 import MagnifyingIcon from '@/src/icons/sections/MagnifyingIcon';
 import SmartphoneIcon from '@/src/icons/sections/SmartphoneIcon';
