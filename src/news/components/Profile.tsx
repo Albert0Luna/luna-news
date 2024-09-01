@@ -28,17 +28,17 @@ export function AuthorProfile ({ closeDialogFn, author }: { closeDialogFn: () =>
       }
     },
     {
-      id: 'dinorah-robles',
-      name: 'Dinorah Robles',
+      id: 'dinorah-luna',
+      name: 'Dinorah Luna',
       picture: '/alberto-luna.jpeg',
       descES: {
-        p1: 'Hola soy Dinorah Robles',
-        p2: 'Creadora de Luna News, Estudiante de ciberseguridad, pero sobre todo soy una apacionada de la tecnologia',
+        p1: 'Hola soy Dinorah Luna',
+        p2: 'Estudiante de ciberseguridad, pero sobre todo soy una apacionada de la tecnologia ',
         p3: 'Espero el contenido que conpartimos de este sitio web de noticas tecnologicas sea de tu agrado.',
         p4: 'Abrochate tus cinturones y preparate para este viaje de conocimeinto al estilo de Luna News.'
       },
       descEN: {
-        p1: 'Hi, I am Dinorah Robles',
+        p1: 'Hi, I am Dinorah Luna',
         p2: 'Creator of Luna News, Cybersecurity student, but above all I am passionate about technology',
         p3: 'I hope the content we share from this technology news website is to your liking.',
         p4: 'Buckle up and get ready for this knowledge journey Luna News style.'

@@ -41,46 +41,52 @@ export default async function RenderNews ({section, sectionPath, page}: {
 
   return (
     <section className='news_pages'>  
-      <ul className='section_highlights_container'>
-        {
-          fechedNews.map((article: any) => (
-            <li key={article.new_code} className='section_highlights_item'>
-              <Link href={`/${article._id}`} className='section_highlights_item_link' scroll={true}>
-                <h5 className='section_highlights_item_title'>
-                  {article.title}
-                </h5>
-                <div className='section_highlights_s1'>
-                  <div className='section_highlights_item_image_container'>
-                    <img 
-                      src={article.thumbnail_image}
-                      alt={article.image_alt}
-                      className='section_highlights_item_image'
-                    />
-                  </div>
-                  <div className='section_highlights_item_content'>
-                    {/*  
+      {
+        !allNews 
+          ? <h1>We are working on articles for this section</h1>
+          : <>
+            <ul className='section_highlights_container'>
+              {
+                fechedNews.map((article: any) => (
+                  <li key={article.new_code} className='section_highlights_item'>
+                    <Link href={`/${article._id}`} className='section_highlights_item_link' scroll={true}>
+                      <h5 className='section_highlights_item_title'>
+                        {article.title}
+                      </h5>
+                      <div className='section_highlights_s1'>
+                        <div className='section_highlights_item_image_container'>
+                          <img 
+                            src={article.thumbnail_image}
+                            alt={article.image_alt}
+                            className='section_highlights_item_image'
+                          />
+                        </div>
+                        <div className='section_highlights_item_content'>
+                          {/*  
                 <p className='section_highlights_item_date'> 2021-09-09</p> 
                 <p className='section_highlights_item_readtime'> readtime 5 min</p>
               */}
-                    <p 
-                      className='section_highlights_item_body'
-                    >
-                      {article.summary}
-                    </p>
+                          <p 
+                            className='section_highlights_item_body'
+                          >
+                            {article.summary}
+                          </p>
               
-                    <small className='section_highlights_item_more'>{lang === 'es' ? 'Leer más' : 'Read more'}</small>
+                          <small className='section_highlights_item_more'>{lang === 'es' ? 'Leer más' : 'Read more'}</small>
               
-                  </div>
-                </div>
-              </Link>
-            </li>
-          ))}
-      </ul>
-      <Pagination
-        section={sectionPath}
-        page={page}
-        allNews={allNews}
-      />
+                        </div>
+                      </div>
+                    </Link>
+                  </li>
+                ))}
+            </ul>
+            <Pagination
+              section={sectionPath}
+              page={page}
+              allNews={allNews}
+            />
+          </>
+      }
     </section>
   );
 }

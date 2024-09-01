@@ -15,3 +15,9 @@ export interface HomeTranslations {
   donate: string;
   changeLanguage: string;
 }
+
+export type Section = {
+  title: string;
+  link: `/${string}`;
+  icon: () => JSX.Element;
+}

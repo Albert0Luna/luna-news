@@ -312,12 +312,12 @@ export default async function Page ({params}: {params: {id: string}}) {
                     ? `${selectedLang === 'en' ? 'Last update today' : 'Última actualización hoy'}`
                     : `${selectedLang === 'en' ? 'Last update' : 'Última actualización'} ${rtf.format(Math.round(lastUpdateDays) + 1, 'day')}`
               : Number.isFinite(Math.round(dateSinceUpdateYear)) && Math.round(dateSinceUpdateYear) < 0
-                ? `${selectedLang === 'en' ? 'Written' : 'Escrito'} ${rtf.format(Math.round(dateSinceUpdateYear), 'year')}`
+                ? `${selectedLang === 'en' ? 'Published' : 'Publicado'} ${rtf.format(Math.round(dateSinceUpdateYear), 'year')}`
                 : Number.isFinite(Math.round(dateSinceUpdateMonth)) && Math.round(dateSinceUpdateMonth) < 0
-                  ? `${selectedLang === 'en' ? 'Written' : 'Escrito'} ${rtf.format(Math.round(dateSinceUpdateMonth), 'month')}`
+                  ? `${selectedLang === 'en' ? 'Published' : 'Publicado'} ${rtf.format(Math.round(dateSinceUpdateMonth), 'month')}`
                   : Number.isFinite(Math.round(dateSinceUpdateDays)) && Math.round(dateSinceUpdateDays) === -1
-                    ? `${selectedLang === 'en' ? 'Written today' : 'Escrito hoy'}`
-                    : `${selectedLang === 'en' ? 'Written' : 'Escrito'} ${rtf.format(Math.round(dateSinceUpdateDays) + 1, 'day')}`
+                    ? `${selectedLang === 'en' ? 'Published today' : 'Publicado hoy'}`
+                    : `${selectedLang === 'en' ? 'Published' : 'Publicado'} ${rtf.format(Math.round(dateSinceUpdateDays) + 1, 'day')}`
           }
         </p>
         

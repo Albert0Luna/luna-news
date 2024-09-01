@@ -5,6 +5,7 @@ import React from 'react';
 import '@/src/sections/styles/Section.css';
 import { cookies } from 'next/headers';
 import { Metadata } from 'next';
+import path from 'path';
 
 export function generateMetadata ({params}: {params: {id: string}}) {
 
@@ -53,6 +54,11 @@ export function generateMetadata ({params}: {params: {id: string}}) {
       title: ['IA', 'AI'],
       desc: ['Las últimas noticias de inteligencia artificial', 'The latest news on artificial intelligence'],
     },
+    {
+      path: 'cybersecurity',
+      title: ['Ciberseguridad', 'Cybersecurity'],
+      desc: ['Las últimas noticias de ciberseguridad', 'The latest cybersecurity news']
+    }
   ];
 
   const sectionTitle = sections.find((section) => section.path === params.id[0]);
@@ -132,6 +138,7 @@ function Page ({
     {path: 'reviews', title: t('sections.Reviews')},
     {path: 'programming', title: t('sections.Programming')},
     {path: 'ai', title: t('sections.AI')},
+    {path: 'cybersecurity', title: t('sections.Cybersecurity')}
   ];
 
   const section = sections.find((section) => section.path === params.id[0]); 

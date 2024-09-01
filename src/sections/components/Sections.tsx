@@ -11,6 +11,8 @@ import HotIcon from '@/src/icons/sections/FireIcon';
 import { Link } from '@/src/navigation';
 import { cookies } from 'next/headers';
 import { Metadata } from 'next';
+import Cybersecurity from '@/src/icons/sections/Cybersecurity';
+import { Section } from '@/types/interfaces';
 
 export function metadata () {
 
@@ -47,7 +49,7 @@ function Sections () {
   const t = useTranslations('Coverpage');
   const tSections = useTranslations('SectionsPage');
 
-  const sections = [
+  const sections:Array<Section> = [
     {
       title: t('sections.Latest'),
       link: '/latest',
@@ -88,6 +90,11 @@ function Sections () {
       link: '/ai',
       icon: () => <AIIcon />
     },
+    {
+      title: t('sections.Cybersecurity'),
+      link: '/cybersecurity',
+      icon: () => <Cybersecurity />
+    }
   ];
 
   return (

@@ -10,12 +10,14 @@ import ProgrammerIcon from '@/src/icons/sections/ProgrammerIcon';
 import AIIcon from '@/src/icons/sections/AIIcon';
 import HotIcon from '@/src/icons/sections/FireIcon';
 import '@/src/home/styles/Coverpage.css';
+import Cybersecurity from '@/src/icons/sections/Cybersecurity';
+import { Section } from '@/types/interfaces';
 
 export default function CoverPage () {
   const t = useTranslations('Coverpage');
 
 
-  const sections = [
+  const sections: Array<Section> = [
     {
       title: t('sections.Latest'),
       link: '/latest',
@@ -56,6 +58,11 @@ export default function CoverPage () {
       link: '/ai',
       icon: () => <AIIcon />
     },
+    {
+      title: t('sections.Cybersecurity'),
+      link: '/cybersecurity',
+      icon: () => <Cybersecurity />
+    }
   ];
 
   return (
