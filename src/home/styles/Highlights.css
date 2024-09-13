@@ -100,15 +100,6 @@
 }
 
 .highlights_section {
-  font-size: .75rem;
-  font-weight: 300;
-  text-align: center;
-  padding: .2rem;
-  border-radius: 10px;
-  border: 1px solid var(--gray-light);
-}
-
-.highlights_section {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -125,7 +116,7 @@
   text-overflow: ellipsis;
   transition: opacity .25s ease, background-color .25s ease;
 
-  &::before {
+  &:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -134,56 +125,56 @@
     border: inherit;
     border-radius: inherit;
     mask: 
-      linear-gradient(white, white) padding-box, 
-      linear-gradient(white, white);
-    mask-composite: exclude;
+    linear-gradient(white, white) padding-box, 
+    linear-gradient(white, white);
+  mask-composite: exclude;
   }
 }
 
 .highlights_section_tutorials {
-  &::before {
+  &:before {
     background: var(--tutorials);
   }
 }
 
 .highlights_section_pcs {
-  &::before {
+  &:before {
     background: var(--pcs);
   }
 }
 
 .highlights_section_mobiles {
-  &::before {
+  &:before {
     background: var(--mobiles);
   }
 }
 
 .highlights_section_gaming {
-  &::before {
+  &:before {
     background: var(--gaming);
   }
 }
 
 .highlights_section_reviews {
-  &::before {
+  &:before {
     background: var(--reviews);
   }
 }
 
 .highlights_section_programming {
-  &::before {
+  &:before {
     background: var(--programming);
   }
 }
 
 .highlights_section_ai {
-  &::before {
+  &:before {
     background: var(--ai);
   }
 }
 
 .highlights_section_cybersecurity {
-  &::before {
+  &:before {
     background: var(--cybersecurity);
   }
 }
@@ -241,7 +232,7 @@
   border: 2px solid transparent;
   transition: opacity 3s ease, background-color .3s ease;
 
-  &::before {
+  &:before {
     content: "";
     position: absolute;
     width: 100%;
