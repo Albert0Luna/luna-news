@@ -13,6 +13,7 @@ import { cookies } from 'next/headers';
 import { Metadata } from 'next';
 import Cybersecurity from '@/src/icons/sections/Cybersecurity';
 import { Section } from '@/types/interfaces';
+import clsx from 'clsx';
 
 export function metadata () {
 
@@ -100,25 +101,39 @@ function Sections () {
   return (
     <div className='sections'>
       <h1 className='sections_title'>{tSections('sections')}</h1>
-      <hr className='sections_divisor'/>
       <section className='section'>
-        <ul className='sections_container'>
+        <div className='section_container'>
           {
             sections && sections.map(item => {
               return (
-                <li key={item.title} className='section_item_container'>
-                  <Link  href={`/sections/${item.link}/1`} className='section_item' >
-                    <picture className='section_item_svg_container'>
-                      {item.icon()}
-                    </picture>
-                    <h2 className='section_item_title'>{item.title}</h2>
-                    <small className='section_item_more'>{tSections('readMore')}</small>
+                <div key={item.title} className={clsx(
+                  'section_item', {
+                    'section_item_tutorials': item.link === '/tutorials',
+                    'section_item_pcs': item.link === '/pcs-and-laptops',
+                    'section_item_mobiles': item.link === '/mobiles-and-tablets',
+                    'section_item_gaming': item.link === '/gaming',
+                    'section_item_reviews': item.link === '/reviews',
+                    'section_item_programming': item.link === '/programming',
+                    'section_item_ai': item.link === '/ai',
+                    'section_item_cybersecurity': item.link === '/cybersecurity'
+                  }
+                )}>
+
+                  <picture className='section_item_svg_container'>
+                    {item.icon()}
+                  </picture>
+
+                  <h2 className='section_item_title'>{item.title}</h2>
+
+                  <Link key={item.title} href={`/sections/${item.link}/1`} className='section_link'>
+                    Posts
                   </Link>
-                </li>
+
+                </div>
               );
             })
           }
-        </ul>
+        </div>
       </section>
     </div>
   );

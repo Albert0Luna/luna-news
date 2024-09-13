@@ -12,7 +12,9 @@ export default function Highlights ({lang: locale}: {lang: string}) {
   const t = useTranslations('Coverpage');
   return (
     <article className='highlight'>
+      {/* 
       <h4 className='highlight_name'>{t('highlight.p1')} <span>{t('highlight.p2')}</span> {t('highlight.p3')}</h4>
+      */}
       <Suspense fallback={<HighlightSkeleton />}>
         <RenderNews locale={locale}/>
       </Suspense>

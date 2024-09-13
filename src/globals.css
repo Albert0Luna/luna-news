@@ -4,8 +4,8 @@
   
   --dark-color-bg: #57575750;
   
-  --primary-color-dark: #E71D36;
-  --primary-color-light: #E63946;
+  --primary-color-dark: linear-gradient(135deg, #E71D36 25.01%, #B71DFF 99.55%);
+  --primary-color-light: linear-gradient(135deg, #E71D36 25.01%, #B71DFF 99.55%);
 
   --primary-color-link: #f7465a;
   
@@ -21,21 +21,20 @@
 
   --content-mobile: 100%;
   --content-pc: 56%;
-  
+  --viewport-pc: 90%;
+  --viewport-mobile: 95%;
 
-}
+  --read-more: linear-gradient(135deg, #f5596b 25.01%, #c44afd 99.55%) border-box;
 
-html {
-  background-color: var(--dark-color);
-}
-
-@media screen and (min-width: 1030px) {
-  html {
-    background-color: #000;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-  }
+  /*? Section colors */
+  --tutorials: linear-gradient(350deg, #d8d7d7 0%, #85cbfa 100%) border-box;
+  --pcs: linear-gradient(350deg, #d8d7d7 0%, #FFEC58 100%) border-box;
+  --mobiles: linear-gradient(350deg, #d8d7d7 0%, #f7223b 100%) border-box;
+  --gaming: linear-gradient(350deg, #d8d7d7 0%, #B71DFF 100%) border-box;
+  --reviews: linear-gradient(350deg, #d8d7d7 0%, #FFA07A 100%) border-box;
+  --programming: linear-gradient(350deg, #d8d7d7 0%, #91E262 100%) border-box;
+  --ai: linear-gradient(350deg, #d8d7d7 0%, #7af6ff 100%) border-box;
+  --cybersecurity: linear-gradient(350deg, #d8d7d7 0%, #4499ff 100%) border-box;
 }
 
 * {
@@ -44,6 +43,31 @@ html {
   margin: 0;
   list-style: none;
   text-decoration: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  overflow-x: hidden;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  width: var(--viewport-mobile);
+}
+
+@media screen and (min-width: 1030px) {
+  main {
+    width: var(--viewport-pc);
+  }
 }
 
 /** LOADER */

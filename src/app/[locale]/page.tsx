@@ -5,9 +5,9 @@ import '@/src/layout/styles/Footer.css';
 
 export default function Page ({params}: {params: {locale: string}}) {
   return (
-    <main>
+    <>
       <CoverPage />
       <Highlights lang={params.locale}/>
-    </main>
+    </>
   );
 }

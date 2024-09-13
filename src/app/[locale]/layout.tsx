@@ -129,14 +129,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         >
         </Script>
         <GoogleAnalytics gaId='G-48F051V7CK' />
-        <section className='header_and_content'>
-          <Header translations={homeTranslations}/>
-          <main>
-            {children}
-            <SpeedInsights />
-            <Analytics /> 
-          </main>
-        </section>
+        <Header translations={homeTranslations}/>
+        <main>
+          {children}
+          <SpeedInsights />
+          <Analytics /> 
+        </main>
         <Footer />
       </body>
     </html>

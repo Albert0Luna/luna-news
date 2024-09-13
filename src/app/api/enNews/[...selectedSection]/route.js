@@ -26,6 +26,7 @@ export async function GET (req, { params }) {
         updatedAt: 1, 
         sections: 1,
         summary: 1,
+        read_time: 1,
       }).skip(noticesSkipped).limit(per_page).sort({ createdAt: -1 });
       const allNewsCount = await NewsEn.countDocuments();
       return NextResponse.json({ fechedNews: news, allNews: allNewsCount });

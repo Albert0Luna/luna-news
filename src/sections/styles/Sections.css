@@ -1,22 +1,14 @@
 .sections {
+  display: grid;
   min-height: 100vh;
   width: 100%;
+  gap: 1rem;
 }
 
 .sections_title {
   font-size: 2.5rem;
   text-align: center;
   letter-spacing: 1.5px;
-}
-
-.sections_divisor {
-  align-self: center;
-  color: var(--primary-color-dark);
-  padding: 1px;
-  background-color: var(--primary-color-dark);
-  margin: .5rem 0 1rem 0;
-  opacity: .6;
-  z-index: -1;
 }
 
 .section {
@@ -26,56 +18,125 @@
   width: 100%;
 }
 
-.sections_container {
+.section_container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   width: 100%;
-  gap: 1rem;
-}
-
-.section_item_container {
+  gap: 2rem 2.5rem;
   text-decoration: none;
-  display: flex;
   padding: .8rem;
-  width: 100%;
 }
 
 .section_item {
+  padding: 1.5rem .5rem;
   display: flex;
-  width: 100%;
-  gap: .2rem;
+  gap: .5rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+    border: inherit;
+    border-radius: inherit;
+    background: var(--tutorials);
+    mask: 
+      linear-gradient(white, white) padding-box, 
+      linear-gradient(white, white);
+    mask-composite: exclude;
+  }
 }
 
-.icon {
-  width: 100px;
+.section_item:first-child {
+  &::before {
+    background: linear-gradient(135deg, #E71D36 25.01%, #B71DFF 99.55%) border-box;
+  }
 }
 
-.section_item_svg_container {
-  border: 2px solid rgba(255, 255, 255, 0.616);
-  padding: 1.2rem;
-  border-radius: 100%;
-  margin-bottom: .4rem;
+.section_item_pcs {
+  &::before {
+    background: var(--pcs);
+  }
+}
+
+.section_item_tutorials {
+  &::before {
+    background: var(--tutorials);
+  }
+}
+
+.section_item_mobiles {
+  &::before {
+    background: var(--mobiles);
+  }
+}
+
+.section_item_gaming {
+  &::before {
+    background: var(--gaming);
+  }
+}
+
+.section_item_reviews {
+  &::before {
+    background: var(--reviews);
+  }
+}
+
+.section_item_programming {
+  &::before {
+    background: var(--programming);
+  }
+}
+
+.section_item_ai {
+  &::before {
+    background: var(--ai);
+  }
+}
+
+.section_item_cybersecurity {
+  &::before {
+    background: var(--cybersecurity);
+  }
 }
 
 .icon-section {
-  width: 28px;
-  height: 28px;
+  width: 38px;
+  height: 38px;
 }
 
 .section_item_title {
   color: var(--light-color);
   font-weight: 600;
+  text-align: center;
   letter-spacing: 1.5px;
 }
 
-.section_item_more {
-  color: var(--primary-color-dark);
-  font-weight: 600;
-  font-size: .9rem;
+.section_link {
+  text-decoration: none;
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  border: 2px solid #eee;
+  padding: .3rem 1rem;
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 1.1rem;
   z-index: 10;
+  transition: color .35s ease, background-color .35s ease;
+
+  &:hover {
+    background-color: var(--primary-color-dark);
+    color: var(--light-color);
+  }
 }
 
 @media screen and (min-width: 1030px) {
@@ -91,6 +152,15 @@
   .section {
     margin: 1rem 0;
   }
+  
+  .section_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    width: 100%;
+    gap: 3rem 2.5rem;
+    text-decoration: none;
+    padding: .8rem;
+  }
 
   .sections_title {
     position: relative;
@@ -99,31 +169,10 @@
     font-weight: 500;
     letter-spacing: 1.5px;
   }
-
-  .sections_divisor {
-    align-self: center;
-    width: 60%;
-    color: var(--primary-color-dark);
-    padding: 1px;
-    background-color: var(--primary-color-dark);
-    margin: 1rem 0;
-    opacity: .6;
-  }
   
   .section_item {
     gap: .5rem;
     transition: .35s ease;
-  }
-
-  .section_item:hover {
-    transform: scale(1.05);
-  }
-
-  .section_item:hover > .section_item_svg_container {
-    border: 3px solid var(--light-color);
-    box-shadow: 0px 0px 5px 2px var(--light-color);
-    border: 3px solid var(--primary-color-dark);
-    box-shadow: 0px 0px 5px 2px var(--primary-color-dark);
   }
 
   .section_item_title {
@@ -143,16 +192,8 @@
     gap: 3rem;
   }
 
- .section_item_svg_container {
-    border: 3px solid rgba(255, 255, 255, 0.616);
-    padding: 1.5rem;
-    border-radius: 100%;
-    margin-bottom: .4rem;
-    transition: .35s ease;
+  .icon-section {
+    width: 48px;
+    height: 48px;
   }
-
-.icon-section {
-  width: 38px;
-  height: 38px;
-}
 }

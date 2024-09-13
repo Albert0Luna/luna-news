@@ -1,11 +1,9 @@
 import RenderSection from '@/src/sections/components/RenderSection';
-import '@/src/sections/styles/Section.css';
+import '@/src/home/styles/Highlights.css';
 import { useTranslations } from 'next-intl';
 import React from 'react';
-import '@/src/sections/styles/Section.css';
 import { cookies } from 'next/headers';
 import { Metadata } from 'next';
-import path from 'path';
 
 export function generateMetadata ({params}: {params: {id: string}}) {
 
@@ -144,12 +142,14 @@ function Page ({
   const section = sections.find((section) => section.path === params.id[0]); 
 
   return (
-    <main>
+    <>
       <h1 className='title_section'>
         {section?.title}
       </h1>
-      <RenderSection section={section?.title} sectionPath={section?.path} page={params.id[1]}/>
-    </main>
+      <article className='highlight'>
+        <RenderSection section={section?.title} sectionPath={section?.path} page={params.id[1]}/>
+      </article>
+    </>
   );
 }
 

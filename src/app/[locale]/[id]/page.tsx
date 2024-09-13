@@ -4,17 +4,18 @@ import { MDXRemote } from 'next-mdx-remote/rsc';
 import { redirect } from '@/src/navigation';
 import { cookies } from 'next/headers';
 import ReloadPage from '@/src/news/components/ReloadPage';
+import ReadTimeIcon from '@/src/icons/sections/ReadTimeIcon';
 // import Adsense from '@/src/rootComponents.tsx/components/Adsense';
 // import GoogleAdUnit from '@/src/rootComponents.tsx/components/GoogleAdUnit';
 
 function Profile ({ authorId } : { authorId?: string }) {
   return (
-    <div className='new_info_author'>
-      <picture className='new_info_author_picture_container'>
-        <img src='/alberto-luna.jpg' alt={authorId} aria-label='profile photo'/>
-      </picture>
-      <p className='antialiased'>Alberto Luna</p>
-    </div>
+    <figure className='new_info_author'>
+      <img 
+        src='/alberto-profile.webp' 
+        alt={authorId} aria-label='profile photo' className='new_info_author_img'
+      />
+    </figure>
   );
 }
 
@@ -297,53 +298,28 @@ export default async function Page ({params}: {params: {id: string}}) {
   const lastUpdateYear = lastUpdateDays / 365;
 
   return (
-    <main>
+    <>
       <ReloadPage />
       <section className='new'>
         <h1 className='new_title'>{selectedNew?.title}</h1>
-        <p className='new_info_date'>
-          {
-            lastUpdate !== fechaDB
-              ? Number.isFinite(Math.round(lastUpdateYear)) && Math.round(lastUpdateYear) < 0
-                ? `${selectedLang === 'en' ? 'Last update' : 'Última actualización'} ${rtf.format(Math.round(lastUpdateYear), 'year')}`
-                : Number.isFinite(Math.round(lastUpdateMonth)) && Math.round(lastUpdateMonth) < 0
-                  ? `${selectedLang === 'en' ? 'Last update' : 'Última actualización'} ${rtf.format(Math.round(lastUpdateMonth), 'month')}`
-                  : Number.isFinite(Math.round(lastUpdateDays)) && Math.round(lastUpdateDays) === -1
-                    ? `${selectedLang === 'en' ? 'Last update today' : 'Última actualización hoy'}`
-                    : `${selectedLang === 'en' ? 'Last update' : 'Última actualización'} ${rtf.format(Math.round(lastUpdateDays) + 1, 'day')}`
-              : Number.isFinite(Math.round(dateSinceUpdateYear)) && Math.round(dateSinceUpdateYear) < 0
-                ? `${selectedLang === 'en' ? 'Published' : 'Publicado'} ${rtf.format(Math.round(dateSinceUpdateYear), 'year')}`
-                : Number.isFinite(Math.round(dateSinceUpdateMonth)) && Math.round(dateSinceUpdateMonth) < 0
-                  ? `${selectedLang === 'en' ? 'Published' : 'Publicado'} ${rtf.format(Math.round(dateSinceUpdateMonth), 'month')}`
-                  : Number.isFinite(Math.round(dateSinceUpdateDays)) && Math.round(dateSinceUpdateDays) === -1
-                    ? `${selectedLang === 'en' ? 'Published today' : 'Publicado hoy'}`
-                    : `${selectedLang === 'en' ? 'Published' : 'Publicado'} ${rtf.format(Math.round(dateSinceUpdateDays) + 1, 'day')}`
-          }
-        </p>
-        
-        <div className='new_info'>
-      
-          <div className='new_info_text'>
-            <Profile authorId={selectedNew?.author_id}/>
-            
-            <p className='new_read_time'>
-              {selectedNew?.read_time}
-            </p>   
-          </div>
+        <div className='new_read_time_container'>
+          <ReadTimeIcon />
+          <p className='new_read_time'>
+            {selectedNew?.read_time}
+          </p> 
+        </div> 
 
-          <picture className='new_info_image_container'>
+        <article className='article'>
+          <figure className='article_main_image_container'>
             <img 
-              className='new_info_image'
+              className='article_info_image'
               src={selectedNew?.main_image} 
               alt={selectedNew?.image_alt} 
             />
-            <small>
-              {`${selectedNew === 'en' ? 'Fuente:' : 'Source:'}`} <a href={selectedNew?.main_image_source.url} className='new_info_source' >{selectedNew?.main_image_source.source_name}</a>
-            </small>
-          </picture>
-        </div>
-
-        <article className='article'>
+            <figcaption className='article_main_image_source_container'>
+              <a href={selectedNew?.main_image_source.url} className='article_main_image_source' >{selectedNew?.main_image_source.source_name}</a>
+            </figcaption>
+          </figure>
           {
             selectedNew?.content.map((item : string, index: number) => (
               <>
@@ -354,8 +330,36 @@ export default async function Page ({params}: {params: {id: string}}) {
           <MDXRemote source={(selectedNew?.conclusion as string)} />
 
         </article>
+        <div className='new_info'>
+      
+          <div className='new_info_text_container'>
+            <Profile authorId={selectedNew?.author_id}/>
+            <div className='new_info_name_and_date'>
+              <p className='new_info_author_name'>Alberto Luna</p>
+              <p className='new_info_date'>
+                {
+                  lastUpdate !== fechaDB
+                    ? Number.isFinite(Math.round(lastUpdateYear)) && Math.round(lastUpdateYear) < 0
+                      ? `${selectedLang === 'en' ? 'Last update' : 'Última actualización'} ${rtf.format(Math.round(lastUpdateYear), 'year')}`
+                      : Number.isFinite(Math.round(lastUpdateMonth)) && Math.round(lastUpdateMonth) < 0
+                        ? `${selectedLang === 'en' ? 'Last update' : 'Última actualización'} ${rtf.format(Math.round(lastUpdateMonth), 'month')}`
+                        : Number.isFinite(Math.round(lastUpdateDays)) && Math.round(lastUpdateDays) === -1
+                          ? `${selectedLang === 'en' ? 'Last update today' : 'Última actualización hoy'}`
+                          : `${selectedLang === 'en' ? 'Last update' : 'Última actualización'} ${rtf.format(Math.round(lastUpdateDays) + 1, 'day')}`
+                    : Number.isFinite(Math.round(dateSinceUpdateYear)) && Math.round(dateSinceUpdateYear) < 0
+                      ? `${selectedLang === 'en' ? 'Written' : 'Escrito'} ${rtf.format(Math.round(dateSinceUpdateYear), 'year')}`
+                      : Number.isFinite(Math.round(dateSinceUpdateMonth)) && Math.round(dateSinceUpdateMonth) < 0
+                        ? `${selectedLang === 'en' ? 'Written' : 'Escrito'} ${rtf.format(Math.round(dateSinceUpdateMonth), 'month')}`
+                        : Number.isFinite(Math.round(dateSinceUpdateDays)) && Math.round(dateSinceUpdateDays) === -1
+                          ? `${selectedLang === 'en' ? 'Written today' : 'Escrito hoy'}`
+                          : `${selectedLang === 'en' ? 'Written' : 'Escrito'} ${rtf.format(Math.round(dateSinceUpdateDays) + 1, 'day')}`
+                }
+              </p>
+            </div>
+          </div> 
+        </div>
       </section>
-    </main>
+    </>
   );
 }
 
