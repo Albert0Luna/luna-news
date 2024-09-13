@@ -302,12 +302,39 @@ export default async function Page ({params}: {params: {id: string}}) {
       <ReloadPage />
       <section className='new'>
         <h1 className='new_title'>{selectedNew?.title}</h1>
-        <div className='new_read_time_container'>
-          <ReadTimeIcon />
-          <p className='new_read_time'>
-            {selectedNew?.read_time}
-          </p> 
-        </div> 
+
+        <div className='new_info_text_container'>
+          <div className='new_info_name_and_date'>
+          <div>
+              <p className='new_info_author_name'>Alberto Luna</p>
+              <p className='new_info_date'>
+                {
+                  lastUpdate !== fechaDB
+                    ? Number.isFinite(Math.round(lastUpdateYear)) && Math.round(lastUpdateYear) < 0
+                      ? `${selectedLang === 'en' ? 'Last update' : 'Última actualización'} ${rtf.format(Math.round(lastUpdateYear), 'year')}`
+                      : Number.isFinite(Math.round(lastUpdateMonth)) && Math.round(lastUpdateMonth) < 0
+                        ? `${selectedLang === 'en' ? 'Last update' : 'Última actualización'} ${rtf.format(Math.round(lastUpdateMonth), 'month')}`
+                        : Number.isFinite(Math.round(lastUpdateDays)) && Math.round(lastUpdateDays) === -1
+                          ? `${selectedLang === 'en' ? 'Last update today' : 'Última actualización hoy'}`
+                          : `${selectedLang === 'en' ? 'Last update' : 'Última actualización'} ${rtf.format(Math.round(lastUpdateDays) + 1, 'day')}`
+                    : Number.isFinite(Math.round(dateSinceUpdateYear)) && Math.round(dateSinceUpdateYear) < 0
+                      ? `${selectedLang === 'en' ? 'Written' : 'Escrito'} ${rtf.format(Math.round(dateSinceUpdateYear), 'year')}`
+                      : Number.isFinite(Math.round(dateSinceUpdateMonth)) && Math.round(dateSinceUpdateMonth) < 0
+                        ? `${selectedLang === 'en' ? 'Written' : 'Escrito'} ${rtf.format(Math.round(dateSinceUpdateMonth), 'month')}`
+                        : Number.isFinite(Math.round(dateSinceUpdateDays)) && Math.round(dateSinceUpdateDays) === -1
+                          ? `${selectedLang === 'en' ? 'Written today' : 'Escrito hoy'}`
+                          : `${selectedLang === 'en' ? 'Written' : 'Escrito'} ${rtf.format(Math.round(dateSinceUpdateDays) + 1, 'day')}`
+                }
+              </p>
+            </div>
+            <div className='new_read_time_container'>
+              <ReadTimeIcon />
+              <p className='new_read_time'>
+                {selectedNew?.read_time}
+              </p> 
+            </div> 
+          </div>
+        </div>
 
         <article className='article'>
           <figure className='article_main_image_container'>
@@ -331,32 +358,7 @@ export default async function Page ({params}: {params: {id: string}}) {
 
         </article>
         <div className='new_info'>
-      
-          <div className='new_info_text_container'>
-            <Profile authorId={selectedNew?.author_id}/>
-            <div className='new_info_name_and_date'>
-              <p className='new_info_author_name'>Alberto Luna</p>
-              <p className='new_info_date'>
-                {
-                  lastUpdate !== fechaDB
-                    ? Number.isFinite(Math.round(lastUpdateYear)) && Math.round(lastUpdateYear) < 0
-                      ? `${selectedLang === 'en' ? 'Last update' : 'Última actualización'} ${rtf.format(Math.round(lastUpdateYear), 'year')}`
-                      : Number.isFinite(Math.round(lastUpdateMonth)) && Math.round(lastUpdateMonth) < 0
-                        ? `${selectedLang === 'en' ? 'Last update' : 'Última actualización'} ${rtf.format(Math.round(lastUpdateMonth), 'month')}`
-                        : Number.isFinite(Math.round(lastUpdateDays)) && Math.round(lastUpdateDays) === -1
-                          ? `${selectedLang === 'en' ? 'Last update today' : 'Última actualización hoy'}`
-                          : `${selectedLang === 'en' ? 'Last update' : 'Última actualización'} ${rtf.format(Math.round(lastUpdateDays) + 1, 'day')}`
-                    : Number.isFinite(Math.round(dateSinceUpdateYear)) && Math.round(dateSinceUpdateYear) < 0
-                      ? `${selectedLang === 'en' ? 'Written' : 'Escrito'} ${rtf.format(Math.round(dateSinceUpdateYear), 'year')}`
-                      : Number.isFinite(Math.round(dateSinceUpdateMonth)) && Math.round(dateSinceUpdateMonth) < 0
-                        ? `${selectedLang === 'en' ? 'Written' : 'Escrito'} ${rtf.format(Math.round(dateSinceUpdateMonth), 'month')}`
-                        : Number.isFinite(Math.round(dateSinceUpdateDays)) && Math.round(dateSinceUpdateDays) === -1
-                          ? `${selectedLang === 'en' ? 'Written today' : 'Escrito hoy'}`
-                          : `${selectedLang === 'en' ? 'Written' : 'Escrito'} ${rtf.format(Math.round(dateSinceUpdateDays) + 1, 'day')}`
-                }
-              </p>
-            </div>
-          </div> 
+     
         </div>
       </section>
     </>

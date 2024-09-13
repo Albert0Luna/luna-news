@@ -9,6 +9,36 @@
   margin-bottom: 2rem;
 }
 
+.more_news_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.15rem;
+  width: fit-content;
+  font-weight: 400;
+  color: var(--light-color);
+  padding: .5rem 1rem;
+  border-radius: 10px;
+  margin: 2rem 0 0 0;
+  position: relative;
+  border: 2px solid transparent;
+  transition: opacity 3s ease, background-color .3s ease;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: inherit;
+    border-radius: inherit;
+    background: var(--read-more);
+    mask: 
+      linear-gradient(white, white) padding-box, 
+      linear-gradient(white, white);
+    mask-composite: exclude;
+  }
+}
+
 /*? Title section */
 
 .title_section {

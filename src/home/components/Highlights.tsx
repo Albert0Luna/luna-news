@@ -1,7 +1,9 @@
 import '@/src/home/styles/Highlights.css';
 import RenderNews from '@/src/home/components/RenderNews';
 import { Suspense } from 'react';
-import { useTranslations } from 'next-intl';
+import { Link } from '@/src/navigation';
+
+
 const HighlightSkeleton = () => {
   return (
     <div className="loader"></div>
@@ -9,7 +11,6 @@ const HighlightSkeleton = () => {
 };
 
 export default function Highlights ({lang: locale}: {lang: string}) {
-  const t = useTranslations('Coverpage');
   return (
     <article className='highlight'>
       {/* 
@@ -18,6 +19,9 @@ export default function Highlights ({lang: locale}: {lang: string}) {
       <Suspense fallback={<HighlightSkeleton />}>
         <RenderNews locale={locale}/>
       </Suspense>
+      <Link href='/sections/latest/2' className='more_news_link'>
+        {locale === 'es' ? 'Ver más noticias' : 'See more news'}
+      </Link>
     </article>
   );
 }

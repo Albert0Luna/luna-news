@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  margin-top: 1rem;
 }
 
 .title {
@@ -79,6 +80,7 @@
   .about {
     margin: auto;
     width: var(--content-pc);
+      margin-top: 2rem;
   }
 
   .about_content h1 {

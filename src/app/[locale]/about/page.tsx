@@ -1,4 +1,3 @@
-import '@/src/home/styles/main.css';
 import '@/src/about/styles/about.css';
 import { useTranslations } from 'next-intl';
 import { MDXRemote } from 'next-mdx-remote/rsc';
@@ -40,7 +39,7 @@ export function metadata () {
   return dynamicMetadata;
 };
 
-
+/*
 const newToRealizeEs = {
   "_id": "phishing-la-amenaza-favorita-de-los-ciberdelincuentes_ES__12",
   "new_code": "12",
@@ -163,10 +162,12 @@ function RenderData () {
   );
 }
 
+*/
+
 export default function Page () {
   const t = useTranslations('About');
   return (
-    <main className={'about'}>
+    <article className='about'>
       {/*<RenderData />*/}
 
       <h1 className='title'>{t('title.p1')} <span>{t('title.p2')}</span></h1>
@@ -177,6 +178,6 @@ export default function Page () {
         />
       </section>
       {/* <FAQ /> */}
-    </main>
+    </article>
   );
 }

@@ -88,7 +88,7 @@ export default async function RenderNews ({section, sectionPath, page}: {
                             }
                           )}>
                     
-                            {section.split(' ')[0]}
+                            <p>{section === 'Smathphones & Tablets' ? 'Smartphones' : section.split(' ')[0]}</p>
                           </Link>
                         ))}
                       </div>

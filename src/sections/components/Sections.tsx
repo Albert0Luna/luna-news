@@ -100,7 +100,9 @@ function Sections () {
 
   return (
     <div className='sections'>
-      <h1 className='sections_title'>{tSections('sections')}</h1>
+      <h1 className='sections_title'>
+        {tSections('sections')}
+      </h1>
       <section className='section'>
         <div className='section_container'>
           {
@@ -123,7 +125,13 @@ function Sections () {
                     {item.icon()}
                   </picture>
 
-                  <h2 className='section_item_title'>{item.title}</h2>
+                  <h2 className='section_item_title'>
+                    {
+                      item.title === 'Smathphones & Tablets'
+                        ? 'Smartphones & Tablets' 
+                        : item.title
+                    }
+                  </h2>
 
                   <Link key={item.title} href={`/sections/${item.link}/1`} className='section_link'>
                     Posts

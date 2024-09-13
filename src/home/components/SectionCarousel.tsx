@@ -87,7 +87,7 @@ export default function SectionCarousel () {
                     <div className='section_icon'>
                       {section.icon()}
                     </div>
-                    <p>{section.title}</p>
+                    <p>{section.link === '/mobiles-and-tablets' ? 'Smartphones' : section.title}</p>
                   </Link>
                 ))
       }

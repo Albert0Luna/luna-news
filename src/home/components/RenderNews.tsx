@@ -66,7 +66,7 @@ export default async function RenderNews ({locale}: {locale: string}) {
                       'highlights_section_cybersecurity': section === 'Cybersecurity' || section === 'Ciberseguridad'
                     }
                   )}>
-                    <p>{section.split(' ')[0]}</p>
+                    <p>{section === 'Smathphones & Tablets' ? 'Smartphones' : section.split(' ')[0]}</p>
                   </Link>
                 ))}
               </div>
