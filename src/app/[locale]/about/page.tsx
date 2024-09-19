@@ -47,7 +47,7 @@ const newToRealizeEs = {
   "url_en": "https://lunanews.tech/en/phishing-the-favorite-threat-of-cybercriminals_EN__12",
   "language": "es",
   "read_time": "6 minutos",
-  "sections": ["Pc & Laptops", "Smathphones & Tablets"],
+  "sections": ["PCs & Laptops", "Smartphones & Tablets"],
   "title": "Phishing: La amenaza favorita de los ciberdelincuentes",
   "main_image": "https://res.cloudinary.com/dis6nw4o7/image/upload/v1724252134/imagen_5_p2jdsl.jpg",
   "main_image_source": {
@@ -91,7 +91,7 @@ const newToRealizeEn = {
   "url_en": "https://lunanews.tech/en/phishing-the-favorite-threat-of-cybercriminals_EN__12",
   "language": "en",
   "read_time": "6 minutes",
-  "sections": ["PC & Laptops", "Smartphones & Tablets"],
+  "sections": ["PCs & Laptops", "Smartphones & Tablets"],
   "title": "Phishing: The Favorite Threat of Cybercriminals",
   "main_image": "https://res.cloudinary.com/dis6nw4o7/image/upload/v1724252134/imagen_5_p2jdsl.jpg",
   "main_image_source": {

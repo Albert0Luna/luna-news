@@ -127,7 +127,7 @@ function Sections () {
 
                   <h2 className='section_item_title'>
                     {
-                      item.title === 'Smathphones & Tablets'
+                      item.title === 'Smartphones & Tablets'
                         ? 'Smartphones & Tablets' 
                         : item.title
                     }

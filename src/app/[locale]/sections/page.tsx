@@ -17,7 +17,7 @@ export function metadata () {
     referrer: 'origin-when-cross-origin',
     keywords: `${lang === 'es' 
       ? 'Secciones, Luna News, Luna, Noticias, Tecnología, Lo último, Tutoriales, Pc y Laptops, Móviles y Tabletas, Gaming, Reseñas, Programación, IA' 
-      : 'Sections, Luna News, Luna, News, Technology, Latest, Tutorials, Pc & Laptops, Mobiles & Tablets, Gaming, Reviews, Programming, AI'
+      : 'Sections, Luna News, Luna, News, Technology, Latest, Tutorials, PCs & Laptops, Mobiles & Tablets, Gaming, Reviews, Programming, AI'
     }`,
     authors: { name: 'Alberto' },
     creator: 'Alberto Luna',

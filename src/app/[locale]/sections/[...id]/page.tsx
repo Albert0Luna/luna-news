@@ -144,11 +144,7 @@ function Page ({
   return (
     <>
       <h1 className='title_section'>
-        {
-          section?.title === 'Smathphones & Tablets'
-            ? 'Smartphones & Tablets' 
-            : section?.title
-        }
+        {section?.title}
       </h1>
       <article className='highlight'>
         <RenderSection section={section?.title} sectionPath={section?.path} page={params.id[1]}/>

@@ -15,8 +15,8 @@ interface BaseNews {
   keywords: string[];
 }
 
-type SectionsEn = 'Latest' | 'Tutorials' | 'Pc & Laptops' | 'Smathphones & Tablets' | 'Gaming' | 'Programming' | 'Reviews' | 'AI';
-type SectionsEs = 'Lo último' | 'Tutoriales' | 'Pc & Laptops' | 'Smathphones & Tablets' | 'Gaming' | 'Programación' | 'Reseñas' | 'IA';
+type SectionsEn = 'Latest' | 'Tutorials' | 'PCs & Laptops' | 'Smartphones & Tablets' | 'Gaming' | 'Programming' | 'Reviews' | 'AI';
+type SectionsEs = 'Lo último' | 'Tutoriales' | 'PCs & Laptops' | 'Smartphones & Tablets' | 'Gaming' | 'Programación' | 'Reseñas' | 'IA';
 
 interface NewsEn extends BaseNews {
   id: `${string}_EN__${number}`;
@@ -93,7 +93,7 @@ Actualmente, esta característica está en fase beta, pero puedes probarla de ma
     newCode: '2',
     lang: 'es',
     readTime: '6 minutos',
-    sections: ['Pc & Laptops'],
+    sections: ['PCs & Laptops'],
     title: 'Los nuevos procesadores chinos que amenazan a Intel y AMD',
     mainImage: 'https://res.cloudinary.com/dis6nw4o7/image/upload/v1721959602/imagen_keqvdf.jpg',
     thumbnail: 'https://res.cloudinary.com/dis6nw4o7/image/upload/v1721959902/loongson_thumbnail_xfq7dk.jpg',
@@ -160,7 +160,7 @@ Actualmente, esta característica está en fase beta, pero puedes probarla de ma
     newCode: '3',
     lang: 'es',
     readTime: '6 minutos',
-    sections: ['Pc & Laptops'],
+    sections: ['PCs & Laptops'],
     title: 'Lubuntu: El Sistema Operativo Ligero para Ordenadores Antiguos',
     mainImage: 'https://res.cloudinary.com/dis6nw4o7/image/upload/v1722379967/astro_thumbnail_w1hzc9.jpg',
     thumbnail: 'https://res.cloudinary.com/dis6nw4o7/image/upload/v1722380053/astro_thumbnail_1_asxc6z.jpg',
@@ -260,7 +260,7 @@ Actualmente, esta característica está en fase beta, pero puedes probarla de ma
     newCode: '4',
     lang: 'es',
     readTime: '4 minutos',
-    sections: ['Pc & Laptops'],
+    sections: ['PCs & Laptops'],
     title: 'Mac mini con M4: ¿Más cerca de lo que Crees?',
     mainImage: 'https://res.cloudinary.com/dis6nw4o7/image/upload/v1722380582/mac-mini_ajccfc.jpg',
     thumbnail: 'https://res.cloudinary.com/dis6nw4o7/image/upload/v1722380579/mac_mini_thumbnail_baszqp.jpg',
@@ -314,7 +314,7 @@ Actualmente, esta característica está en fase beta, pero puedes probarla de ma
     newCode: '5',
     lang: 'es',
     readTime: '5 minutos',
-    sections: ['IA', 'Smathphones & Tablets'],
+    sections: ['IA', 'Smartphones & Tablets'],
     title: 'Meta AI en WhatsApp: Un Asistente Digital',
     mainImage: 'https://res.cloudinary.com/dis6nw4o7/image/upload/v1722380931/watsapp_tcv7hn.jpg',
     thumbnail: 'https://res.cloudinary.com/dis6nw4o7/image/upload/v1722380928/wattsapp_thumbnail_sokz3d.jpg',
@@ -394,7 +394,7 @@ Actualmente, esta característica está en fase beta, pero puedes probarla de ma
     newCode: '6',
     lang: 'es',
     readTime: '5 minutos',
-    sections: ['Gaming', 'Pc & Laptops'],
+    sections: ['Gaming', 'PCs & Laptops'],
     title: 'Mejor PC Gamer por menos de $500 USD',
     mainImage: 'https://res.cloudinary.com/dis6nw4o7/image/upload/v1722400055/pc-corsair_um3x3c.jpg',
     thumbnail: 'https://res.cloudinary.com/dis6nw4o7/image/upload/v1722400052/pc-corsair-thumbnail_ywbovu.jpg',
@@ -504,7 +504,7 @@ Actualmente, esta característica está en fase beta, pero puedes probarla de ma
     newCode: '7',
     lang: 'es',
     readTime: '4 minutos',
-    sections: ['Gaming', 'Smathphones & Tablets'],
+    sections: ['Gaming', 'Smartphones & Tablets'],
     title: 'Google Pixel 9 Pro Fold: Detalles y Expectativas',
     mainImage: 'https://res.cloudinary.com/dis6nw4o7/image/upload/v1722400968/pixel-fold_r9f5p5.jpg',
     thumbnail: 'https://res.cloudinary.com/dis6nw4o7/image/upload/v1722400964/pixel-fold-thumbnail_dtjctv.jpg',
@@ -889,7 +889,7 @@ const newsEn = [
     newCode: '2',
     lang: 'en',
     readTime: '6 minutes',
-    sections: ['Pc & Laptops'],
+    sections: ['PCs & Laptops'],
     title: 'The New Chinese Processors That Threaten Intel and AMD',
     mainImage: 'https://res.cloudinary.com/dis6nw4o7/image/upload/v1721959602/imagen_keqvdf.jpg',
     thumbnail: 'https://res.cloudinary.com/dis6nw4o7/image/upload/v1721959902/loongson_thumbnail_xfq7dk.jpg',
@@ -956,7 +956,7 @@ const newsEn = [
     newCode: '3',
     lang: 'en',
     readTime: '6 minutes',
-    sections: ['Pc & Laptops'],
+    sections: ['PCs & Laptops'],
     title: 'Lubuntu: The Lightweight Operating System for Old Computers',
     mainImage: 'https://res.cloudinary.com/dis6nw4o7/image/upload/v1722379967/astro_thumbnail_w1hzc9.jpg',
     thumbnail: 'https://res.cloudinary.com/dis6nw4o7/image/upload/v1722380053/astro_thumbnail_1_asxc6z.jpg',
@@ -1061,7 +1061,7 @@ const newsEn = [
     newCode: '4',
     lang: 'en',
     readTime: '4 minutes',
-    sections: ['Pc & Laptops'],
+    sections: ['PCs & Laptops'],
     title: 'Mac mini with M4: Closer Than You Think?',
     mainImage: 'https://res.cloudinary.com/dis6nw4o7/image/upload/v1722380582/mac-mini_ajccfc.jpg',
     thumbnail: 'https://res.cloudinary.com/dis6nw4o7/image/upload/v1722380579/mac_mini_thumbnail_baszqp.jpg',
@@ -1115,7 +1115,7 @@ const newsEn = [
     newCode: '5',
     lang: 'en',
     readTime: '5 minutes',
-    sections: ['AI', 'Smathphones & Tablets'],
+    sections: ['AI', 'Smartphones & Tablets'],
     title: 'Meta AI on WhatsApp: A Digital Assistant',
     mainImage: 'https://res.cloudinary.com/dis6nw4o7/image/upload/v1722380931/watsapp_tcv7hn.jpg',
     thumbnail: 'https://res.cloudinary.com/dis6nw4o7/image/upload/v1722380928/wattsapp_thumbnail_sokz3d.jpg',
@@ -1195,7 +1195,7 @@ const newsEn = [
     newCode: '6',
     lang: 'en',
     readTime: '5 minutes',
-    sections: ['Gaming', 'Pc & Laptops'],
+    sections: ['Gaming', 'PCs & Laptops'],
     title: 'Best Gaming PC for Under $500 USD',
     mainImage: 'https://res.cloudinary.com/dis6nw4o7/image/upload/v1722400055/pc-corsair_um3x3c.jpg',
     thumbnail: 'https://res.cloudinary.com/dis6nw4o7/image/upload/v1722400052/pc-corsair-thumbnail_ywbovu.jpg',
@@ -1303,7 +1303,7 @@ const newsEn = [
     newCode: '7',
     lang: 'en',
     readTime: '4 minutes',
-    sections: ['Smathphones & Tablets'],
+    sections: ['Smartphones & Tablets'],
     title: 'Google Pixel 9 Pro Fold: Details and Expectations',
     mainImage: 'https://res.cloudinary.com/dis6nw4o7/image/upload/v1722400968/pixel-fold_r9f5p5.jpg',
     thumbnail: 'https://res.cloudinary.com/dis6nw4o7/image/upload/v1722400964/pixel-fold-thumbnail_dtjctv.jpg',

@@ -67,8 +67,8 @@ export default async function RenderNews ({section, sectionPath, page}: {
                         {article.sections.map((section: string) => (
                           <Link key={section} href={clsx({
                             '/sections/tutorials/1': section === 'Tutorials' || section === 'Tutoriales',
-                            '/sections/pcs-and-laptops/1': section === 'Pc & Laptops',
-                            '/sections/mobiles-and-tablets/1': section === 'Smathphones & Tablets' || section === 'Móviles y Tablets',
+                            '/sections/pcs-and-laptops/1': section === 'PCs & Laptops',
+                            '/sections/mobiles-and-tablets/1': section === 'Smartphones & Tablets' || section === 'Móviles y Tablets',
                             '/sections/gaming/1': section === 'Gaming',
                             '/sections/reviews/1': section === 'Reviews' || section === 'Reseñas',
                             '/sections/programming/1': section === 'Programming' || section === 'Programación',
@@ -78,8 +78,8 @@ export default async function RenderNews ({section, sectionPath, page}: {
                           )}  className={clsx(
                             'highlights_section', {
                               'highlights_section_tutorials': section === 'Tutorials' || section === 'Tutoriales',
-                              'highlights_section_pcs': section === 'Pc & Laptops',
-                              'highlights_section_mobiles': section === 'Smathphones & Tablets' || section === 'Móviles y Tablets',
+                              'highlights_section_pcs': section === 'PCs & Laptops',
+                              'highlights_section_mobiles': section === 'Smartphones & Tablets' || section === 'Móviles y Tablets',
                               'highlights_section_gaming': section === 'Gaming',
                               'highlights_section_reviews': section === 'Reviews' || section === 'Reseñas',
                               'highlights_section_programming': section === 'Programming' || section === 'Programación',
@@ -88,7 +88,7 @@ export default async function RenderNews ({section, sectionPath, page}: {
                             }
                           )}>
                     
-                            <p>{section === 'Smathphones & Tablets' ? 'Smartphones' : section.split(' ')[0]}</p>
+                            <p>{section.split(' ')[0]}</p>
                           </Link>
                         ))}
                       </div>
