@@ -5,8 +5,6 @@ import Footer from '@/src/layout/components/Footer';
 import '@/src/home/styles/main.css';
 import { Metadata } from 'next';
 import { cookies } from 'next/headers';
-import { Analytics } from '@vercel/analytics/react';
-import { SpeedInsights } from '@vercel/speed-insights/next';
 import Scroll from '@/src/home/components/Scroll';
 import { GoogleAnalytics } from '@next/third-parties/google';
 import Script from 'next/script';
@@ -132,8 +130,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <Header translations={homeTranslations}/>
         <main>
           {children}
-          <SpeedInsights />
-          <Analytics /> 
         </main>
         <Footer />
       </body>
