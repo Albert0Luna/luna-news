@@ -126,7 +126,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           }}
         >
         </Script>
-        <GoogleAnalytics gaId='G-48F051V7CK' />
+        <GoogleAnalytics gaId={process.env.GOOGLE_ANALYTICS_ID as string} />
         <Header translations={homeTranslations}/>
         <main>
           {children}

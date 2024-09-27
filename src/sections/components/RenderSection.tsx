@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { Link, redirect } from '@/src/navigation';
 import { cookies } from 'next/headers';
 import { Pagination } from './Pagination';

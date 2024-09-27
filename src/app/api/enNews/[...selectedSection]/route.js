@@ -15,11 +15,13 @@ export async function GET (req, { params }) {
     const noticesSkipped = end;
 
     if (selectedSection === 'Latest') {
-      const news = await NewsEn.find({},{
+      //* Getting just the fields we need
+      const news = await NewsEn.find({}, {
         id: 1,
         title: 1, 
         new_code: 1,
         keywords: 1, 
+        main_image: 1,
         thumbnail_image: 1, 
         image_alt: 1,
         createdAt: 1, 
@@ -28,13 +30,30 @@ export async function GET (req, { params }) {
         summary: 1,
         read_time: 1,
       }).skip(noticesSkipped).limit(per_page).sort({ createdAt: -1 });
+
+      //* Getting the total count of all news to use it in pagination
       const allNewsCount = await NewsEn.countDocuments();
       return NextResponse.json({ fechedNews: news, allNews: allNewsCount });
     } else {
+      //* Getting just the fields we need
       const news = await NewsEn.find({ 
         sections: { $in: [new RegExp(selectedSection)] }
-      }).skip(noticesSkipped).limit(per_page);
-  
+      }, {
+        id: 1,
+        title: 1, 
+        new_code: 1,
+        keywords: 1, 
+        main_image: 1,
+        thumbnail_image: 1, 
+        image_alt: 1,
+        createdAt: 1, 
+        updatedAt: 1, 
+        sections: 1,
+        summary: 1,
+        read_time: 1,
+      }).skip(noticesSkipped).limit(per_page).sort({ createdAt: -1 });
+
+      //* Getting the total count of all news to use it in pagination
       const allNewsCount = await NewsEn.countDocuments({ 
         sections: { $in: [new RegExp(selectedSection)] }
       });

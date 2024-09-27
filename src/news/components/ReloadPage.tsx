@@ -11,7 +11,7 @@ export default function ReloadPage () {
 
   useEffect(() => {
     router.refresh();
-  }, [reloadLanguage]);
+  }, [reloadLanguage, router]);
 
   return (
     <>

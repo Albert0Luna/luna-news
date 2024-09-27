@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import ReadTimeIcon from '@/src/icons/sections/ReadTimeIcon';
 import { Link } from '@/src/navigation';
 import clsx from 'clsx';
