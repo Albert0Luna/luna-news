@@ -3,7 +3,6 @@ import '@/src/news/styles/News.css';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import { redirect } from '@/src/navigation';
 import { cookies } from 'next/headers';
-import ReloadPage from '@/src/news/components/ReloadPage';
 import ReadTimeIcon from '@/src/icons/sections/ReadTimeIcon';
 import NewInfoDate from '@/src/rootComponents.tsx/components/NewInfoDate';
 import { fetchNewsDataEn } from '@/src/libs/queryEnNews-services';
@@ -124,7 +123,6 @@ export default async function Page ({params}: {params: {id: string}}) {
 
   return (
     <>
-      {/*<ReloadPage />*/}
       <section className='new'>
         <h1 className='new_title'>{selectedNew?.title}</h1>
 

@@ -54,7 +54,7 @@ export default async function RenderNews ({section, sectionPath, page}: {
 
                   <div className='highlights_item_image_container'>
                     <img 
-                      src={article.thumbnail_image}
+                      src={article.main_image}
                       alt={article.image_alt}
                       className='highlights_item_image'
                     />
