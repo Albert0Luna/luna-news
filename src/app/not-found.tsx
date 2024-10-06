@@ -1,9 +1,7 @@
 'use client';
- 
-// import { useTranslations } from 'next-intl';
-//import Link from 'next/link';
+
 import '@/src/globals.css';
-import '@/src/home/styles/main.css';
+import '@/src/app/not-found.css';
 import { outfit } from '@/src/fonts/fonts';
 import Link from 'next/link';
  

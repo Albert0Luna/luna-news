@@ -285,7 +285,7 @@
 
 @media screen and (min-width: 1030px) {
   .title_section {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   /*? Highlights container */
   .highlights_container {
@@ -294,9 +294,4 @@
   }
   /** Highlights container */
 
-  /*? Highlights item image */
-  .highlights_item_image_container {
-    height: 250px;
-  }
-  /** Highlights item image */
 }

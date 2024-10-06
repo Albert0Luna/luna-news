@@ -1,0 +1,31 @@
+/*! ERROR */
+
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error h1 {
+  color: var(--primary-color-dark);
+  font-size: 2.5rem;
+  text-align: center;
+  letter-spacing: 1PX;
+}
+
+.error p {
+  color: var(--gray-light);
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: .5rem;
+  padding: 0 .4rem;
+}
+
+.error a {
+  color: var(--primary-color-dark);
+  font-size: 1.4rem;
+  text-decoration: underline;
+  opacity: .75;
+  margin-top: 1rem;
+}

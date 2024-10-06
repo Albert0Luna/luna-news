@@ -1,27 +1,35 @@
+import { notFound } from 'next/navigation';
 
-async function fetchNewsEs (new_code: string) {
-  const response = await fetch(`https://www.lunanews.tech/api/newEsSearched/${new_code}`);
-  const filteredSection = await response.json();
-  return filteredSection;
-}
-
-async function fetchMetadataNewsEs (new_code: string) {
-  const response = await fetch(`https://www.lunanews.tech/api/newEsMetadataSearched/${new_code}`);
-  const filteredSection = await response.json();
-  return filteredSection;
-}
-
-export async function fetchNewsDataEs (new_code: string) {
+async function fetchData (url: string) {
   try {
-    const [newsEnData, metadataNewsEnData] = await Promise.all([
-      fetchNewsEs(new_code), 
-      fetchMetadataNewsEs(new_code)
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`Failed to fetch data: ${response.status}`);
+    }
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    notFound();
+  }
+}
+
+async function fetchNewsEs (newCode: string) {
+  return fetchData(`https://www.lunanews.tech/api/newEsSearched/${newCode}`);
+}
+
+async function fetchMetadataNewsEs (newCode: string) {
+  return fetchData(`https://www.lunanews.tech/api/newEsMetadataSearched/${newCode}`);
+}
+
+export async function fetchNewsDataEs (newCode: string) {
+  try {
+    const [newsEs, metadataNewsEs] = await Promise.all([
+      fetchNewsEs(newCode),
+      fetchMetadataNewsEs(newCode),
     ]);
 
-    return { newsEs: newsEnData, metadataNewsEs: metadataNewsEnData };
+    return { newsEs, metadataNewsEs };
   } catch (error) {
-    console.error('Error fetching data:', error);
-    // Handle the error appropriately (e.g., return an error object)
-    throw error; // Re-throw to propagate the error if needed
+    notFound();
   }
 }

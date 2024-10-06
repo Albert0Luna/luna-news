@@ -1,6 +1,7 @@
 
-'use client'; // Error components must be Client Components
+'use client';
 
+import '@/src/app/[locale]/error.css';
 import { useLocale } from 'next-intl';
 import Link from 'next/link';
 import { useEffect } from 'react';

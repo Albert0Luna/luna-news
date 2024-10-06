@@ -1,0 +1,69 @@
+/*? NOT FOUND */
+
+.notFound {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.notFound small {
+  color: var(--gray-light);
+  font-size: 1.3rem;
+}
+
+.notFound h1 {
+  background-image: var(--primary-color-dark); /* Define el degradado */
+  -webkit-background-clip: text; /* Para navegadores WebKit (Safari, Chrome) */
+  background-clip: text; /* Para navegadores modernos */
+  -webkit-text-fill-color: transparent; /* Para navegadores WebKit */
+  text-fill-color: transparent; /* Para navegadores modernos */
+  font-size: 7rem;
+  letter-spacing: 2PX;
+}
+
+.notFound h2 {
+  color: var(--light-color);
+  font-weight: 500;
+  font-size: 2rem;
+} 
+
+.notFound p {
+  color: var(--gray-strong);
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: .5rem;
+  padding: 0 .4rem;
+} 
+
+.notFound a {
+  color: var(--primary-color-dark);
+  font-size: 1.4rem;
+  text-decoration: underline;
+  opacity: .75;
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 1030px) {
+  .notFound small {
+    font-size: 1.5rem;
+  }
+
+  .notFound h1 {
+    font-size: 15rem;
+  }
+
+  .notFound h2 {
+    font-size: 2.5rem;
+  }
+
+  .notFound p {
+    font-size: 1.7rem;
+  }
+
+  .notFound a {
+    font-size: 1.6rem;
+  }
+}
+
+/*? NOT FOUND */

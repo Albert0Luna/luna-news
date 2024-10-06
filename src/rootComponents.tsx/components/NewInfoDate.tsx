@@ -1,50 +1,44 @@
-export default function NewInfoDate (
-  {selectedNewCreated, selectedNewUpdated, selectedLang, suffixLower}: 
-  {selectedNewCreated: string, selectedNewUpdated: string, selectedLang: string, suffixLower: string}
-) {
-  const fechaDB = selectedNewCreated;
-
+export default function NewInfoDate ({
+  selectedNewCreated,
+  selectedNewUpdated,
+  selectedLang,
+  suffixLower,
+}: {
+  selectedNewCreated: string;
+  selectedNewUpdated: string;
+  selectedLang: string;
+  suffixLower: string;
+}) {
   const currentDate = new Date();
-  const updateDate = new Date((fechaDB) as string);
+  
+  const formatRelativeTime = (date: string) => {
+    const diffDays = (new Date(date).getTime() - currentDate.getTime()) / (1000 * 60 * 60 * 24);
+    const rtf = new Intl.RelativeTimeFormat(selectedLang || suffixLower);
 
-  const dateSinceUpdateDays = (updateDate.getTime() - currentDate.getTime()) / (1000 * 60 * 60 * 24);
+    if (Math.abs(diffDays) < 1) {
+      return selectedLang === 'en' ? 'today' : 'hoy';
+    }
 
-  const dateSinceUpdateMonth = dateSinceUpdateDays / 31;
+    const diffYears = diffDays / 365;
+    const diffMonths = diffDays / 31;
 
-  const dateSinceUpdateYear = dateSinceUpdateDays / 365;
+    if (Math.abs(diffYears) >= 1) {
+      return rtf.format(Math.round(diffYears), 'year');
+    } else if (Math.abs(diffMonths) >= 1) {
+      return rtf.format(Math.round(diffMonths), 'month');
+    } else {
+      return rtf.format(Math.round(diffDays), 'day');
+    }
+  };
 
-  const rtf = new Intl.RelativeTimeFormat(selectedLang || suffixLower);
+  const isUpdated = selectedNewUpdated !== selectedNewCreated;
+  const label = isUpdated
+    ? selectedLang === 'en' ? 'Last update' : 'Última actualización'
+    : selectedLang === 'en' ? 'Written' : 'Escrito';
 
-  //*? Last update
+  const relativeTime = isUpdated
+    ? formatRelativeTime(selectedNewUpdated)
+    : formatRelativeTime(selectedNewCreated);
 
-  const lastUpdate = selectedNewUpdated;
-
-  const lastUpdateDate = new Date((lastUpdate as string));
-
-  const lastUpdateDays = (lastUpdateDate.getTime() - currentDate.getTime()) / (1000 * 60 * 60 * 24);
-
-  const lastUpdateMonth = lastUpdateDays / 31;
-
-  const lastUpdateYear = lastUpdateDays / 365;
-  return (
-    <p className='new_info_date'>
-      {
-        lastUpdate !== fechaDB
-          ? Number.isFinite(Math.round(lastUpdateYear)) && Math.round(lastUpdateYear) < 0
-            ? `${selectedLang === 'en' ? 'Last update' : 'Última actualización'} ${rtf.format(Math.round(lastUpdateYear), 'year')}`
-            : Number.isFinite(Math.round(lastUpdateMonth)) && Math.round(lastUpdateMonth) < 0
-              ? `${selectedLang === 'en' ? 'Last update' : 'Última actualización'} ${rtf.format(Math.round(lastUpdateMonth), 'month')}`
-              : Number.isFinite(Math.round(lastUpdateDays)) && Math.round(lastUpdateDays) === -1
-                ? `${selectedLang === 'en' ? 'Last update today' : 'Última actualización hoy'}`
-                : `${selectedLang === 'en' ? 'Last update' : 'Última actualización'} ${rtf.format(Math.round(lastUpdateDays) + 1, 'day')}`
-          : Number.isFinite(Math.round(dateSinceUpdateYear)) && Math.round(dateSinceUpdateYear) < 0
-            ? `${selectedLang === 'en' ? 'Written' : 'Escrito'} ${rtf.format(Math.round(dateSinceUpdateYear), 'year')}`
-            : Number.isFinite(Math.round(dateSinceUpdateMonth)) && Math.round(dateSinceUpdateMonth) < 0
-              ? `${selectedLang === 'en' ? 'Written' : 'Escrito'} ${rtf.format(Math.round(dateSinceUpdateMonth), 'month')}`
-              : Number.isFinite(Math.round(dateSinceUpdateDays)) && Math.round(dateSinceUpdateDays) === -1
-                ? `${selectedLang === 'en' ? 'Written today' : 'Escrito hoy'}`
-                : `${selectedLang === 'en' ? 'Written' : 'Escrito'} ${rtf.format(Math.round(dateSinceUpdateDays) + 1, 'day')}`
-      }
-    </p>
-  );
+  return <p className="new_info_date">{`${label} ${relativeTime}`}</p>;
 }
