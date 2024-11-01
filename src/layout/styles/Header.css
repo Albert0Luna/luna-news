@@ -11,6 +11,7 @@
   from {
     width: 3%;
   }
+
   to {
     width: 100%;
   }
@@ -41,13 +42,12 @@
   padding: 10px 2.5%;
   background-color: #000000c9;
   backdrop-filter: blur(15px);
-  border-bottom: 1px solid rgba(124, 124, 124, 0.445); 
 }
 
 .header_opened {
   position: fixed;
   height: 100vh;
-} 
+}
 
 /*? Mobile Navbar */
 .brand_menu {
@@ -81,13 +81,14 @@
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
 
 .brand {
-  display: flex;  
+  display: flex;
   align-items: center;
   letter-spacing: 1px;
   gap: 10px;
@@ -115,7 +116,7 @@
   display: none;
   align-items: center;
   -webkit-animation: slide-in-top-own .35s both;
-	        animation: slide-in-top-own .35s both;
+  animation: slide-in-top-own .35s both;
 }
 
 .hide-nav {
@@ -222,12 +223,13 @@ option {
 @keyframes slide-in-top-own {
   0% {
     -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
+    transform: translateY(-50px);
     opacity: 0.3;
   }
+
   100% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
@@ -294,7 +296,7 @@ option {
   .brand_name span {
     background: var(--primary-color-light);
     background-clip: text;
-    color: transparent; 
+    color: transparent;
   }
 
   .menu_button {
@@ -343,7 +345,7 @@ option {
     font-weight: 500;
     background: var(--primary-color-light);
     background-clip: text;
-    color: transparent;  
+    color: transparent;
   }
 
   .other_options {
@@ -377,6 +379,7 @@ option {
     width: 20px;
     height: 20px;
   }
+
   /*
   .donate_btn {
     display: flex;
@@ -414,4 +417,3 @@ option {
     margin-left: 5%;
   }
 }
-
