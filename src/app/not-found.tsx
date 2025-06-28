@@ -1,33 +1,22 @@
 'use client';
-
 import '@/src/globals.css';
-import '@/src/app/not-found.css';
-import { outfit } from '@/src/fonts/fonts';
+import { useTranslations } from 'next-intl';
 import Link from 'next/link';
- 
-export default function NotFound () {
-  // const t = useTranslations('notFound');
+import notFoundImage from '@/src/assets/404.jpg';
+import notFoundLightImage from '@/src/assets/404-light.jpg';
+import Image from 'next/image';
 
+export default function NotFound () {
+  const t = useTranslations('NotFound');
   return (
-    <html>
-      <body>
-        <main className={`${outfit.className} antialiased`}>
-          <section className='notFound'>
-            <small>Error:</small>
-            <h1>404</h1>
-            <Link href="/">
-              Go back
-            </Link>
-            {/**
-            <h2>{t('notFoundPage')}</h2>
-            <p>{t('errorFound')}</p>
-            <Link href="/">
-              {t('backHome')}
-            </Link>
-             */}
-          </section>
-        </main>
-      </body>
-    </html>
+    <main className=" w-full h-screen bg-cover bg-center flex ">
+      <Image src={notFoundImage} alt="404 Not Found" className="absolute inset-0 w-full h-full object-cover block dark:block" />
+      <Image src={notFoundLightImage} alt="404 Not Found" className="absolute inset-0 w-full h-full object-cover block dark:hidden" />
+      <div className='text-slate-900 dark:text-white flex flex-col mt-12 md:mt-15 font-poppins-600 px-5 md:justify-start w-full max-w-[1200px] text-center md:text-start mx-10 md:gap-6 z-10'>
+        <h1 className='text-3xl mb-2 md:text-4xl'>{t('title')}</h1>
+        <h1 className='md:text-[126px] text-8xl mb-2 font-manrope font-semibold md:font-bold md:tracking-wide'>404</h1>
+        <Link href="/" className='text-primary text-2xl md:text-3xl hover:opacity-85'>{t('goBack')}</Link>
+      </div>
+    </main>
   );
 }

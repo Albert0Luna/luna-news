@@ -1,0 +1,225 @@
+.about {
+  max-width: 800px;
+  margin: 100px auto 0 auto;
+  padding: 1rem 1rem;
+  font-family: var(--font-manrope);
+  line-height: 1.6;
+  color: var(--color-gray-900);
+}
+
+.dark .about {
+  color: var(--color-gray-100);
+}
+
+/* Page title styling */
+.about .title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--color-gray-900);
+  font-family: var(--font-poppins);
+}
+
+.about .title span {
+  color: var(--color-primary);
+}
+
+.dark .about .title {
+  color: var(--color-gray-100);
+}
+
+/* About content section */
+.about_content {
+  background: var(--color-white);
+  border-radius: 12px;
+  padding: 1.5rem 2.5rem;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  border: 1px solid var(--color-gray-200);
+}
+
+.dark .about_content {
+  background: var(--color-gray-800);
+  border-color: var(--color-gray-600);
+}
+
+/* Logo/brand heading */
+.about_content > h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 1.4px;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-family: var(--font-manrope);
+  color: var(--color-gray-900);
+}
+
+.about_content > h1 span {
+  color: var(--color-primary);
+}
+
+.dark .about_content > h1 {
+  color: var(--color-gray-100);
+}
+
+/* Paragraph styling */
+.about_content p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-gray-700);
+}
+
+.dark .about_content p {
+  color: var(--color-gray-300);
+}
+
+/* Headings in content */
+.about_content h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin: 2.5rem 0 1.5rem 0;
+  color: var(--color-gray-900);
+  font-family: var(--font-poppins);
+  border-bottom: 2px solid var(--color-primary);
+  padding-bottom: 0.5rem;
+}
+
+.dark .about_content h2 {
+  color: var(--color-gray-100);
+}
+
+/* Inline code styling */
+.about_content code {
+  background: var(--color-gray-100);
+  color: var(--color-primary);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.9em;
+  font-family: var(--font-mono);
+  font-weight: 500;
+}
+
+.dark .about_content code {
+  background: var(--color-gray-700);
+  color: var(--color-orange-300);
+}
+
+/* Code blocks */
+.about_content pre {
+  background: var(--color-gray-900);
+  color: var(--color-gray-100);
+  padding: 1.5rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  border-left: 4px solid var(--color-primary);
+  position: relative;
+}
+
+.about_content pre::before {
+  content: "JavaScript";
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  color: var(--color-gray-500);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.about_content pre code {
+  background: transparent;
+  color: inherit;
+  padding: 0;
+  font-size: 0.95rem;
+  display: block;
+}
+
+/* Syntax highlighting for the console.log */
+.about_content pre code .keyword {
+  color: #ff79c6; /* console */
+}
+
+.about_content pre code .method {
+  color: #50fa7b; /* log */
+}
+
+.about_content pre code .string {
+  color: var(--color-primary); /* "Welcome to Luna News!" */
+}
+
+.about_content pre code .punctuation {
+  color: #f8f8f2; /* parentheses, semicolon */
+}
+
+/* Lists styling */
+.about_content ul {
+  margin: 1.5rem 0;
+  padding-left: 0;
+}
+
+.about_content li {
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+  position: relative;
+  color: var(--color-gray-700);
+}
+
+.dark .about_content li {
+  color: var(--color-gray-300);
+}
+
+.about_content li::before {
+  content: "•";
+  color: var(--color-primary);
+  font-weight: bold;
+  position: absolute;
+  left: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* Strong/bold text */
+.about_content strong {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.dark .about_content strong {
+  color: var(--color-orange-300);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .about {
+    margin: 5rem 0 0 0;
+    padding: 1rem 0.5rem;
+  }
+  
+  .about .title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .about_content {
+    padding: 1.5rem;
+  }
+  
+  .about_content > h1 {
+    font-size: 1.5rem;
+  }
+  
+  .about_content h2 {
+    font-size: 1.5rem;
+  }
+  
+  .about_content p {
+    font-size: 1rem;
+  }
+}
+
+/* Smooth transitions */
+.about_content,
+.about_content code,
+.about_content pre {
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}

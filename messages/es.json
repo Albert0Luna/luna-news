@@ -1,7 +1,6 @@
 {
   "Index": {
-    "title": "Inicio",
-    "description": "Bienvenido a la página de inicio"
+    "title": "Últimas Noticias"
   },
   "Header": {
     "routes": {
@@ -11,10 +10,6 @@
     },
     "donate": "Donar",
     "changeLanguage": "Cambiar idioma"
-  },
-  "Footer": {
-    "privacy": "Política de privacidad",
-    "terms": "Términos y condiciones"
   },
   "Privacy": {
     "title": "Política de privacidad",
@@ -41,44 +36,27 @@
           "p4": "Abrocha tus cinturones y prepárate para este viaje de conocimiento al estilo de Luna News."
         }
   }},
-  "Coverpage": {
-    "title": {
-      "p1" : "El satelite que",
-      "p2": "mejor",
-      "p3": "te informa en el universo"
-    },
-    "subtitle": {
-      "p1": "En",
-      "p2": "LUNA",
-      "p3": "NEWS encontraras las noticias mas recientes y relevantes del mundo tech"
-    },
-    "sections": {
-      "Latest": "Lo último",
-      "Tutorials": "Tutoriales",
-      "Pc's-&-Laptops": "PCs & Laptops",
-      "Mobiles-&-Tablets": "Smartphones & Tablets",
-      "Gaming": "Gaming",
-      "Programming": "Programación",
-      "Reviews": "Reseñas",
-      "AI": "IA",
-      "Cybersecurity": "Ciberseguridad"
-    },
-    "highlight": {
-      "p1": "Lo",
-      "p2": "más",
-      "p3": "destacado"
-    }
-  },
   "About": {
     "title": {
       "p1": "Sobre",
       "p2": "Nosotros"
     },
-      "content": "\nLuna News es un portal digital de noticias dedicado a ofrecer información precisa, relevante y oportuna a nuestra audiencia. Trabajamos incansablemente para traerte las últimas novedades sobre una amplia variedad de temas, que incluyen:\n\n## Secciones\n\n- **Lo Último:** Cobertura de las ultimas noticias del mundo tech.\n- **Tutoriales:** Guías prácticas y consejos sobre tecnología, software y más.\n- **PC's & Laptops:** Noticias y análisis de las últimas novedades en computadoras y portátiles.\n- **Móviles & Tablets:** Noticias y análisis sobre los dispositivos móviles y tabletas más recientes.\n- **Tecnología:** Actualizaciones sobre las últimas tendencias y avances en el mundo de la tecnología y los gadgets.\n- **Gaming:** Cobertura exhaustiva de eventos y noticias en el mundo de los videojuegos y el entretenimiento digital.\n- **Programación:** Noticias y recursos sobre el desarrollo de software, lenguajes de programación y más.\n- **Reseñas:** Críticas y opiniones sobre productos, servicios y tendencias en diversos campos.\n- **IA:** Noticias y desarrollos en el campo de la inteligencia artificial y su impacto en diversas industrias.\n\n## Nuestros Valores\n\n- **Objetividad:** Nos esforzamos por presentar las noticias de manera imparcial, sin influencias políticas o religiosas.\n- **Precisión:** Verificamos meticulosamente toda la información que publicamos para garantizar su exactitud y confiabilidad.\n- **Relevancia:** Nos enfocamos en las noticias que son importantes para nuestra audiencia y que tienen un impacto en sus vidas.\n- **Oportunidad:** Nos mantenemos actualizados con las últimas noticias y las entregamos a nuestros lectores lo más rápido posible.\n- **Análisis:** Ofrecemos análisis profundos y perspectivas expertas sobre los eventos actuales desde un enfoque profesional.\n- **Compromiso:** Nos comprometemos a brindar a nuestra audiencia una experiencia informativa atractiva y valiosa.\n\n---\n## Misión\n\nLuna News es más que un simple sitio web de noticias. Somos una comunidad apasionada por mantenerse informada y comprometida con el mundo que nos rodea.\n\n*Te invitamos a unirte a nuestra comunidad y a sumergirte en un mundo de conocimiento.*"    
+      "content": "¡Bienvenido! Soy Alberto Luna, el creador de Luna News, una plataforma dedicada a ofrecer las últimas noticias de ``programación`` de todo el mundo. Nuestra misión es mantenerte informado, inspirado y conectado con el siempre cambiante mundo de la tecnología.\n\n## Nuestros valores\n\n- **Objetividad:** Nos comprometemos a presentar las noticias de manera imparcial, libres de sesgos políticos, religiosos o ideológicos.\n- **Precisión:** Cada información es verificada minuciosamente para asegurar que sea precisa y confiable.\n- **Relevancia:** Priorizamos las noticias que importan a nuestra audiencia y que tienen un impacto significativo en sus vidas.\n\nLuna News es más que un sitio web de noticias. Es una visión para construir una comunidad donde la información empodera, inspira y conecta a las personas. Nos esforzamos por ser tu fuente confiable de noticias de programación, ayudándote a mantenerte involucrado e informado en un mundo que cambia rápidamente.\n\n```javascript\nconsole.log(\"¡Bienvenido a Luna News!\");\n```",
+      "Metadata": {
+      "title": "Sobre nosotros",
+      "description": "Conoce más sobre Luna News, nuestra misión, valores y el equipo detrás de las últimas noticias de programación.",
+      "keywords": "sobre, luna news, noticias de programación, tecnología, equipo"
+    }
   },
-  "SectionsPage": {
-    "sections": "Secciones",
-    "readMore": "Leer más"
+  "Sections": {
+    "title": "Secciones",
+    "description": "Explora las diferentes secciones de Luna News para encontrar las últimas noticias y artículos sobre programación y más.",
+    "articles": "Artículos",
+    "Metadata": {
+      "title": "Secciones",
+      "description": "Explora las diferentes secciones de Luna News para encontrar las últimas noticias y artículos sobre programación y tecnología.",
+      "keywords": "secciones, luna news, noticias de programación, tecnología"
+    }
   },
   "notFound": {
     "notFoundPage": "Esta pagina no existe",
@@ -90,6 +68,35 @@
     "writtenToday": "Escrito hoy",
     "lastUpdate": "Última actualización",
     "lastUpdateToday": "Última actualización hoy"
+  },
+  "Metadata": {
+    "keywords": "programación, noticias, tecnología, software, desarrollo",
+    "description": "Luna News es tu fuente principal para las últimas noticias de programación, actualizaciones e información en el mundo tecnológico. ¡Mantente informado con nosotros!",
+    "author": "Alberto Luna",
+    "descriptionShort": "Mantente actualizado con las últimas noticias y perspectivas de programación en Luna News.",
+    "openGraph": {
+      "title": "Luna News - Tu fuente de noticias de programación",
+      "description": "Mantente actualizado con las últimas noticias y perspectivas de programación en Luna News."
+    },
+    "twitter": {
+      "title": "Luna News - Tu fuente de noticias de programación",
+      "description": "Mantente actualizado con las últimas noticias y perspectivas de programación en Luna News.",
+      "cardType": "summary_large_image"
+    }
+  },
+  "NotFound": {
+    "title": "Página no encontrada",
+    "description": "La página que buscas no existe. Por favor, verifica la URL o regresa a la página de inicio.",
+    "goBack": "Regresar"
+  },
+  "Error": {
+    "title": "Error inesperado",
+    "description": "Ha ocurrido un error inesperado. Por favor, inténtelo de nuevo más tarde.",
+    "report": "Apreciaríamos mucho si reporta el problema al correo",
+    "apology": "Muchas gracias y una disculpa",
+    "goBack": "Regresar"
+  },
+  "Footer": {
+    "description": "Luna News fue creada por"
   }
 }
-

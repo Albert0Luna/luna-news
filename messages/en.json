@@ -1,95 +1,104 @@
 {
   "Index": {
-    "title": "Home",
-    "description": "Welcome to the home page"
+    "title": "Latest News"
   },
   "Header": {
     "routes": {
       "home": "Home",
-      "about": "About",
-      "sections": "Sections"
+        "about": "About",
+          "sections": "Sections"
     },
     "donate": "Donate",
-    "changeLanguage": "Change Language"
-  },
-  "Footer": {
-    "privacy": "Privacy Policy",
-    "terms": "Terms of Service"
+      "changeLanguage": "Change Language"
   },
   "Privacy": {
     "title": "Privacy Policy",
-    "content": "## Responsible Entity \n\nLuna News, operated by Alberto Luna, contact: neongeeksofficial@gmail.com \n\n## Personal Data We Collect \n\nCurrently, we only collect users' language preferences. \n\nNo other personal data is collected on our site. \n\n## Purpose of Data Processing \n\nThe collected language preferences are used solely by Luna News to configure and personalize the content language on our site, in order to provide a better user experience. \n\n## Use of Information \n\nThe information regarding language preferences is used exclusively within the same site and is not shared with third parties. \n\n## Changes to the Privacy Notice \n\nThis Privacy Notice may undergo modifications, changes, or updates due to new legal requirements, our own needs, our privacy practices, or other causes. We commit to keeping you informed about any changes to this notice through our website. \n\n### Last updated: *30-07-2024* \n\n--- \n\n**Luna News**"
+      "content": "## Responsible Entity \n\nLuna News, operated by Alberto Luna, contact: neongeeksofficial@gmail.com \n\n## Personal Data We Collect \n\nCurrently, we only collect users' language preferences. \n\nNo other personal data is collected on our site. \n\n## Purpose of Data Processing \n\nThe collected language preferences are used solely by Luna News to configure and personalize the content language on our site, in order to provide a better user experience. \n\n## Use of Information \n\nThe information regarding language preferences is used exclusively within the same site and is not shared with third parties. \n\n## Changes to the Privacy Notice \n\nThis Privacy Notice may undergo modifications, changes, or updates due to new legal requirements, our own needs, our privacy practices, or other causes. We commit to keeping you informed about any changes to this notice through our website. \n\n### Last updated: *30-07-2024* \n\n--- \n\n**Luna News**"
   },
   "TermsAndConditions": {
     "title": "Terms and Conditions",
-    "content": "## Terms and Conditions \n\n### 1. Website Name \n\nThis website, **Luna news**, is operated and managed with the purpose of providing our users with the most relevant news in the technological world. \n\n### 2. Purpose of the Site \n\nThe primary objective of Luna news is to publish informative and educational content related to the latest innovations and advancements in technology. \n\n### 3. Prohibitions \n\nPlagiarism and any attempts to steal content are strictly prohibited. All users accessing this site must refrain from copying, reproducing, distributing, or otherwise using the content without the express authorization of the owners of Luna news. \n\n### 4. Requirements to Access the Site \n\nAccess to this site is intended exclusively for users who enjoy the provided content and do not take opinions or information personally. \n\n### 5. Use and Consultation of the Site \n\nCurrently, the use and consultation of the Luna news website are entirely free of charge. However, we reserve the right to modify this policy in the future, with prior notification to our users. \n\n### 6. Prohibited Activities \n\nUsing this website for illegal, harmful activities or those that may harm other users is prohibited. This includes, but is not limited to, harassment, spreading computer viruses, and any other malicious behavior. \n\n### 7. Ownership of Content \n\nLuna news is the exclusive owner of all text content on this website. \n\n### 8. Responsibility for External Sites \n\nLuna news is not responsible for the content, accuracy, or privacy policies of external websites that may be linked to our site. The inclusion of any link does not imply approval or endorsement by Luna news. \n\n### 9. Modifications to the Terms and Conditions \n\nLuna news reserves the right to make changes to these terms and conditions at any time. Any modifications will be communicated to users through our website. \n\n--- \n\n**Luna news**"
+      "content": "## Terms and Conditions \n\n### 1. Website Name \n\nThis website, **Luna news**, is operated and managed with the purpose of providing our users with the most relevant news in the technological world. \n\n### 2. Purpose of the Site \n\nThe primary objective of Luna news is to publish informative and educational content related to the latest innovations and advancements in technology. \n\n### 3. Prohibitions \n\nPlagiarism and any attempts to steal content are strictly prohibited. All users accessing this site must refrain from copying, reproducing, distributing, or otherwise using the content without the express authorization of the owners of Luna news. \n\n### 4. Requirements to Access the Site \n\nAccess to this site is intended exclusively for users who enjoy the provided content and do not take opinions or information personally. \n\n### 5. Use and Consultation of the Site \n\nCurrently, the use and consultation of the Luna news website are entirely free of charge. However, we reserve the right to modify this policy in the future, with prior notification to our users. \n\n### 6. Prohibited Activities \n\nUsing this website for illegal, harmful activities or those that may harm other users is prohibited. This includes, but is not limited to, harassment, spreading computer viruses, and any other malicious behavior. \n\n### 7. Ownership of Content \n\nLuna news is the exclusive owner of all text content on this website. \n\n### 8. Responsibility for External Sites \n\nLuna news is not responsible for the content, accuracy, or privacy policies of external websites that may be linked to our site. The inclusion of any link does not imply approval or endorsement by Luna news. \n\n### 9. Modifications to the Terms and Conditions \n\nLuna news reserves the right to make changes to these terms and conditions at any time. Any modifications will be communicated to users through our website. \n\n--- \n\n**Luna news**"
   },
   "Authors": {
-      "alberto-luna": {
-        "bio": {
-          "p1": "Hello, I'm Alberto Luna,",
+    "alberto-luna": {
+      "bio": {
+        "p1": "Hello, I'm Alberto Luna,",
           "p2": "Creator of Luna News, Software Engineer, but above all, I'm passionate about technology.",
-          "p3": "I hope you enjoy the content we share on this technology news website.",
-          "p4": "Buckle up and get ready for this knowledge journey, Luna News style."
-        }
-            },
-            "dinorah-luna": {
-        "bio": {
-          "p1": "Hello, I'm Dinorah Robles",
+            "p3": "I hope you enjoy the content we share on this technology news website.",
+              "p4": "Buckle up and get ready for this knowledge journey, Luna News style."
+      }
+    },
+    "dinorah-luna": {
+      "bio": {
+        "p1": "Hello, I'm Dinorah Robles",
           "p2": "Creator of Luna News, Cybersecurity Student, but above all, I'm passionate about technology.",
-          "p3": "I hope you enjoy the content we share on this technology news website.",
-          "p4": "Buckle up and get ready for this knowledge journey, Luna News style."
-        }
-        }},
-  "Coverpage": {
-    "title": {
-      "p1" : "The satellite ",
-      "p2": "best",
-      "p3": "informs you in the universe"
-    },
-    "subtitle": {
-      "p1": "In",
-      "p2": "LUNA",
-      "p3": "NEWS you will find the most recent and relevant news of the tech world"
-    },
-   "sections": {
-      "Latest": "Latest",
-      "Tutorials": "Tutorials",
-      "Pc's-&-Laptops": "PCs & Laptops",
-      "Mobiles-&-Tablets": "Smartphones & Tablets",
-      "Gaming": "Gaming",
-      "Programming": "Programming",
-      "Reviews": "Reviews",
-      "AI": "AI",
-      "Cybersecurity": "Cybersecurity"
-   },
-    "highlight": {
-        "p1": "Highlight",
-        "p2": "more",
-        "p3": "important"
+            "p3": "I hope you enjoy the content we share on this technology news website.",
+              "p4": "Buckle up and get ready for this knowledge journey, Luna News style."
+      }
     }
   },
   "About": {
     "title": {
       "p1": "About",
-      "p2": "us"
+        "p2": "us"
     },
-    "content": "\nLuna News is a digital news portal dedicated to providing accurate, relevant, and timely information to our audience. We work tirelessly to bring you the latest updates on a wide variety of topics, including:\n\n## Sections\n\n- **Latest:** Coverage of the latest tech news from around the world.\n- **Tutorials:** Practical guides and tips on technology, software, and more.\n- **PCs & Laptops:** News and analysis of the latest updates in computers and laptops.\n- **Mobiles & Tablets:** News and analysis on the latest mobile devices and tablets.\n- **Technology:** Updates on the latest trends and advancements in the world of technology and gadgets.\n- **Gaming:** Comprehensive coverage of events and news in the world of video games and digital entertainment.\n- **Programming:** News and resources on software development, programming languages, and more.\n- **Reviews:** Critiques and opinions on products, services, and trends in various fields.\n- **AI:** News and developments in the field of artificial intelligence and its impact on various industries.\n\n## Our Values\n\n- **Objectivity:** We strive to present news impartially, without political or religious influence.\n- **Accuracy:** We meticulously verify all the information we publish to ensure its accuracy and reliability.\n- **Relevance:** We focus on news that is important to our audience and impacts their lives.\n- **Timeliness:** We stay updated with the latest news and deliver it to our readers as quickly as possible.\n- **Analysis:** We offer in-depth analysis and expert perspectives on current events from a professional approach.\n- **Commitment:** We are dedicated to providing our audience with an engaging and valuable informative experience.\n\n---\n## Mission\n\nLuna News is more than just a news website. We are a community passionate about staying informed and engaged with the world around us.\n\n*We invite you to join our community and immerse yourself in a world of knowledge.*"
+    "content": "Welcome! I'm Alberto Luna, the creator of Luna News—a platform dedicated to delivering the latest ``programming`` news from around the globe. Our mission is to keep you informed, inspired, and connected with the ever-evolving world of technology.\n\n## Our Values\n\n- **Objectivity:** We are committed to presenting news impartially, free from political, religious, or ideological bias.\n- **Accuracy:** Every piece of information is thoroughly verified to ensure it is both accurate and reliable.\n- **Relevance:** We prioritize news that matters to our audience and has a meaningful impact on their lives.\n\nLuna News is more than just a news website. It is a vision to build a community where information empowers, inspires, and connects people. We strive to be your trusted source for programming news, helping you stay engaged and informed in a rapidly changing world.\n\n```javascript\nconsole.log(\"Welcome to Luna News!\");\n```",
+    "Metadata": {
+      "title": "About us",
+        "description": "Learn more about Luna News, our mission, values, and the team behind the latest programming news.",
+          "keywords": "about, luna news, programming news, technology, team"
+    }
   },
-  "SectionsPage": {
-    "sections": "Sections",
-    "readMore": "Read more"
+  "Sections": {
+    "title": "Sections",
+    "description": "Explore the various sections of Luna News, where you can find the latest updates and insights in programming and more.",
+    "articles": "Articles",
+    "Metadata": {
+      "title": "Sections",
+      "description": "Explore the various sections of Luna News, where you can find the latest updates and insights in programming and technology.",
+      "keywords": "sections, luna news, programming, technology, updates"
+    }
   },
   "notFound": {
     "notFoundPage": "This page does not exist",
-    "errorFound": "The page you are looking has been deleted or does not exist :(.",
-    "backHome": "Return to the home page"
+      "errorFound": "The page you are looking has been deleted or does not exist :(.",
+        "backHome": "Return to the home page"
   },
   "Date": {
     "written": "Written",
-    "writtenToday": "Written today",
-    "lastUpdate": "Last update",
-    "lastUpdateToday": "Last update today"
+      "writtenToday": "Written today",
+        "lastUpdate": "Last update",
+          "lastUpdateToday": "Last update today"
+  },
+  "Metadata": {
+    "keywords": "programming, news, technology, software, development",
+    "description": "Luna News is your go-to source for the latest programming news, updates, and insights in the tech world. Stay informed with us!",
+    "author": "Alberto Luna",
+    "descriptionShort": "Stay updated with the latest programming news and insights from Luna News.",
+    "openGraph": {
+      "title": "Luna News - Your Source for Programming News",
+      "description": "Stay updated with the latest programming news and insights from Luna News."
+    },
+    "twitter": {
+      "title": "Luna News - Your Source for Programming News",
+      "description": "Stay updated with the latest programming news and insights from Luna News.",
+      "cardType": "summary_large_image" 
+    }
+  },
+  "NotFound": {
+    "title": "Page Not Found",
+    "description": "The page you are looking for does not exist. Please check the URL or return to the home page.",
+    "goBack": "Go back"
+  },
+  "Error": {
+    "title": "Unexpected Error",
+    "description": "An unexpected error has occurred. Please try again later.",
+    "report": "We would appreciate very much if you report the problem to the mail",
+    "apology": "Thank you very much and an apology",
+    "goBack": "Go back"
+  },
+  "Footer": {
+    "description": "Luna News was created by"
   }
 }
 

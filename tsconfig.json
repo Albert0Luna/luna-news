@@ -1,6 +1,10 @@
 {
   "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -18,9 +22,22 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
-    }
+      "@/*": [
+        "./*"
+      ]
+    },
+    "target": "ES2017"
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/[lang]/page.jsx.jsxsrc/app/layout.jsxyout.jsx", "src/app/[locale]/about/page.jsx", "src/app/not-found.tsx"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/app/[lang]/page.jsx.jsxsrc/app/layout.jsxyout.jsx",
+    "src/app/[locale]/about/page.jsx",
+    "src/app/not-found.tsx"
+, "src/app/api/news/route.js", "converter.js"  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
