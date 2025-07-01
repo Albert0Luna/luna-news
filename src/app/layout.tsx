@@ -2,6 +2,7 @@ import '@/src/globals.css';
 import { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { getLocale, getTranslations } from 'next-intl/server';
+import Script from 'next/script'
 
 export async function generateMetadata ({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -88,12 +89,11 @@ export default async function Layout ({ children }: { children: React.ReactNode 
       `
           }}
         />
-        <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
-
         <NextIntlClientProvider locale={locale}>
           {children}
         </NextIntlClientProvider>
       </body>
+      <Script src="https://scripts.simpleanalyticscdn.com/latest.js" />
     </html>
   );
 }
