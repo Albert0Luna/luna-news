@@ -67,7 +67,7 @@ export default async function Layout ({ children }: { children: React.ReactNode 
   const locale = await getLocale();
   return (
     <html lang={locale} suppressHydrationWarning>
-      <body className='flex flex-col justify-center bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 w-full font-poppins'>
+      <body className='flex flex-col justify-center bg-white dark:bg-[#0f172a] text-gray-900 dark:text-gray-100 w-full font-poppins'>
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -88,6 +88,8 @@ export default async function Layout ({ children }: { children: React.ReactNode 
       `
           }}
         />
+        <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+
         <NextIntlClientProvider locale={locale}>
           {children}
         </NextIntlClientProvider>
