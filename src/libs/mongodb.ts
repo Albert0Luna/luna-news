@@ -14,7 +14,8 @@ export async function connectToDatabase () {
         deprecationErrors: true
       },
       timeoutMS: 10000,
-      maxPoolSize: 5,
+      maxPoolSize: 15,
+      minPoolSize: 10
     });
     client = conection;
     await client.connect();
