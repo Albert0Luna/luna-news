@@ -1,17 +1,5 @@
 # 🌙 Welcome to Luna News!
-
-Stay up to date with the latest trends and news in the ever-evolving world of technology! 🚀 Whether you're into smartphones, laptops, AI, or cybersecurity, **Luna News** has something for everyone.
-
-## 📰 Explore Our Sections:
-- [Latest News](https://www.lunanews.tech/es/sections/latest/1) – Discover what's trending in tech.
-- [Tutorials](https://www.lunanews.tech/es/sections/tutorials/1) – Hands-on guides and how-tos for every skill level.
-- [PCs and Laptops](https://www.lunanews.tech/es/sections/pcs-and-laptops/1) – Stay informed about the best devices for work or play.
-- [Smartphones](https://www.lunanews.tech/es/sections/mobiles-and-tablets/1) – Reviews and tips for mobile enthusiasts.
-- [Gaming](https://www.lunanews.tech/es/sections/gaming/1) – Level up with news and reviews on the latest games.
-- [Reviews](https://www.lunanews.tech/es/sections/reviews/1) – Honest, in-depth reviews on the latest tech.
-- [Programming](https://www.lunanews.tech/es/sections/programming/1) – Code smarter with our programming insights.
-- [Artificial Intelligence](https://www.lunanews.tech/es/sections/ai/1) – Explore the cutting-edge of AI innovation.
-- [Cybersecurity](https://www.lunanews.tech/es/sections/cybersecurity/1) – Stay safe in the digital world.
+Dynamic website focused on programming news and resources.
 
 ## 🖥️ Frontend Development:
 
