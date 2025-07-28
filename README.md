@@ -52,4 +52,4 @@ Stay up to date with the latest trends and news in the ever-evolving world of te
 
 ---
 
-**👋 Hi! I'm Alberto Luna**, a passionate Frontend Developer from Mexico. This is my first project using **Next.js**, and I'm thrilled to share it with you. Hope you enjoy exploring Luna News as much as I enjoyed building it!
+**👋 Hi! I'm Alberto Luna**, a passionate Frontend Developer from Mexico. Hope you enjoy exploring Luna News as much as I enjoyed building it!
