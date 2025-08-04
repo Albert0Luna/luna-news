@@ -3,15 +3,15 @@
 Stay up to date with the latest trends and news in the ever-evolving world of technology! 🚀 Whether you're into smartphones, laptops, AI, or cybersecurity, **Luna News** has something for everyone.
 
 ## 📰 Explore Our Sections:
-- [Latest News](https://www.lunanews.tech/es/sections/latest/1) – Discover what's trending in tech.
-- [Tutorials](https://www.lunanews.tech/es/sections/tutorials/1) – Hands-on guides and how-tos for every skill level.
-- [PCs and Laptops](https://www.lunanews.tech/es/sections/pcs-and-laptops/1) – Stay informed about the best devices for work or play.
-- [Smartphones](https://www.lunanews.tech/es/sections/mobiles-and-tablets/1) – Reviews and tips for mobile enthusiasts.
-- [Gaming](https://www.lunanews.tech/es/sections/gaming/1) – Level up with news and reviews on the latest games.
-- [Reviews](https://www.lunanews.tech/es/sections/reviews/1) – Honest, in-depth reviews on the latest tech.
-- [Programming](https://www.lunanews.tech/es/sections/programming/1) – Code smarter with our programming insights.
-- [Artificial Intelligence](https://www.lunanews.tech/es/sections/ai/1) – Explore the cutting-edge of AI innovation.
-- [Cybersecurity](https://www.lunanews.tech/es/sections/cybersecurity/1) – Stay safe in the digital world.
+
+https://luna-news-albertos-projects-77837bf4.vercel.app/en/sections/frontend
+
+- [Frontend](https://luna-news-albertos-projects-77837bf4.vercel.app/en/sections/frontend) – Discover what's trending in tech.
+- [Backend](https://luna-news-albertos-projects-77837bf4.vercel.app/en/sections/backend) – Dive into the backend world.
+- [AI](https://luna-news-albertos-projects-77837bf4.vercel.app/en/sections/ai) – Explore the latest in artificial intelligence.
+- [Data Systems](https://luna-news-albertos-projects-77837bf4.vercel.app/en/sections/data-systems) – Learn about data management and systems.
+- [Tools](https://luna-news-albertos-projects-77837bf4.vercel.app/en/sections/tools) – Find the best tools for developers.
+- [Cybersecurity](https://luna-news-albertos-projects-77837bf4.vercel.app/en/sections/cibersecurity) – Stay secure in the digital world.
 
 ## 🖥️ Frontend Development:
 
@@ -46,10 +46,6 @@ Stay up to date with the latest trends and news in the ever-evolving world of te
 ### 📡 API Endpoints:
 - [Next.js](https://nextjs.org/) – Powering our backend with server-side magic.
 
-## 🌐 Check it out!
-
-👉 [Luna News](https://github.com/Albert0Luna/luna-news) – Dive into our latest articles and tutorials!
-
 ---
 
-**👋 Hi! I'm Alberto Luna**, a passionate Frontend Developer from Mexico. This is my first project using **Next.js**, and I'm thrilled to share it with you. Hope you enjoy exploring Luna News as much as I enjoyed building it!
+**👋 Hi! I'm Alberto Luna**, a passionate Frontend Developer from Mexico. This is my first real project using **Next.js**, and I'm thrilled to share it with you. Hope you enjoy exploring Luna News as much as I enjoyed building it!

@@ -2,7 +2,7 @@ import '@/src/globals.css';
 import { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { getLocale, getTranslations } from 'next-intl/server';
-import Script from 'next/script'
+import Script from 'next/script';
 
 export async function generateMetadata ({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;

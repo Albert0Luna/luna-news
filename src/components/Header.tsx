@@ -1,12 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 'use client';
-import { Link } from '@/src/i18n/navigation';
+import Magnifying from '@/public/Magnifying';
+import { Link, usePathname, useRouter } from '@/src/i18n/navigation';
+import fetchSearchResults from '@/src/libs/fetchSearchResults';
+import { HomeTranslations, SearchResult } from '@/src/types/interfaces';
 import clsx from 'clsx';
 import { useEffect, useRef, useState } from 'react';
-import { HomeTranslations, SearchResult } from '@/src/types/interfaces';
-import { usePathname, useRouter } from '@/src/i18n/navigation';
-import Magnifying from '@/public/Magnifying';
-import fetchSearchResults from '@/src/libs/fetchSearchResults';
 
 export default function Header (
   { translations, locale }: { translations: HomeTranslations, locale: string }
@@ -135,11 +134,6 @@ export default function Header (
                 <label htmlFor="voice-search" className="sr-only">Search</label>
                 <div className="relative w-full ">
                   <input type="text" id="voice-search" name="search" ref={searchInputRef} className="bg-gray-50 border-2 border-gray-300 text-gray-900 rounded-lg focus:border-orange-500 block w-full p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-500 dark:focus:border-orange-400/70 text-sm md:text-lg ps-4 dark:focus:outline-none" placeholder="Search Astro, Rust, AI..." required />
-                  <button type="button" className="absolute inset-y-0 end-0 flex items-center pe-3">
-                    <svg className="w-4.5 h-4.5 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white cursor-pointer" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 20">
-                      <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 7v3a5.006 5.006 0 0 1-5 5H6a5.006 5.006 0 0 1-5-5V7m7 9v3m-3 0h6M7 1h2a3 3 0 0 1 3 3v5a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V4a3 3 0 0 1 3-3Z" />
-                    </svg>
-                  </button>
                 </div>
                 <button type="submit" className="inline-flex items-center py-2.5 px-3 ms-2 text-sm md:text-lg font-medium text-white bg-primary rounded-lg border hover:bg-orange-400 focus:ring-4 focus:outline-none focus:ring-orange-300 dark:hover:bg-primary cursor-pointer dark:border-none">
                   <svg className="w-5 h-5 md:w-4.5 md:h-4.5 md:me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
@@ -257,8 +251,8 @@ export default function Header (
                   <div className='flex items-center justify-center w-4 h-4 m-auto'>
                     <Magnifying color={theme === 'dark' ? '#98a1af' : '#364153'} />
                   </div>
-                  <span className='text-gray-600 dark:text-gray-400 font-light'>Search</span>
-                  <span className='bg-[#eee] dark:bg-gray-700 text-sm m-auto px-1.5 text-center py-0.5 rounded-lg text-gray-500 dark:text-gray-400 tracking-widest'>⌘K</span>
+                  <span className='text-gray-600 dark:text-gray-400 font-light pr-6'>Search</span>
+                  {/* <span className='bg-[#eee] dark:bg-gray-700 text-sm m-auto px-1.5 text-center py-0.5 rounded-lg text-gray-500 dark:text-gray-400 tracking-widest'>⌘K</span> */}
                 </div>
               </button>
               <div className='bg-[#eee] dark:bg-gray-700 flex items-center justify-center w-9 h-9 rounded-full shadow-lg mr-10 md:mr-0'>

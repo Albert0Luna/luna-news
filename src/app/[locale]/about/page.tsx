@@ -1,8 +1,8 @@
-import { MDXRemote } from 'next-mdx-remote/rsc';
-import { Metadata } from 'next';
 import '@/src/app/[locale]/about/about.css';
-import { getLocale, getTranslations } from 'next-intl/server';
+import { Metadata } from 'next';
 import { useTranslations } from 'next-intl';
+import { getLocale, getTranslations } from 'next-intl/server';
+import { MDXRemote } from 'next-mdx-remote/rsc';
 
 export async function generateMetadata (): Promise<Metadata> {
   const locale = await getLocale();
@@ -15,9 +15,9 @@ export async function generateMetadata (): Promise<Metadata> {
     alternates: {
       canonical: 'https://lunanews.tech/en/about',
       languages: {
-        'en-US': 'https://www.lunanews.tech/en/about',
-        'es-MX': 'https://www.lunanews.tech/es/about',
-        'x-default': 'https://www.lunanews.tech/en/about',
+        'en-US': `${process.env.NEXT_PUBLIC_DOMAIN}/en/about`,
+        'es-MX': `${process.env.NEXT_PUBLIC_DOMAIN}/es/about`,
+        'x-default': `${process.env.NEXT_PUBLIC_DOMAIN}/en/about`,
       },
     },
   };

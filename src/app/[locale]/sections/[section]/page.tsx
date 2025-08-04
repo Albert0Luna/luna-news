@@ -21,7 +21,7 @@ export default async function Page ({ params }: { params: Promise<{ section: str
   if (!(sections.some(sec => sec.link === section) && locale)) return notFound();
 
   try {
-    const query = await fetch(`https://www.lunanews.tech/api/section?lang=${locale}&section=${section}`);
+    const query = await fetch(`${process.env.NEXT_PUBLIC_DOMAIN}/api/section?lang=${locale}&section=${section}`);
     const data = await query.json();
     sectionContent = data;
   } catch (error) {

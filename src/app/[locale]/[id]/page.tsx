@@ -1,15 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
-import { notFound } from 'next/navigation';
-import { getLocale } from 'next-intl/server';
-import Article from './Article';
-import { cache } from 'react';
-import { Metadata } from 'next';
-import { sections } from '@/src/utils/const';
 import { Link } from '@/src/i18n/navigation';
+import { sections } from '@/src/utils/const';
+import { Metadata } from 'next';
+import { getLocale } from 'next-intl/server';
+import { notFound } from 'next/navigation';
+import { cache } from 'react';
+import Article from './Article';
 
 const getArticle = cache(async (locale: string, slug: string) => {
   try {
-    const response = await fetch(`https://www.lunanews.tech/api/article?lang=${locale}&slug=${slug}`);
+    const response = await fetch(`${process.env.NEXT_PUBLIC_DOMAIN}/api/article?lang=${locale}&slug=${slug}`);
     const data = await response.json();
     return data;
   } catch (error) {
@@ -32,17 +32,17 @@ export async function generateMetadata ({ params }: { params: Promise<{ id: stri
     description: article.translations[locale].summary,
     keywords: article.keywords.join(', ') ?? '',
     alternates: {
-      canonical: `https://www.lunanews.tech/${locale}/${slug}`,
+      canonical: `${process.env.NEXT_PUBLIC_DOMAIN}/${locale}/${slug}`,
       languages: {
-        'en-US': 'https://www.lunanews.tech/en/' + slug,
-        'es-MX': 'https://www.lunanews.tech/es/' + slug,
-        'x-default': 'https://www.lunanews.tech/en/' + slug,
+        'en-US': `${process.env.NEXT_PUBLIC_DOMAIN}/en/${slug}`,
+        'es-MX': `${process.env.NEXT_PUBLIC_DOMAIN}/es/${slug}`,
+        'x-default': `${process.env.NEXT_PUBLIC_DOMAIN}/en/${slug}`,
       },
     },
     openGraph: {
       title: article.translations[locale].title,
       description: article.translations[locale].summary,
-      url: `https://www.lunanews.tech/${locale}/${slug}`,
+      url: `${process.env.NEXT_PUBLIC_DOMAIN}/${locale}/${slug}`,
       siteName: 'Luna News',
       images: [
         {

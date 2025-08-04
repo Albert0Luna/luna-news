@@ -1,11 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 import { Link } from '@/src/i18n/navigation';
-import { sections } from '@/src/utils/const';
 import { HomeArticles } from '@/src/types/interfaces';
+import { sections } from '@/src/utils/const';
+import { Clock } from 'lucide-react';
 import { getLocale, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { Suspense } from 'react';
-
 
 const HighlightSkeleton = () => {
   return (
@@ -20,7 +20,7 @@ export default async function Page () {
   let news: HomeArticles[];
 
   try {
-    const response = await fetch(`https://www.lunanews.tech/api/news?lang=${locale}`);
+    const response = await fetch(`${process.env.NEXT_PUBLIC_DOMAIN}/api/news?lang=${locale}`);
     const result = await response.json();
     news = result;
   } catch (error) {
@@ -30,14 +30,14 @@ export default async function Page () {
 
   return (
     <main className="mt-26 px-4 w-full md:mt-[140px] max-w-[1300px] mx-auto">
-      <h1 className="text-4xl font-manrope tracking-[-0.2px] text-center mb-7 md:mb-16 dark:text-gray-100 text-gray-900 md:text-[55px] md:tracking-[-0.4px]">
+      <h1 className="text-4xl font-manrope tracking-[-0.2px] text-center mb-7 md:mb-16 dark:text-gray-100 text-gray-900 md:text-[55px] md:tracking-[-0.4px] font-extrabold">
         {t('title')}
       </h1>
       <Suspense fallback={<HighlightSkeleton />}>
         <ul className="hero-grid">
           {news &&
             news.map((article: HomeArticles, index: number) => (
-              <li key={index} className='hero-grid__item border border-gray-200 dark:border-gray-700 rounded-xl shadow'>
+              <li key={index} className='hero-grid__item border-gray-200 '>
                 <img src={article.mainImage} alt={article.translations[locale].title} />
                 <div className='hero-grid__content'>
                   <Link href={`/${article.slug}`}>
@@ -56,8 +56,11 @@ export default async function Page () {
                         })()
                       }
                     </Link>
-                    <span>|</span>
-                    <p>{article.readTime} <span>min read</span></p>
+                    <span className='hidden sm:flex'>|</span>
+                    <div className='flex items-center gap-1 align-middle text-sm font-manrope opacity-70 -z-10'>
+                      <Clock size={14}/>
+                      <p>  {article.readTime}</p>
+                    </div>
                   </div>
                 </div>
               </li>

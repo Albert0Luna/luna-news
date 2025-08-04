@@ -4,7 +4,7 @@ import { getLocale } from 'next-intl/server';
 export default async function fetchSearchResults ({ searchValue }: { searchValue: string }) {
   const locale = await getLocale();
   try {
-    const data = await fetch(`https://www.lunanews.tech/api/search?query=${searchValue}&lang=${locale}`);
+    const data = await fetch(`${process.env.NEXT_PUBLIC_DOMAIN}/api/search?query=${searchValue}&lang=${locale}`);
     const res = await data.json();
     if (res.length === 0) {
       throw new Error('Network response was not ok');

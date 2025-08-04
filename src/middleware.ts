@@ -1,12 +1,12 @@
 import createMiddleware from 'next-intl/middleware';
-import { routing } from './i18n/routing';
 import { NextRequest, NextResponse } from 'next/server';
+import { routing } from './i18n/routing';
 
 //todo Add CORS HEADERS
 // function corsHeaders (origin: string) {
 //   // Only allow requests from your own domain(s)
 //   const allowedOrigins = [
-//     'https://www.lunanews.tech/',
+//     `${process.env.NEXT_PUBLIC_DOMAIN}`,
 //     'https://luna-news.vercel.app'
 //   ];
 

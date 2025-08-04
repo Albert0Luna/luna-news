@@ -1,13 +1,15 @@
 'use client';
+import notFoundLightImage from '@/src/assets/404-light.jpg';
+import notFoundImage from '@/src/assets/404.jpg';
 import '@/src/globals.css';
 import { useTranslations } from 'next-intl';
-import Link from 'next/link';
-import notFoundImage from '@/src/assets/404.jpg';
-import notFoundLightImage from '@/src/assets/404-light.jpg';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function NotFound () {
   const t = useTranslations('NotFound');
+  console.log(process.env.NEXT_PUBLIC_DOMAIN);
+  
   return (
     <main className=" w-full h-screen bg-cover bg-center flex ">
       <Image src={notFoundImage} alt="404 Not Found" className="absolute inset-0 w-full h-full object-cover block dark:block" />

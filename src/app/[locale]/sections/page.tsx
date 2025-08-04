@@ -1,10 +1,9 @@
 import { Link } from '@/src/i18n/navigation';
-import React from 'react';
-import Image from 'next/image';
 import { sections } from '@/src/utils/const';
 import { Metadata } from 'next';
-import { getLocale, getTranslations } from 'next-intl/server';
 import { useLocale, useTranslations } from 'next-intl';
+import { getLocale, getTranslations } from 'next-intl/server';
+import Image from 'next/image';
 
 export async function generateMetadata (): Promise<Metadata> {
   const locale = await getLocale();
@@ -17,9 +16,9 @@ export async function generateMetadata (): Promise<Metadata> {
     alternates: {
       canonical: 'https://lunanews.tech/en/sections',
       languages: {
-        'en-US': 'https://www.lunanews.tech/en/sections',
-        'es-MX': 'https://www.lunanews.tech/es/sections',
-        'x-default': 'https://www.lunanews.tech/en/sections',
+        'en-US': `${process.env.NEXT_PUBLIC_DOMAIN}/en/sections`,
+        'es-MX': `${process.env.NEXT_PUBLIC_DOMAIN}/es/sections`,
+        'x-default': `${process.env.NEXT_PUBLIC_DOMAIN}/en/sections`,
       },
     },
   };
