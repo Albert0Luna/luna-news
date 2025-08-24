@@ -1,17 +1,16 @@
 /* eslint-disable @next/next/no-img-element */
-import { Link } from '@/src/i18n/navigation';
-import { sections } from '@/src/utils/const';
-import { Metadata } from 'next';
-import { getLocale } from 'next-intl/server';
-import { notFound } from 'next/navigation';
-import { cache } from 'react';
+import {Link} from '@/src/i18n/navigation';
+import {sections} from '@/src/utils/const';
+import {Metadata} from 'next';
+import {getLocale} from 'next-intl/server';
+import {notFound} from 'next/navigation';
+import {cache} from 'react';
 import Article from './Article';
 
 const getArticle = cache(async (locale: string, slug: string) => {
   try {
     const response = await fetch(`${process.env.NEXT_PUBLIC_DOMAIN}/api/article?lang=${locale}&slug=${slug}`);
-    const data = await response.json();
-    return data;
+    return await response.json();
   } catch (error) {
     console.error('Error fetching article:', error);
     return notFound();
